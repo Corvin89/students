@@ -7,7 +7,7 @@
         </div>
         <div class="post">
             <div class="top-cat">
-                <span class="date"><?php the_time('d.m.Y');?></span>
+                <span class="date"><?php the_time('d.m.y');?></span>
                 <a href="#" class="tags">Style & Design </a>
             </div>
             <div class="two-box">
