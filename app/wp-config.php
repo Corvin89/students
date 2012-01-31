@@ -19,7 +19,7 @@
 define('DB_NAME', 'student');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'student');
+define('DB_USER', 'admin');
 
 /** Пароль к базе данных MySQL */
 define('DB_PASSWORD', 'admin');
