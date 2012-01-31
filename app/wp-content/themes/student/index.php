@@ -1,39 +1,43 @@
 <?php get_header(); ?>
 <div id="conteiner">
     <div class="boxer">
-        <div class="box-post">
-            <div class="title"><a href="#">Транспорт</a></div>
-            <div class="black">
-                <p><a href="#" class="title">Бал дебютанок Tatler</a></p>
+    <div class="box-post">
+        <?php query_posts('posts_per_page=1'); ?>
+        <?php while (have_posts()) : the_post(); ?>
+        <div class="title"><a href="<?php the_permalink();?>"><?php the_category(); ?></a></div>
+        <div class="black">
+            <p><a href="<?php the_permalink();?>" class="title"><?php the_title(); ?></a></p>
 
-                <p><a href="#" class="more">Подробнее...</a></p>
-            </div>
-            <img src="<?php bloginfo('template_directory'); ?>/img/photo-post.jpg" alt="" title=""/>
+            <p><a href="<?php the_permalink();?>" class="more">Подробнее...</a></p>
+        </div>
+        <?php the_post_thumbnail(); ?>
         </div>
         <div class="news">
-            <p><span class="date">08.12.11</span></p>
+            <p><span class="date"><?php  the_date('d:m:y'); ?></span></p>
 
-            <p>Whether giving feedback to a designer during the build of a website, or contacting a business because
-                their website isn’t clear, many Web users find that putting their suggestions into words can be tricky.
-                Hoping to make that a problem of the past, a new online feedback tool — Wishbox ...</p>
+            <?php list($teaser, $junk) = explode('<!--more', $post->post_content);
+            echo apply_filters('the_content', $teaser); ?>
 
-            <div class="soc"><a href="#" class="more">Подробнее...</a>
+            <div class="soc"><a href="<?php the_permalink();?>" class="more">Подробнее...</a>
 
                 <div class="likes">
                     <img src="<?php bloginfo('template_directory'); ?>/img/like.png" alt="" title=""/>
                 </div>
             </div>
         </div>
+        <?php endwhile; ?>
         <div class="news">
             <ul class="posts">
+                <?php query_posts('posts_per_page=1'); ?>
+                <?php while (have_posts()) : the_post(); ?>
                 <li>
                     <div class="small">
-                        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/small.jpg" alt="" title=""/></a>
+                        <a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a>
 
-                        <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
+                        <div class="title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></div>
                     </div>
                     <div class="top-cat">
-                        <span class="date">08.12.11</span>
+                        <span class="date"><?php the_date('d:m:y') ?></span>
                         <a href="#" class="tags">Style & Design </a>
                     </div>
                     <p>Little Printer enables users to set up subscriptions to a range of publications, which it then
@@ -64,6 +68,7 @@
                         <img src="<?php bloginfo('template_directory'); ?>/img/bg-like.png" alt="" title=""/>
                     </div>
                 </li>
+                <?php endwhile; ?>
             </ul>
         </div>
         <div class="post">
