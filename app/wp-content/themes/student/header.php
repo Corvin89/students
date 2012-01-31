@@ -2,18 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Chocaloca</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="keywords" />
-    <meta name="description" content="description" />
-    <meta http-equiv="content-language" content="en" />
-    <meta name="language" content="en" />
-    <meta http-equiv="imagetoolbar" content="no" />
-    <link href="css/all.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="keywords"/>
+    <meta name="description" content="description"/>
+    <meta http-equiv="content-language" content="en"/>
+    <meta name="language" content="en"/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/all.css" />
-    <!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen"/><![endif]-->
-    <!--[if gte IE 9]> <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/all.css"/>
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen"/><![endif]-->
+    <!--[if gte IE 9]>
+    <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
     <?php wp_head(); ?>
 </head>
 <body>
@@ -21,13 +23,16 @@
     <div id="header">
         <div class="top">
             <a href="#" id="logo"></a>
-            <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt="" title="" /></a></div>
+
+            <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt=""
+                                                 title=""/></a></div>
         </div>
         <div class="menu">
             <ul>
                 <li><a href="#"><span>Главная</span></a></li>
                 <li><a href="#"><span>О нас</span></a></li>
                 <li class="activ"><a href="#"><span>База  идей</span></a>
+
                     <div class="submenu">
                         <ul>
                             <li><a href="#">Eco & Sustainability</a></li>
@@ -43,8 +48,8 @@
             </ul>
             <form action="" method="post">
                 <div class="serc">
-                    <input type="text" class="text" value="Поиск по сайту" />
-                    <input type="submit" class="sub" value="" />
+                    <input type="text" class="text" value="Поиск по сайту"/>
+                    <input type="submit" class="sub" value=""/>
                 </div>
             </form>
         </div>
