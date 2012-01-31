@@ -2,7 +2,7 @@
 <div id="conteiner">
     <div class="boxer width">
         <div class="pages">
-            <h1>Бал дебютанок Tatler</h1>
+            <h1><?php the_title();?></h1>
 
             <p>Whether giving feedback to a designer during the build of a website, or contacting a business because
                 their website isn’t clear, many Web users find that putting their suggestions into words can be tricky.
