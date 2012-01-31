@@ -1,25 +1,16 @@
 <?php get_header(); ?>
+<?php rewind_posts(); $i=1; ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="conteiner">
     <div class="boxer width">
         <div class="pages">
             <h1><?php the_title();?></h1>
-
-            <p>Whether giving feedback to a designer during the build of a website, or contacting a business because
-                their website isn’t clear, many Web users find that putting their suggestions into words can be tricky.
-                Hoping to make that a problem of the past, a new online feedback tool — Wishbox ... </p>
-
-            <p><img src="img/photo-post.jpg" alt="" title=""/></p>
-
+            <p><img src="<?php bloginfo('template_directory'); ?>/img/photo-post.jpg" alt="" title=""/></p>
             <div class="news">
-                <p><span class="date">08.12.11</span></p>
+                <p><span class="date"><?php the_time('d.m.y');?></span></p>
 
-                <p>Whether giving feedback to a designer during the build of a website, or contacting a business because
-                    their website isn’t clear, many Web users find that putting their suggestions into words can be
-                    tricky. Hoping to make that a problem of the past, a new online feedback tool — Wishbox ...</p>
-
-                <div class="soc"><a href="#" class="more">Подробнее...</a>
-
-                    <div class="likes"><img src="img/like.png" alt="" title=""/></div>
+                <p><?php the_content();?></p>
+                    <div class="likes"><img src="<?php bloginfo('template_directory'); ?>img/like.png" alt="" title=""/></div>
                 </div>
             </div>
             <div class="list-url">
@@ -43,7 +34,7 @@
                         <li>
                             <div class="comment">
                                 <div class="ava">
-                                    <img src="img/ava.gif" alt="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/img/ava.gif" alt="">
                                 </div>
                                 <div class="boxers">
                                     <p><a href="#" class="name">Nauman Lodhi</a> <span
@@ -66,9 +57,9 @@
                         <div class="item">
                             <label>Комментировать с помощью </label>
                             <ul>
-                                <li><input type="radio"/> <a href="#"><img src="img/v.gif" title="" alt=""/></a></li>
-                                <li><input type="radio"/> <a href="#"><img src="img/mail.gif" title="" alt=""/></a></li>
-                                <li><input type="radio"/> <a href="#"><img src="img/t.gif" title="" alt=""/></a></li>
+                                <li><input type="radio"/> <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/v.gif" title="" alt=""/></a></li>
+                                <li><input type="radio"/> <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/mail.gif" title="" alt=""/></a></li>
+                                <li><input type="radio"/> <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/t.gif" title="" alt=""/></a></li>
                             </ul>
                         </div>
                         <div class="item">
@@ -89,21 +80,21 @@
             <ul>
                 <li>
                     <div class="small">
-                        <a href="#"><img src="img/photo.jpg" alt="" title=""/></a>
+                        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/photo.jpg" alt="" title=""/></a>
 
                         <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="small">
-                        <a href="#"><img src="img/photo.jpg" alt="" title=""/></a>
+                        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/photo.jpg" alt="" title=""/></a>
 
                         <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
                     </div>
                 </li>
                 <li>
                     <div class="small">
-                        <a href="#"><img src="img/photo.jpg" alt="" title=""/></a>
+                        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/photo.jpg" alt="" title=""/></a>
 
                         <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
                     </div>
