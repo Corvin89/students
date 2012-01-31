@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/all.css" />
     <!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen"/><![endif]-->
     <!--[if gte IE 9]> <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
-
+    <?php wp_head(); ?>
 </head>
 <body>
 <div id="page">
