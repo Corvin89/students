@@ -27,7 +27,19 @@
             <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt=""
                                                  title=""/></a></div>
         </div>
+<!--        --><?php //wp_nav_menu($args = array(
+//            'menu' => 'Top',
+//            'container' => 'div',
+//            'container_class' => 'fgmenu',
+//            'menu_class' => '',
+//            'menu_id' => '',
+//            'echo' => true,
+//            'fallback_cb' => 'wp_page_menu',
+//            'depth' => 0,
+//        )
+//    );?>
         <div class="menu">
+
             <ul>
                 <li><a href="#"><span>Главная</span></a></li>
                 <li><a href="#"><span>О нас</span></a></li>
