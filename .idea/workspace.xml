@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80c5110e-7ddb-4c2e-afd3-25e4e41dbeb2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/404.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/css/all.css" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/header.php" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/single.php" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
     </list>
     <ignored path="student.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,91 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="single.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/single.php">
+      <file leaf-file-name="404.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/404.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="91" selection-start="4876" selection-end="4876" vertical-scroll-proportion="-7.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar-top.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-top.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="492" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar-bottom.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="39" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-15.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/css/all.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.33333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-forum.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-forum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="613" selection-end="613" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="19" selection-start="1181" selection-end="1219" vertical-scroll-proportion="-18.307692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-novosti.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-novosti.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showcase.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/twentyeleven/showcase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="546" vertical-scroll-proportion="-0.0">
+            <state line="1" column="3" selection-start="26" selection-end="26" vertical-scroll-proportion="0.025830258">
               <folding />
             </state>
           </provider>
@@ -144,15 +62,16 @@
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/header.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/single.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/css/all.css" />
+        <option value="$PROJECT_DIR$/app/.htaccess" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/404.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="24" />
+    <option name="width" value="1024" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -180,7 +99,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,38 +197,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,14 +224,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1024" height="720" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25564682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -409,114 +298,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/wp-includes/nav-menu-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="5" selection-start="1094" selection-end="1202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-abiturient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="26" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="97" selection-start="421" selection-end="462" vertical-scroll-proportion="-6.3076925">
-          <folding />
-        </state>
+        <state line="11" column="97" selection-start="421" selection-end="462" vertical-scroll-proportion="-6.3076925" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="24" selection-end="46" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/twentyeleven/showcase.php">
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="546" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-novosti.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="1181" selection-end="1219" vertical-scroll-proportion="-18.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="492" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-forum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="613" selection-end="613" vertical-scroll-proportion="-0.65384614">
+        <state line="174" column="36" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.48368523">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="91" selection-start="4876" selection-end="4876" vertical-scroll-proportion="-7.769231">
+        <state line="84" column="91" selection-start="4876" selection-end="4876" vertical-scroll-proportion="0.4515464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="492" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="0.16867469">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="39" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-15.038462">
+        <state line="35" column="39" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.7302505">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+        <state line="16" column="5" selection-start="573" selection-end="573" vertical-scroll-proportion="0.41328412">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/css/all.css">
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-forum.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.33333334">
+        <state line="15" column="22" selection-start="613" selection-end="613" vertical-scroll-proportion="0.026974952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="1181" selection-end="1219" vertical-scroll-proportion="0.13680154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-novosti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/twentyeleven/showcase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="546" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-abiturient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.3099631">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="26" selection-end="26" vertical-scroll-proportion="0.025830258">
           <folding />
         </state>
       </provider>
