@@ -1,37 +1,33 @@
-<?php get_header(); ?>111
-<?php query_posts('posts_per_page=5'); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+<?php get_header(); ?>
 <div id="conteiner">
-    <div class="boxer width">
-        <div class="title">
-            <h1 class="title"><?php the_category();?></h1>
-        </div>
-        <div class="post">
-            <div class="top-cat">
-                <span class="date"><?php the_time('d.m.y');?></span>
-                <a href="#" class="tags">Style & Design </a>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="boxer width">
+            <div class="title">
+                <h1 class="title"><?php the_category();?></h1>
             </div>
-            <div class="two-box">
-                <div class="post-photo">
-                    <a href="#"><img src="img/photo.png" alt="" title=""/></a>
+            <div class="post">
+                <div class="top-cat">
+                    <span class="date"><?php the_time('d.m.y');?></span>
+                    <a href="#" class="tags">Style & Design </a>
                 </div>
-                <div class="box-text">
-                    <h3><a href="#"><?php the_title();?></a></h3>
+                <div class="two-box">
+                    <div class="post-photo">
+                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+                    </div>
+                    <div class="box-text">
+                        <h3><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
+                        <p><?php the_excerpt() ?></p>
+                    </div>
+                </div>
+                <div class="soc"><a href="<?php the_permalink();?>" class="more">Читать далее</a>
 
-                    <p><?php list($teaser, $junk) = explode('<!--more', $post->post_content);
-                        echo apply_filters('the_content', $teaser); ?></p>
+                    <div class="likes"><img src="img/like.png" alt="" title=""/></div>
                 </div>
             </div>
-            <div class="soc"><a href="#" class="more"><?php the_permalink();?></a>
-
-                <div class="likes"><img src="img/like.png" alt="" title=""/></div>
-            </div>
         </div>
-    </div>
-<?php endwhile; ?>
-<?php endif; ?>
-<?php wp_reset_query();?>
+    <?php endwhile; ?>
+    <?php endif; ?>
+
     <div class="col-3">
         <div class="top-orang">Подпишитесь бесплатно</div>
         <form action="" method="post">

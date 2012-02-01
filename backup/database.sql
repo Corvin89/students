@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.3.2deb1ubuntu1
+-- version 3.4.5
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Янв 31 2012 г., 19:23
--- Версия сервера: 5.1.41
--- Версия PHP: 5.3.2-1ubuntu4.11
+-- Время создания: Фев 01 2012 г., 10:30
+-- Версия сервера: 5.5.16
+-- Версия PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -34,11 +35,6 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `comment_id` (`comment_id`),
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Дамп данных таблицы `wp_commentmeta`
---
-
 
 -- --------------------------------------------------------
 
@@ -128,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=172 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=185 ;
 
 --
 -- Дамп данных таблицы `wp_options`
@@ -166,7 +162,7 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (31, 0, 'links_recently_updated_time', '120', 'yes'),
 (32, 0, 'comment_moderation', '0', 'yes'),
 (33, 0, 'moderation_notify', '1', 'yes'),
-(34, 0, 'permalink_structure', '', 'yes'),
+(34, 0, 'permalink_structure', '/%postname%/', 'yes'),
 (35, 0, 'gzipcompression', '0', 'yes'),
 (36, 0, 'hack_file', '0', 'yes'),
 (37, 0, 'blog_charset', 'UTF-8', 'yes'),
@@ -193,7 +189,7 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (58, 0, 'upload_path', '', 'yes'),
 (59, 0, 'blog_public', '1', 'yes'),
 (60, 0, 'default_link_category', '2', 'yes'),
-(61, 0, 'show_on_front', 'posts', 'yes'),
+(61, 0, 'show_on_front', 'page', 'yes'),
 (62, 0, 'tag_base', '', 'yes'),
 (63, 0, 'show_avatars', '1', 'yes'),
 (64, 0, 'avatar_rating', 'G', 'yes'),
@@ -227,7 +223,7 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (92, 0, 'embed_autourls', '1', 'yes'),
 (93, 0, 'embed_size_w', '', 'yes'),
 (94, 0, 'embed_size_h', '600', 'yes'),
-(95, 0, 'page_for_posts', '0', 'yes'),
+(95, 0, 'page_for_posts', '25', 'yes'),
 (96, 0, 'page_on_front', '0', 'yes'),
 (97, 0, 'default_post_format', '0', 'yes'),
 (98, 0, 'initial_db_version', '19470', 'yes'),
@@ -238,10 +234,10 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (103, 0, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (104, 0, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (105, 0, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:18:"orphaned_widgets_1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
-(106, 0, 'cron', 'a:3:{i:1328037403;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1328080609;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1328011018;s:15:"version_checked";s:5:"3.3.1";}', 'yes'),
-(109, 0, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328029401;s:7:"checked";a:3:{s:19:"akismet/akismet.php";s:5:"2.5.3";s:9:"hello.php";s:3:"1.6";s:23:"rustolat/rus-to-lat.php";s:3:"0.3";}s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":5:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:11:"new_version";s:5:"2.5.5";s:3:"url";s:44:"http://wordpress.org/extend/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.2.5.5.zip";}}}', 'yes'),
-(110, 0, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328029597;s:7:"checked";a:3:{s:7:"student";s:3:"1.0";s:12:"twentyeleven";s:3:"1.3";s:9:"twentyten";s:3:"1.3";}s:8:"response";a:0:{}}', 'yes'),
+(106, 0, 'cron', 'a:3:{i:1328123803;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1328167009;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1328083908;s:15:"version_checked";s:5:"3.3.1";}', 'yes'),
+(109, 0, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328083125;s:7:"checked";a:3:{s:19:"akismet/akismet.php";s:5:"2.5.3";s:9:"hello.php";s:3:"1.6";s:23:"rustolat/rus-to-lat.php";s:3:"0.3";}s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":5:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:11:"new_version";s:5:"2.5.5";s:3:"url";s:44:"http://wordpress.org/extend/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.2.5.5.zip";}}}', 'yes'),
+(110, 0, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328083127;s:7:"checked";a:3:{s:7:"student";s:3:"1.0";s:12:"twentyeleven";s:3:"1.3";s:9:"twentyten";s:3:"1.3";}s:8:"response";a:0:{}}', 'yes'),
 (111, 0, '_site_transient_timeout_browser_abb8ee9df7b6e17fbb57f67c38296f02', '1328599010', 'yes'),
 (112, 0, '_site_transient_browser_abb8ee9df7b6e17fbb57f67c38296f02', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:11:"16.0.912.77";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (113, 0, 'dashboard_widget_options', 'a:4:{s:25:"dashboard_recent_comments";a:1:{s:5:"items";i:5;}s:24:"dashboard_incoming_links";a:5:{s:4:"home";s:18:"http://student.dev";s:4:"link";s:94:"http://blogsearch.google.com/blogsearch?scoring=d&partner=wordpress&q=link:http://student.dev/";s:3:"url";s:127:"http://blogsearch.google.com/blogsearch_feeds?scoring=d&ie=utf-8&num=10&output=rss&partner=wordpress&q=link:http://student.dev/";s:5:"items";i:10;s:9:"show_date";b:0;}s:17:"dashboard_primary";a:7:{s:4:"link";s:26:"http://wordpress.org/news/";s:3:"url";s:31:"http://wordpress.org/news/feed/";s:5:"title";s:18:"Блог WordPress";s:5:"items";i:2;s:12:"show_summary";i:1;s:11:"show_author";i:0;s:9:"show_date";i:1;}s:19:"dashboard_secondary";a:7:{s:4:"link";s:28:"http://planet.wordpress.org/";s:3:"url";s:33:"http://planet.wordpress.org/feed/";s:5:"title";s:37:"Другие новости WordPress";s:5:"items";i:5;s:12:"show_summary";i:0;s:11:"show_author";i:0;s:9:"show_date";i:0;}}', 'yes'),
@@ -294,12 +290,14 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (161, 0, 'recently_activated', 'a:0:{}', 'yes'),
 (162, 0, '_site_transient_timeout_browser_e015afc46b2088f41b6ad6db073cfe17', '1328634080', 'yes'),
 (163, 0, '_site_transient_browser_e015afc46b2088f41b6ad6db073cfe17', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"15.0.874.106";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:1;s:8:"insecure";b:0;}', 'yes'),
-(164, 0, '_site_transient_timeout_theme_roots', '1328036480', 'yes'),
-(165, 0, '_site_transient_theme_roots', 'a:3:{s:7:"student";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";}', 'yes'),
 (166, 0, '_site_transient_timeout_wporg_theme_feature_list', '1328040399', 'yes'),
 (167, 0, '_site_transient_wporg_theme_feature_list', 'a:5:{s:6:"Colors";a:15:{i:0;s:5:"black";i:1;s:4:"blue";i:2;s:5:"brown";i:3;s:4:"gray";i:4;s:5:"green";i:5;s:6:"orange";i:6;s:4:"pink";i:7;s:6:"purple";i:8;s:3:"red";i:9;s:6:"silver";i:10;s:3:"tan";i:11;s:5:"white";i:12;s:6:"yellow";i:13;s:4:"dark";i:14;s:5:"light";}s:7:"Columns";a:6:{i:0;s:10:"one-column";i:1;s:11:"two-columns";i:2;s:13:"three-columns";i:3;s:12:"four-columns";i:4;s:12:"left-sidebar";i:5;s:13:"right-sidebar";}s:5:"Width";a:2:{i:0;s:11:"fixed-width";i:1;s:14:"flexible-width";}s:8:"Features";a:18:{i:0;s:8:"blavatar";i:1;s:10:"buddypress";i:2;s:17:"custom-background";i:3;s:13:"custom-colors";i:4;s:13:"custom-header";i:5;s:11:"custom-menu";i:6;s:12:"editor-style";i:7;s:21:"featured-image-header";i:8;s:15:"featured-images";i:9;s:20:"front-page-post-form";i:10;s:19:"full-width-template";i:11;s:12:"microformats";i:12;s:12:"post-formats";i:13;s:20:"rtl-language-support";i:14;s:11:"sticky-post";i:15;s:13:"theme-options";i:16;s:17:"threaded-comments";i:17;s:17:"translation-ready";}s:7:"Subject";a:3:{i:0;s:7:"holiday";i:1;s:13:"photoblogging";i:2;s:8:"seasonal";}}', 'yes'),
 (168, 0, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
-(171, 0, 'category_children', 'a:0:{}', 'yes');
+(173, 0, '_site_transient_timeout_theme_roots', '1328090326', 'yes'),
+(174, 0, '_site_transient_theme_roots', 'a:3:{s:7:"student";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";}', 'yes'),
+(177, 0, 'category_children', 'a:1:{i:5;a:1:{i:0;i:6;}}', 'yes'),
+(178, 0, '_transient_random_seed', '982f27c7b6663770f6da8a7f4ac9375e', 'yes'),
+(182, 0, 'rewrite_rules', 'a:67:{s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:29:"comments/page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -315,7 +313,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=66 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=92 ;
 
 --
 -- Дамп данных таблицы `wp_postmeta`
@@ -365,14 +363,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (44, 19, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (45, 19, '_menu_item_xfn', ''),
 (46, 19, '_menu_item_url', ''),
-(48, 20, '_menu_item_type', 'post_type'),
-(49, 20, '_menu_item_menu_item_parent', '0'),
-(50, 20, '_menu_item_object_id', '7'),
-(51, 20, '_menu_item_object', 'page'),
-(52, 20, '_menu_item_target', ''),
-(53, 20, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(54, 20, '_menu_item_xfn', ''),
-(55, 20, '_menu_item_url', ''),
 (57, 21, '_menu_item_type', 'post_type'),
 (58, 21, '_menu_item_menu_item_parent', '0'),
 (59, 21, '_menu_item_object_id', '12'),
@@ -380,7 +370,29 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (61, 21, '_menu_item_target', ''),
 (62, 21, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (63, 21, '_menu_item_xfn', ''),
-(64, 21, '_menu_item_url', '');
+(64, 21, '_menu_item_url', ''),
+(66, 1, '_edit_last', '1'),
+(69, 1, '_wp_old_slug', '%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80'),
+(70, 1, '_edit_lock', '1328083390:1'),
+(71, 23, '_menu_item_type', 'taxonomy'),
+(72, 23, '_menu_item_menu_item_parent', '0'),
+(73, 23, '_menu_item_object_id', '5'),
+(74, 23, '_menu_item_object', 'category'),
+(75, 23, '_menu_item_target', ''),
+(76, 23, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(77, 23, '_menu_item_xfn', ''),
+(78, 23, '_menu_item_url', ''),
+(80, 24, '_menu_item_type', 'taxonomy'),
+(81, 24, '_menu_item_menu_item_parent', '23'),
+(82, 24, '_menu_item_object_id', '6'),
+(83, 24, '_menu_item_object', 'category'),
+(84, 24, '_menu_item_target', ''),
+(85, 24, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(86, 24, '_menu_item_xfn', ''),
+(87, 24, '_menu_item_url', ''),
+(89, 25, '_edit_last', '1'),
+(90, 25, '_edit_lock', '1328085078:1'),
+(91, 25, '_wp_page_template', 'home.php');
 
 -- --------------------------------------------------------
 
@@ -417,14 +429,14 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
 --
 -- Дамп данных таблицы `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(1, 1, '2012-01-31 07:16:39', '2012-01-31 07:16:39', 'Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!', 'Привет, мир!', '', 'publish', 'open', 'open', '', '%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80', '', '', '2012-01-31 07:16:39', '2012-01-31 07:16:39', '', 0, 'http://student.dev/?p=1', 0, 'post', '', 1),
+(1, 1, '2012-01-31 07:16:39', '2012-01-31 07:16:39', 'Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!', 'Привет, мир!', '', 'publish', 'open', 'open', '', 'privet-mir', '', '', '2012-02-01 08:03:10', '2012-02-01 08:03:10', '', 0, 'http://student.dev/?p=1', 0, 'post', '', 1),
 (2, 1, '2012-01-31 07:16:39', '2012-01-31 07:16:39', 'Это пример страницы. От записей в блоге она отличается тем, что остаётся на одном месте и отображается в меню сайта (в большинстве тем). На странице &laquo;Детали&raquo; владельцы сайтов обычно рассказывают о себе потенциальным посетителям. Например, так:\n\n<blockquote>Привет! Днём я курьер, а вечером &#8212; подающий надежды актёр. Это мой блог. Я живу в Ростове-на-Дону, люблю своего пса Джека и пинаколаду. (И ещё попадать под дождь.)</blockquote>\n\n...или так:\n\n<blockquote>Компания &laquo;Штучки XYZ&raquo; была основана в 1971 году и с тех пор производит качественные штучки. Компания находится в Готэм-сити, имеет штат из более чем 2000 сотрудников и приносит много пользы жителям Готэма.</blockquote>\n\nПерейдите <a href="http://student.dev/wp-admin/">в консоль</a>, чтобы удалить эту страницу и создать новые. Успехов!', 'Пример страницы', '', 'publish', 'open', 'open', '', 'sample-page', '', '', '2012-01-31 07:16:39', '2012-01-31 07:16:39', '', 0, 'http://student.dev/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2012-01-31 07:16:50', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'open', '', '', '', '', '2012-01-31 07:16:50', '0000-00-00 00:00:00', '', 0, 'http://student.dev/?p=3', 0, 'post', '', 0),
 (4, 1, '2012-01-31 17:02:58', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'open', '', '', '', '', '2012-01-31 17:02:58', '0000-00-00 00:00:00', '', 0, 'http://student.dev/?page_id=4', 0, 'page', '', 0),
@@ -439,12 +451,17 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (13, 1, '2012-01-31 17:06:09', '2012-01-31 17:06:09', '', 'Черновик', '', 'inherit', 'open', 'open', '', '12-revision', '', '', '2012-01-31 17:06:09', '2012-01-31 17:06:09', '', 12, 'http://student.dev/?p=13', 0, 'revision', '', 0),
 (14, 1, '2012-01-31 17:06:33', '2012-01-31 17:06:33', '', 'О нас', '', 'publish', 'open', 'open', '', 'o-nas', '', '', '2012-01-31 17:06:33', '2012-01-31 17:06:33', '', 0, 'http://student.dev/?page_id=14', 0, 'page', '', 0),
 (15, 1, '2012-01-31 17:06:19', '2012-01-31 17:06:19', '', 'Черновик', '', 'inherit', 'open', 'open', '', '14-revision', '', '', '2012-01-31 17:06:19', '2012-01-31 17:06:19', '', 14, 'http://student.dev/?p=15', 0, 'revision', '', 0),
-(16, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 'Главная', '', 'publish', 'open', 'open', '', 'glavnaya', '', '', '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 0, 'http://student.dev/?p=16', 1, 'nav_menu_item', '', 0),
-(17, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 0, 'http://student.dev/?p=17', 4, 'nav_menu_item', '', 0),
-(18, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '18', '', '', '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 0, 'http://student.dev/?p=18', 2, 'nav_menu_item', '', 0),
-(19, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '19', '', '', '2012-01-31 17:07:33', '2012-01-31 17:07:33', '', 0, 'http://student.dev/?p=19', 6, 'nav_menu_item', '', 0),
-(20, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '20', '', '', '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 0, 'http://student.dev/?p=20', 3, 'nav_menu_item', '', 0),
-(21, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '21', '', '', '2012-01-31 17:07:33', '2012-01-31 17:07:33', '', 0, 'http://student.dev/?p=21', 5, 'nav_menu_item', '', 0);
+(16, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 'Главная', '', 'publish', 'open', 'open', '', 'glavnaya', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=16', 1, 'nav_menu_item', '', 0),
+(17, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=17', 5, 'nav_menu_item', '', 0),
+(18, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '18', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=18', 2, 'nav_menu_item', '', 0),
+(19, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '19', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=19', 7, 'nav_menu_item', '', 0),
+(21, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '21', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=21', 6, 'nav_menu_item', '', 0),
+(22, 1, '2012-01-31 07:16:39', '2012-01-31 07:16:39', 'Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!', 'Привет, мир!', '', 'inherit', 'open', 'open', '', '1-revision', '', '', '2012-01-31 07:16:39', '2012-01-31 07:16:39', '', 1, 'http://student.dev/1-revision/', 0, 'revision', '', 0),
+(23, 1, '2012-02-01 08:03:34', '2012-02-01 08:03:34', ' ', '', '', 'publish', 'open', 'open', '', '23', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=23', 3, 'nav_menu_item', '', 0),
+(24, 1, '2012-02-01 08:07:15', '2012-02-01 08:07:15', ' ', '', '', 'publish', 'open', 'open', '', '24', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 5, 'http://student.dev/?p=24', 4, 'nav_menu_item', '', 0),
+(25, 1, '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 'Главная', '', 'publish', 'open', 'open', '', 'home', '', '', '2012-02-01 08:33:05', '2012-02-01 08:33:05', '', 0, 'http://student.dev/?page_id=25', 0, 'page', '', 0),
+(26, 1, '2012-02-01 08:31:01', '2012-02-01 08:31:01', '', 'Главная', '', 'inherit', 'open', 'open', '', '25-revision', '', '', '2012-02-01 08:31:01', '2012-02-01 08:31:01', '', 25, 'http://student.dev/25-revision/', 0, 'revision', '', 0),
+(27, 1, '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 'Главная', '', 'inherit', 'open', 'open', '', '25-revision-2', '', '', '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 25, 'http://student.dev/25-revision-2/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -460,7 +477,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   PRIMARY KEY (`term_id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Дамп данных таблицы `wp_terms`
@@ -470,7 +487,9 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (1, 'Без рубрики', '%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8', 0),
 (2, 'Ссылки', '%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8', 0),
 (3, 'menu top', 'menu-top', 0),
-(4, 'Жизнь', 'life', 0);
+(4, 'Жизнь', 'life', 0),
+(5, 'Студент', 'student', 0),
+(6, 'Учеба', 'ucheba', 0);
 
 -- --------------------------------------------------------
 
@@ -491,8 +510,8 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0),
 (1, 2, 0),
+(1, 6, 0),
 (2, 2, 0),
 (3, 2, 0),
 (4, 2, 0),
@@ -503,8 +522,9 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (17, 3, 0),
 (18, 3, 0),
 (19, 3, 0),
-(20, 3, 0),
-(21, 3, 0);
+(21, 3, 0),
+(23, 3, 0),
+(24, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -522,17 +542,19 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Дамп данных таблицы `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1),
+(1, 1, 'category', '', 0, 0),
 (2, 2, 'link_category', '', 0, 7),
-(3, 3, 'nav_menu', '', 0, 6),
-(4, 4, 'category', '', 0, 0);
+(3, 3, 'nav_menu', '', 0, 7),
+(4, 4, 'category', '', 0, 0),
+(5, 5, 'category', '', 0, 0),
+(6, 6, 'category', '', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -548,7 +570,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
 -- Дамп данных таблицы `wp_usermeta`
@@ -573,7 +595,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (16, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:8:"add-post";i:1;s:12:"add-post_tag";}'),
 (17, 1, 'closedpostboxes_page', 'a:0:{}'),
 (18, 1, 'metaboxhidden_page', 'a:5:{i:0;s:10:"postcustom";i:1;s:16:"commentstatusdiv";i:2;s:11:"commentsdiv";i:3;s:9:"authordiv";i:4;s:12:"revisionsdiv";}'),
-(19, 1, 'nav_menu_recently_edited', '3');
+(19, 1, 'nav_menu_recently_edited', '3'),
+(20, 1, 'wp_user-settings', 'editor=tinymce'),
+(21, 1, 'wp_user-settings-time', '1328083122');
 
 -- --------------------------------------------------------
 
@@ -603,3 +627,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BkRn2pSngRBb0Pvv2CPQ5R4yt7GKKc.', 'admin', 'vlad_graf@mail.ru', '', '2012-01-31 07:16:38', '', 0, 'admin');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

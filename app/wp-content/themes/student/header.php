@@ -32,10 +32,8 @@
             'container' => 'div',
             'container_class' => 'menu',
             'menu_class' => 'menu',
-            'menu_id' => '',
             'echo' => true,
-            'fallback_cb' => 'wp_page_menu',
-            'depth' => 0,
+            'walker' => new My_Walker_Nav_Menu
         )
     );?>
         <div class="menu">

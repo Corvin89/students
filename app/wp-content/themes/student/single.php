@@ -10,7 +10,9 @@
                 <p><span class="date"><?php the_time('d.m.y');?></span></p>
 
                 <p><?php the_content();?></p>
-                    <div class="likes"><img src="<?php bloginfo('template_directory'); ?>/img/like.png" alt="" title=""/></div>
+                    <div class="likes">
+                        <g:plusone size="medium"><script type=" text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></g:plusone>
+                    </div>
                 </div>
             </div>
             <div class="list-url">
