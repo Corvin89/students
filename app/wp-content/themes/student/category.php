@@ -1,5 +1,7 @@
-<?php get_header(); ?>
-<?php query_posts('posts_per_page=2') ?>
+<?php get_header(); ?>111
+<?php query_posts('posts_per_page=5'); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <div id="conteiner">
     <div class="boxer width">
         <div class="title">
@@ -22,11 +24,14 @@
                 </div>
             </div>
             <div class="soc"><a href="#" class="more"><?php the_permalink();?></a>
+
                 <div class="likes"><img src="img/like.png" alt="" title=""/></div>
             </div>
         </div>
     </div>
-<?php wp_reset_query(); ?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query();?>
     <div class="col-3">
         <div class="top-orang">Подпишитесь бесплатно</div>
         <form action="" method="post">
@@ -50,5 +55,5 @@
         </ul>
     </div>
 </div>
-</div>
+
 <?php get_footer(); ?>
