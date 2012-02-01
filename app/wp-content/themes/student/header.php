@@ -34,33 +34,7 @@
             'menu_class' => 'menu',
             'echo' => true,
             'walker' => new My_Walker_Nav_Menu
-        )
-    );?>
-        <div class="menu">
+             )
+        );?>
 
-            <ul>
-                <li><a href="#"><span>Главная</span></a></li>
-                <li><a href="#"><span>О нас</span></a></li>
-                <li class="activ"><a href="#"><span>База  идей</span></a>
-
-                    <div class="submenu">
-                        <ul>
-                            <li><a href="#">Eco & Sustainability</a></li>
-                            <li><a href="#">Eco & Sustainability</a></li>
-                            <li><a href="#">Eco & Sustainability</a></li>
-                            <li><a href="#">Eco & Sustainability</a></li>
-                        </ul>
-                        <div class="bottom"></div>
-                    </div>
-                </li>
-                <li><a href="#"><span>Новости</span></a></li>
-                <li><a href="#"><span>Контакты</span></a></li>
-            </ul>
-            <form action="" method="post">
-                <div class="serc">
-                    <input type="text" class="text" value="Поиск по сайту"/>
-                    <input type="submit" class="sub" value=""/>
-                </div>
-            </form>
-        </div>
     </div>
