@@ -22,7 +22,7 @@
 <div id="page">
     <div id="header">
         <div class="top">
-            <a href="#" id="logo"></a>
+            <a href="<?php bloginfo('url'); ?>" id="logo"></a>
 
             <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt=""
                                                  title=""/></a></div>
