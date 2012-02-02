@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80c5110e-7ddb-4c2e-afd3-25e4e41dbeb2" name="Default" comment="" />
+    <list default="true" id="80c5110e-7ddb-4c2e-afd3-25e4e41dbeb2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/functions/admin-menu.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/student.dev.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-1024x640.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-1024x640.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-150x150.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-150x150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-300x187.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-300x187.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-1024x640.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-1024x640.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-150x150.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-150x150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-300x187.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-300x187.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225-150x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225-150x150.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300-109x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300-109x150.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-150x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-150x150.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-300x200.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-300x200.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/footer.php" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/functions.php" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php" afterPath="$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php" />
+    </list>
     <ignored path="student.dev.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,10 +49,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="404.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/404.php">
+      <file leaf-file-name="sidebar-bottom.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.07749078">
+            <state line="5" column="146" selection-start="69" selection-end="654" vertical-scroll-proportion="-3.8461537">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="20" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.9245283">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="23" selection-start="138" selection-end="138" vertical-scroll-proportion="61.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin-menu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/admin-menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="17" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1328203551000" expanded="true" signature="995:1026" placeholder="..." />
+                <marker date="1328203551000" expanded="true" signature="1608:1635" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wp-config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/wp-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="23" selection-start="3189" selection-end="3193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,31 +118,36 @@
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/wp-content/themes/student/js/google.js" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/js/tweet.js" />
-        <option value="$PROJECT_DIR$/app/wp-content/themes/student/functions.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/functions/menu.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/index.php" />
-        <option value="$PROJECT_DIR$/app/wp-content/themes/student/home.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/category-student.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/category.php" />
-        <option value="$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/header.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/single.php" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/css/all.css" />
         <option value="$PROJECT_DIR$/app/.htaccess" />
         <option value="$PROJECT_DIR$/app/wp-content/themes/student/404.php" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/home.php" />
+        <option value="$PROJECT_DIR$/app/wp-config.php" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/functions.php" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/functions/admin-menu.php" />
+        <option value="$PROJECT_DIR$/app/wp-content/themes/student/footer.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1024" />
-    <option name="height" value="720" />
+    <option name="width" value="1280" />
+    <option name="height" value="751" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -95,7 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,12 +207,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="65" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="82" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="179" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="948" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="861" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="86" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="81" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/wp-content/themes/student/functions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" scope="Directory">
@@ -142,9 +309,32 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="80c5110e-7ddb-4c2e-afd3-25e4e41dbeb2" name="Default" comment="" />
@@ -154,19 +344,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1024" height="720" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1280" height="751" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49415693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26796713" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27317074" sideWeight="0.639399" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.360601" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -228,49 +418,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="97" selection-start="421" selection-end="462" vertical-scroll-proportion="-6.3076925" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="46" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/css/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="36" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.48368523" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="91" selection-start="4876" selection-end="4876" vertical-scroll-proportion="0.4515464" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-top.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="492" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="0.16867469" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="39" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.7302505" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="573" selection-end="573" vertical-scroll-proportion="0.41328412" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/page-forum.php">
@@ -307,7 +462,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/404.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.07749078">
+        <state line="3" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="573" selection-end="573" vertical-scroll-proportion="0.5584642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="23" selection-start="3189" selection-end="3193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions/admin-menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="17" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="138" selection-end="138" vertical-scroll-proportion="61.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1328203551000" expanded="true" signature="995:1026" placeholder="..." />
+            <marker date="1328203551000" expanded="true" signature="1608:1635" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/sidebar-bottom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="146" selection-start="69" selection-end="654" vertical-scroll-proportion="-3.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/wp-content/themes/student/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.9245283">
           <folding />
         </state>
       </provider>
