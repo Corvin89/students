@@ -20,8 +20,7 @@ get_header(); ?>
         <div class="news">
             <p><span class="date"><?php the_time('d:m:y'); ?></span></p>
 
-            <?php list($teaser, $junk) = explode('<!--more', $post->post_content);
-            echo apply_filters('the_content', $teaser); ?>
+            <?php $a=get_the_content(); kama_excerpt(array("maxchar" => 380, "text" => $a));?>
 
             <div class="soc"><a href="<?php the_permalink();?>" class="more">Подробнее...</a>
 
@@ -34,7 +33,7 @@ get_header(); ?>
         <?php wp_reset_query(); ?>
         <div class="news">
             <ul class="posts">
-                <?php query_posts('posts_per_page=2&offset=0'); ?>
+                <?php query_posts('posts_per_page=2&offset=1'); ?>
                 <?php while (have_posts()) : the_post(); ?>
                 <li>
                     <div class="small">
@@ -54,8 +53,7 @@ get_header(); ?>
                             ?>
                         </a>
                     </div>
-                    <?php list($teaser, $junk) = explode('<!--more', $post->post_content);
-                    echo apply_filters('the_content', $teaser); ?>
+                    <?php $a=get_the_content(); kama_excerpt(array("maxchar" => 380, "text" => $a));?>
 
                     <p><a href="<?php the_permalink();?>" class="more">Подробнее...</a></p>
 
@@ -67,7 +65,7 @@ get_header(); ?>
                 <?php wp_reset_query(); ?>
             </ul>
         </div>
-        <?php query_posts('posts_per_page=2&offset=0'); ?>
+        <?php query_posts('posts_per_page=2&category_name=studwiki'); ?>
         <?php while (have_posts()) : the_post(); ?>
         <div class="post">
             <div class="top-cat">
@@ -89,8 +87,7 @@ get_header(); ?>
                 <div class="box-text">
                     <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 
-                    <?php list($teaser, $junk) = explode('<!--more', $post->post_content);
-                    echo apply_filters('the_content', $teaser); ?>
+                    <?php $a=get_the_content(); kama_excerpt(array("maxchar" => 380, "text" => $a));?>
 
                 </div>
             </div>
