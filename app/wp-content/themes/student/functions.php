@@ -12,7 +12,7 @@ function kama_excerpt($args=''){
     $text        = isset($i['text']) ?          trim($i['text'])        : '';
     $save_format = isset($i['save_format']) ?   trim($i['save_format'])         : false;
     $echo        = isset($i['echo']) ?          false                   : true;
-
+    $out = '';
     if (!$text){
         $out = $post->post_excerpt ? $post->post_excerpt : $post->post_content;
         $out = preg_replace ("!\[/?.*\]!U", '', $out ); //убираем шоткоды, например:[singlepic id=3]
