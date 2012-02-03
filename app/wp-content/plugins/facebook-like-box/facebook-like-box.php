@@ -46,7 +46,7 @@ function facebook_like_box($profile_id, $stream = 1, $connections = 10, $width =
 
 function widget_flb_init() {
 
-	if ( !function_exists('register_sidebar_widget') )
+	if ( @!function_exists('register_sidebar_widget') )
 		return;
 	
 	$check_options = get_option('widget_flb');
@@ -135,9 +135,9 @@ function widget_flb_init() {
 	function widget_flb_register() {		
     $title = 'Facebook Like Box';
     // Register widget for use
-    register_sidebar_widget($title, 'widget_flb');    
+        @register_sidebar_widget($title, 'widget_flb');
     // Register settings for use, 300x100 pixel form
-    register_widget_control($title, 'widget_flb_control');
+    @register_widget_control($title, 'widget_flb_control');
 	}
 
 	widget_flb_register();

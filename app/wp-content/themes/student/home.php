@@ -103,7 +103,10 @@ get_header(); ?>
     <?php get_sidebar('banner'); ?>
     <div class="col-3">
         <?php get_sidebar('top'); ?>
-        <?php get_sidebar('middle'); ?>
+        <?php if ( !function_exists('dynamic_sidebar')
+        || !dynamic_sidebar() ) : ?>
+        <?php //get_sidebar('middle'); ?>
+        <?php endif; ?>
         <?php get_sidebar('bottom'); ?>
     </div>
 </div>

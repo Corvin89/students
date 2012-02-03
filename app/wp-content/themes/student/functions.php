@@ -58,5 +58,10 @@ function the_thumbnail_src() {
     echo $image_url[0];
 }
 
+if ( function_exists('register_sidebar') )
+    register_sidebar();
+
 require_once "functions/menu.php";
 require_once "functions/opengraph.php";
+
+
