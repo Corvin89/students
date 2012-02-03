@@ -4,21 +4,6 @@
     <list default="true" id="cad14b1d-4aa6-4808-a96a-35852a8ca34f" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/wp-content/plugins/rustolat/readme.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/wp-content/plugins/rustolat/rus-to-lat.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-1024x640.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-1024x640.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-150x150.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-150x150.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-300x187.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1-300x187.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-1024x640.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-1024x640.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-150x150.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-150x150.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-300x187.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2-300x187.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2.png" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/01/Снимок2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225-150x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/88ccb1f4f406cbe0-large-300x225.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300-109x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300-109x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/Unnamed-109x300.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-150x150.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-150x150.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-300x200.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521-300x200.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521.jpg" afterPath="$PROJECT_DIR$/app/wp-content/uploads/2012/02/test-780x521.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="student.dev.iws" />
@@ -51,6 +36,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
@@ -97,6 +87,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,13 +210,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" scope="Directory">
+      <TestRunner />
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -239,13 +235,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1282" height="756" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25405845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25892857" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
