@@ -109,7 +109,7 @@ body{
 #header div.menu ul li a{
 	float:left;
 	height:40px;
-	font-size:18px;
+	font-size:15px;
 	color:#175276;
 	text-shadow:0 1px #84c2e9;
 	text-transform:uppercase;
@@ -131,14 +131,14 @@ body{
 }
 
 #header div.menu ul li div.submenu{
-	background:url(../img/arow.png) no-repeat 36% 0;
-	width:193px;
-	position:absolute;
-	top:33px;
-	margin:0;
-	left:-9px ;
-	display:none;
-	padding:3px 10px;
+	background: url(../img/arow.png) no-repeat 28% 0;
+    display: none;
+    left: -9px;
+    margin: 0;
+    padding: 7px 10px 0;
+    position: absolute;
+    top: 29px;
+    width: 193px;
 }
 
 #header div.menu ul li:hover div.submenu{
@@ -1053,4 +1053,8 @@ h3{
 	color:#bebebe;
 	float:left;
 	line-height:50px;
+}
+
+span.wpcf7-not-valid-tip{
+	top:113%;
 }
