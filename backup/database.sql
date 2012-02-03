@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.3.2deb1ubuntu1
+-- version 3.4.5
 -- http://www.phpmyadmin.net
 --
--- Хост: localhost
--- Время создания: Фев 03 2012 г., 13:16
--- Версия сервера: 5.1.41
--- Версия PHP: 5.3.2-1ubuntu4.11
+-- Host: localhost
+-- Erstellungszeit: 03. Feb 2012 um 12:30
+-- Server Version: 5.5.16
+-- PHP-Version: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,13 +17,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- База данных: `student`
+-- Datenbank: `student`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_commentmeta`
+-- Tabellenstruktur für Tabelle `wp_commentmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
@@ -35,15 +36,10 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Дамп данных таблицы `wp_commentmeta`
---
-
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_comments`
+-- Tabellenstruktur für Tabelle `wp_comments`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_comments` (
@@ -71,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Дамп данных таблицы `wp_comments`
+-- Daten für Tabelle `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -80,7 +76,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_links`
+-- Tabellenstruktur für Tabelle `wp_links`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_links` (
@@ -102,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Дамп данных таблицы `wp_links`
+-- Daten für Tabelle `wp_links`
 --
 
 INSERT INTO `wp_links` (`link_id`, `link_url`, `link_name`, `link_image`, `link_target`, `link_description`, `link_visible`, `link_owner`, `link_rating`, `link_updated`, `link_rel`, `link_notes`, `link_rss`) VALUES
@@ -117,7 +113,7 @@ INSERT INTO `wp_links` (`link_id`, `link_url`, `link_name`, `link_image`, `link_
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_options`
+-- Tabellenstruktur für Tabelle `wp_options`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_options` (
@@ -128,10 +124,10 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=296 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=298 ;
 
 --
--- Дамп данных таблицы `wp_options`
+-- Daten für Tabelle `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -262,8 +258,6 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (218, 0, '_transient_timeout_plugin_slugs', '1328351809', 'no'),
 (219, 0, '_transient_plugin_slugs', 'a:4:{i:0;s:19:"akismet/akismet.php";i:1;s:22:"cyr2lat/cyr-to-lat.php";i:2;s:9:"hello.php";i:3;s:25:"subscribe2/subscribe2.php";}', 'no'),
 (233, 0, 'category_children', 'a:2:{i:5;a:6:{i:0;i:4;i:1;i:6;i:2;i:8;i:3;i:9;i:4;i:10;i:5;i:11;}i:12;a:4:{i:0;i:13;i:1;i:14;i:2;i:15;i:3;i:16;}}', 'yes'),
-(254, 0, '_site_transient_timeout_theme_roots', '1328267975', 'yes'),
-(255, 0, '_site_transient_theme_roots', 'a:3:{s:7:"student";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";}', 'yes'),
 (256, 0, '_transient_timeout_feed_a5420c83891a9c88ad2a4f04584a5efc', '1328303987', 'no'),
 (257, 0, '_transient_timeout_feed_c2cb6b65a21c26a6c91c183e4515b2b5', '1328303988', 'no'),
 (258, 0, '_transient_feed_a5420c83891a9c88ad2a4f04584a5efc', 'a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:3:"\n	\n";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:72:"\n		\n		\n		\n		\n		\n		\n				\n\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n		\n\n	";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:39:"WordPress Plugins » View: Most Popular";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:51:"http://wordpress.org/extend/plugins/browse/popular/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:39:"WordPress Plugins » View: Most Popular";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"language";a:1:{i:0;a:5:{s:4:"data";s:5:"en-US";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 03 Feb 2012 09:15:46 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"generator";a:1:{i:0;a:5:{s:4:"data";s:25:"http://bbpress.org/?v=1.1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"item";a:15:{i:0;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:27:"Matt Mullenweg on "Akismet"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:52:"http://wordpress.org/extend/plugins/akismet/#post-15";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 09 Mar 2007 22:11:30 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:39:"15@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:98:"Akismet checks your comments against the Akismet web service to see if they look like spam or not.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Matt Mullenweg";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:1;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:36:"Takayuki Miyoshi on "Contact Form 7"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:61:"http://wordpress.org/extend/plugins/contact-form-7/#post-2141";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 02 Aug 2007 12:45:03 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"2141@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:54:"Just another contact form plugin. Simple but flexible.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:16:"Takayuki Miyoshi";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:2;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:28:"Lester Chan on "WP-PageNavi"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:57:"http://wordpress.org/extend/plugins/wp-pagenavi/#post-363";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 09 Mar 2007 23:17:57 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:40:"363@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:49:"Adds a more advanced paging navigation interface.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:11:"Lester Chan";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:3;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:33:"uberdose on "All in One SEO Pack"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:65:"http://wordpress.org/extend/plugins/all-in-one-seo-pack/#post-753";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 30 Mar 2007 20:08:18 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:40:"753@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:92:"Automatically optimizes your Wordpress blog for Search Engines (Search Engine Optimization).";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:8:"uberdose";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:4;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:49:"Joost de Valk on "Google Analytics for WordPress"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:77:"http://wordpress.org/extend/plugins/google-analytics-for-wordpress/#post-2316";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 14 Sep 2007 12:15:27 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"2316@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:145:"Track your WordPress site easily and with lots of metadata: views per author &#38; category, automatic tracking of outbound clicks and pageviews.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joost de Valk";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:5;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Alex Rabe on "NextGEN Gallery"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:62:"http://wordpress.org/extend/plugins/nextgen-gallery/#post-1169";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 23 Apr 2007 20:08:06 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"1169@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:108:"NextGEN Gallery is a full integrated Image Gallery plugin for WordPress with dozens of options and features.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Alex Rabe";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:6;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:41:"Joost de Valk on "WordPress SEO by Yoast"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:60:"http://wordpress.org/extend/plugins/wordpress-seo/#post-8321";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 01 Jan 2009 20:34:44 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"8321@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:131:"Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the WordPress SEO plugin by Yoast.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joost de Valk";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:7;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"BraveNewCode Inc. on "WPtouch"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://wordpress.org/extend/plugins/wptouch/#post-5468";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 01 May 2008 04:58:09 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"5468@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:70:"WPtouch: A simple, powerful and elegant mobile theme for your website.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"BraveNewCode Inc.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:8;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:42:"Mike Challis on "Fast Secure Contact Form"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:63:"http://wordpress.org/extend/plugins/si-contact-form/#post-12636";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 27 Aug 2009 01:20:04 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:42:"12636@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:131:"A super customizable contact form that lets your visitors send you email. Blocks all automated spammers. No templates to mess with.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Mike Challis";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:9;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:29:"Arne on "Google XML Sitemaps"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:70:"http://wordpress.org/extend/plugins/google-sitemap-generator/#post-132";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 09 Mar 2007 22:31:32 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:40:"132@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:105:"This plugin will generate a special XML sitemap which will help search engines to better index your blog.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:4:"Arne";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:10;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:38:"Brian Colinger on "WordPress Importer"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:66:"http://wordpress.org/extend/plugins/wordpress-importer/#post-18101";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 20 May 2010 17:42:45 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:42:"18101@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:101:"Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Brian Colinger";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:11;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:19:"kikadev on "gtrans"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://wordpress.org/extend/plugins/gtrans/#post-30417";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 22 Sep 2011 11:48:04 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:42:"30417@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:45:"GTranslate: Google Translate for your website";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:7:"kikadev";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:12;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:40:"Vladimir Prelovac on "Smart YouTube PRO"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:60:"http://wordpress.org/extend/plugins/smart-youtube/#post-2935";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 12 Feb 2008 12:05:03 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"2935@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:150:"Smart Youtube is a professional WordPress Video plugin that allows you to easily insert videos/playlists into your post, comments and in your RSS feed";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Vladimir Prelovac";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:13;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:36:"Donncha O Caoimh on "WP Super Cache"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:61:"http://wordpress.org/extend/plugins/wp-super-cache/#post-2572";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 05 Nov 2007 11:40:04 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"2572@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:73:"A very fast caching engine for WordPress that produces static html files.";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:16:"Donncha O Caoimh";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:14;a:6:{s:4:"data";s:30:"\n			\n			\n			\n			\n			\n			\n					";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:5:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:27:"Joost de Valk on "Sociable"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:55:"http://wordpress.org/extend/plugins/sociable/#post-2865";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 31 Jan 2008 11:36:17 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:41:"2865@http://wordpress.org/extend/plugins/";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:149:"Sociable continues being the leader in the sharing space of WordPress plugins. Started more than 2 years ago, and with over 1,5mm downloads now, here";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joost de Valk";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:4:"href";s:52:"http://wordpress.org/extend/plugins/rss/view/popular";s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:8:{s:6:"server";s:5:"nginx";s:4:"date";s:29:"Fri, 03 Feb 2012 09:19:46 GMT";s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:10:"connection";s:5:"close";s:4:"vary";s:15:"Accept-Encoding";s:13:"last-modified";s:19:"2007-03-09 22:11:30";s:14:"content-length";s:4:"7757";s:4:"x-nc";s:11:"HIT luv 138";}s:5:"build";s:14:"20090627192103";}', 'no');
@@ -305,12 +299,14 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (289, 0, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'a:40:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";s:4:"2477";}s:4:"post";a:3:{s:4:"name";s:4:"Post";s:4:"slug";s:4:"post";s:5:"count";s:4:"1672";}s:6:"plugin";a:3:{s:4:"name";s:6:"plugin";s:4:"slug";s:6:"plugin";s:5:"count";s:4:"1488";}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";s:4:"1249";}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";s:4:"1237";}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";s:4:"1202";}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";s:3:"881";}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";s:3:"809";}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";s:3:"778";}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";s:3:"758";}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";s:3:"739";}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";s:3:"686";}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";s:3:"675";}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";s:3:"600";}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";s:3:"530";}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";s:3:"517";}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";s:3:"445";}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";s:3:"443";}s:4:"ajax";a:3:{s:4:"name";s:4:"AJAX";s:4:"slug";s:4:"ajax";s:5:"count";s:3:"439";}s:9:"wordpress";a:3:{s:4:"name";s:9:"wordpress";s:4:"slug";s:9:"wordpress";s:5:"count";s:3:"430";}s:8:"facebook";a:3:{s:4:"name";s:8:"Facebook";s:4:"slug";s:8:"facebook";s:5:"count";s:3:"428";}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";s:3:"400";}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";s:3:"389";}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";s:3:"379";}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";s:3:"373";}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";s:3:"355";}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";s:3:"354";}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";s:3:"354";}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";s:3:"350";}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";s:3:"345";}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";s:3:"345";}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";s:3:"340";}s:5:"flash";a:3:{s:4:"name";s:5:"flash";s:4:"slug";s:5:"flash";s:5:"count";s:3:"328";}s:4:"tags";a:3:{s:4:"name";s:4:"tags";s:4:"slug";s:4:"tags";s:5:"count";s:3:"318";}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";s:3:"312";}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";s:3:"309";}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";s:3:"301";}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";s:3:"289";}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";s:3:"289";}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";s:3:"283";}}', 'yes'),
 (293, 0, '_transient_plugins_delete_result_1', '1', 'yes'),
 (294, 0, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328265385;s:7:"checked";a:4:{s:19:"akismet/akismet.php";s:5:"2.5.3";s:22:"cyr2lat/cyr-to-lat.php";s:3:"3.2";s:9:"hello.php";s:3:"1.6";s:25:"subscribe2/subscribe2.php";s:3:"7.2";}s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":5:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:11:"new_version";s:5:"2.5.5";s:3:"url";s:44:"http://wordpress.org/extend/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.2.5.5.zip";}}}', 'yes'),
-(295, 0, 'subscribe2_options', 'a:36:{s:7:"autosub";s:2:"no";s:15:"newreg_override";s:2:"no";s:8:"wpregdef";s:2:"no";s:10:"autoformat";s:7:"excerpt";s:12:"show_autosub";s:3:"yes";s:11:"autosub_def";s:3:"yes";s:12:"comment_subs";s:2:"no";s:8:"bcclimit";i:0;s:11:"admin_email";s:4:"subs";s:8:"tracking";s:0:"";s:6:"s2page";i:0;s:10:"stylesheet";s:3:"yes";s:5:"pages";s:2:"no";s:8:"password";s:2:"no";s:7:"private";s:2:"no";s:10:"email_freq";s:5:"never";s:10:"cron_order";s:4:"desc";s:7:"exclude";s:0:"";s:6:"sender";s:6:"author";s:12:"reg_override";s:1:"1";s:9:"show_meta";s:1:"0";s:11:"show_button";s:1:"1";s:4:"ajax";s:1:"0";s:6:"widget";s:1:"0";s:13:"counterwidget";s:1:"0";s:14:"s2meta_default";s:1:"0";s:7:"entries";i:25;s:6:"barred";s:0:"";s:15:"exclude_formats";s:0:"";s:8:"mailtext";s:215:"{BLOGNAME} has posted a new item, ''{TITLE}''\n\n{POST}\n\nYou may view the latest post at\n{PERMALINK}\n\nYou received this e-mail because you asked to be notified when new updates are posted.\nBest regards,\n{MYNAME}\n{EMAIL}";s:20:"notification_subject";s:20:"[{BLOGNAME}] {TITLE}";s:13:"confirm_email";s:229:"{BLOGNAME} has received a request to {ACTION} for this email address. To complete your request please click on the link below:\n\n{LINK}\n\nIf you did not request this, please feel free to disregard this notice!\n\nThank you,\n{MYNAME}.";s:15:"confirm_subject";s:40:"[{BLOGNAME}] Please confirm your request";s:12:"remind_email";s:348:"This email address was subscribed for notifications at {BLOGNAME} ({BLOGLINK}) but the subscription remains incomplete.\n\nIf you wish to complete your subscription please click on the link below:\n\n{LINK}\n\nIf you do not wish to complete your subscription please ignore this email and your address will be removed from our database.\n\nRegards,\n{MYNAME}";s:14:"remind_subject";s:34:"[{BLOGNAME}] Subscription Reminder";s:7:"version";s:3:"7.2";}', 'yes');
+(295, 0, 'subscribe2_options', 'a:36:{s:7:"autosub";s:2:"no";s:15:"newreg_override";s:2:"no";s:8:"wpregdef";s:2:"no";s:10:"autoformat";s:7:"excerpt";s:12:"show_autosub";s:3:"yes";s:11:"autosub_def";s:3:"yes";s:12:"comment_subs";s:2:"no";s:8:"bcclimit";i:0;s:11:"admin_email";s:4:"subs";s:8:"tracking";s:0:"";s:6:"s2page";i:0;s:10:"stylesheet";s:3:"yes";s:5:"pages";s:2:"no";s:8:"password";s:2:"no";s:7:"private";s:2:"no";s:10:"email_freq";s:5:"never";s:10:"cron_order";s:4:"desc";s:7:"exclude";s:0:"";s:6:"sender";s:6:"author";s:12:"reg_override";s:1:"1";s:9:"show_meta";s:1:"0";s:11:"show_button";s:1:"1";s:4:"ajax";s:1:"0";s:6:"widget";s:1:"0";s:13:"counterwidget";s:1:"0";s:14:"s2meta_default";s:1:"0";s:7:"entries";i:25;s:6:"barred";s:0:"";s:15:"exclude_formats";s:0:"";s:8:"mailtext";s:215:"{BLOGNAME} has posted a new item, ''{TITLE}''\n\n{POST}\n\nYou may view the latest post at\n{PERMALINK}\n\nYou received this e-mail because you asked to be notified when new updates are posted.\nBest regards,\n{MYNAME}\n{EMAIL}";s:20:"notification_subject";s:20:"[{BLOGNAME}] {TITLE}";s:13:"confirm_email";s:229:"{BLOGNAME} has received a request to {ACTION} for this email address. To complete your request please click on the link below:\n\n{LINK}\n\nIf you did not request this, please feel free to disregard this notice!\n\nThank you,\n{MYNAME}.";s:15:"confirm_subject";s:40:"[{BLOGNAME}] Please confirm your request";s:12:"remind_email";s:348:"This email address was subscribed for notifications at {BLOGNAME} ({BLOGLINK}) but the subscription remains incomplete.\n\nIf you wish to complete your subscription please click on the link below:\n\n{LINK}\n\nIf you do not wish to complete your subscription please ignore this email and your address will be removed from our database.\n\nRegards,\n{MYNAME}";s:14:"remind_subject";s:34:"[{BLOGNAME}] Subscription Reminder";s:7:"version";s:3:"7.2";}', 'yes'),
+(296, 0, '_site_transient_timeout_theme_roots', '1328275633', 'yes'),
+(297, 0, '_site_transient_theme_roots', 'a:3:{s:7:"student";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";}', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_postmeta`
+-- Tabellenstruktur für Tabelle `wp_postmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
@@ -321,10 +317,10 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=128 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=209 ;
 
 --
--- Дамп данных таблицы `wp_postmeta`
+-- Daten für Tabelle `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -390,14 +386,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (76, 23, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (77, 23, '_menu_item_xfn', ''),
 (78, 23, '_menu_item_url', ''),
-(80, 24, '_menu_item_type', 'taxonomy'),
-(81, 24, '_menu_item_menu_item_parent', '23'),
-(82, 24, '_menu_item_object_id', '6'),
-(83, 24, '_menu_item_object', 'category'),
-(84, 24, '_menu_item_target', ''),
-(85, 24, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(86, 24, '_menu_item_xfn', ''),
-(87, 24, '_menu_item_url', ''),
 (89, 25, '_edit_last', '1'),
 (90, 25, '_edit_lock', '1328085078:1'),
 (91, 25, '_wp_page_template', 'home.php'),
@@ -424,12 +412,84 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (124, 43, '_thumbnail_id', '32'),
 (125, 2, '_edit_lock', '1328264401:1'),
 (126, 55, '_wp_attached_file', '2012/02/subscribe2-ru_ru47.zip'),
-(127, 55, '_wp_attachment_context', 'upgrader');
+(127, 55, '_wp_attachment_context', 'upgrader'),
+(128, 56, '_menu_item_type', 'taxonomy'),
+(129, 56, '_menu_item_menu_item_parent', '17'),
+(130, 56, '_menu_item_object_id', '16'),
+(131, 56, '_menu_item_object', 'category'),
+(132, 56, '_menu_item_target', ''),
+(133, 56, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(134, 56, '_menu_item_xfn', ''),
+(135, 56, '_menu_item_url', ''),
+(137, 57, '_menu_item_type', 'taxonomy'),
+(138, 57, '_menu_item_menu_item_parent', '17'),
+(139, 57, '_menu_item_object_id', '14'),
+(140, 57, '_menu_item_object', 'category'),
+(141, 57, '_menu_item_target', ''),
+(142, 57, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(143, 57, '_menu_item_xfn', ''),
+(144, 57, '_menu_item_url', ''),
+(146, 58, '_menu_item_type', 'taxonomy'),
+(147, 58, '_menu_item_menu_item_parent', '17'),
+(148, 58, '_menu_item_object_id', '13'),
+(149, 58, '_menu_item_object', 'category'),
+(150, 58, '_menu_item_target', ''),
+(151, 58, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(152, 58, '_menu_item_xfn', ''),
+(153, 58, '_menu_item_url', ''),
+(155, 59, '_menu_item_type', 'taxonomy'),
+(156, 59, '_menu_item_menu_item_parent', '17'),
+(157, 59, '_menu_item_object_id', '15'),
+(158, 59, '_menu_item_object', 'category'),
+(159, 59, '_menu_item_target', ''),
+(160, 59, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(161, 59, '_menu_item_xfn', ''),
+(162, 59, '_menu_item_url', ''),
+(164, 60, '_menu_item_type', 'taxonomy'),
+(165, 60, '_menu_item_menu_item_parent', '23'),
+(166, 60, '_menu_item_object_id', '11'),
+(167, 60, '_menu_item_object', 'category'),
+(168, 60, '_menu_item_target', ''),
+(169, 60, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(170, 60, '_menu_item_xfn', ''),
+(171, 60, '_menu_item_url', ''),
+(173, 61, '_menu_item_type', 'taxonomy'),
+(174, 61, '_menu_item_menu_item_parent', '23'),
+(175, 61, '_menu_item_object_id', '4'),
+(176, 61, '_menu_item_object', 'category'),
+(177, 61, '_menu_item_target', ''),
+(178, 61, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(179, 61, '_menu_item_xfn', ''),
+(180, 61, '_menu_item_url', ''),
+(182, 62, '_menu_item_type', 'taxonomy'),
+(183, 62, '_menu_item_menu_item_parent', '23'),
+(184, 62, '_menu_item_object_id', '10'),
+(185, 62, '_menu_item_object', 'category'),
+(186, 62, '_menu_item_target', ''),
+(187, 62, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(188, 62, '_menu_item_xfn', ''),
+(189, 62, '_menu_item_url', ''),
+(191, 63, '_menu_item_type', 'taxonomy'),
+(192, 63, '_menu_item_menu_item_parent', '23'),
+(193, 63, '_menu_item_object_id', '8'),
+(194, 63, '_menu_item_object', 'category'),
+(195, 63, '_menu_item_target', ''),
+(196, 63, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(197, 63, '_menu_item_xfn', ''),
+(198, 63, '_menu_item_url', ''),
+(200, 64, '_menu_item_type', 'taxonomy'),
+(201, 64, '_menu_item_menu_item_parent', '23'),
+(202, 64, '_menu_item_object_id', '9'),
+(203, 64, '_menu_item_object', 'category'),
+(204, 64, '_menu_item_target', ''),
+(205, 64, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(206, 64, '_menu_item_xfn', ''),
+(207, 64, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_posts`
+-- Tabellenstruktur für Tabelle `wp_posts`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_posts` (
@@ -461,10 +521,10 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=65 ;
 
 --
--- Дамп данных таблицы `wp_posts`
+-- Daten für Tabelle `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -483,14 +543,13 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (13, 1, '2012-01-31 17:06:09', '2012-01-31 17:06:09', '', 'Черновик', '', 'inherit', 'open', 'open', '', '12-revision', '', '', '2012-01-31 17:06:09', '2012-01-31 17:06:09', '', 12, 'http://student.dev/?p=13', 0, 'revision', '', 0),
 (14, 1, '2012-01-31 17:06:33', '2012-01-31 17:06:33', '', 'О нас', '', 'publish', 'open', 'open', '', 'o-nas', '', '', '2012-01-31 17:06:33', '2012-01-31 17:06:33', '', 0, 'http://student.dev/?page_id=14', 0, 'page', '', 0),
 (15, 1, '2012-01-31 17:06:19', '2012-01-31 17:06:19', '', 'Черновик', '', 'inherit', 'open', 'open', '', '14-revision', '', '', '2012-01-31 17:06:19', '2012-01-31 17:06:19', '', 14, 'http://student.dev/?p=15', 0, 'revision', '', 0),
-(16, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 'Главная', '', 'publish', 'open', 'open', '', 'glavnaya', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=16', 1, 'nav_menu_item', '', 0),
-(17, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=17', 5, 'nav_menu_item', '', 0),
-(18, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '18', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=18', 2, 'nav_menu_item', '', 0),
-(19, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '19', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=19', 7, 'nav_menu_item', '', 0),
-(21, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '21', '', '', '2012-02-01 08:07:16', '2012-02-01 08:07:16', '', 0, 'http://student.dev/?p=21', 6, 'nav_menu_item', '', 0),
+(16, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', '', 'Главная', '', 'publish', 'open', 'open', '', 'glavnaya', '', '', '2012-02-03 11:29:10', '2012-02-03 11:29:10', '', 0, 'http://student.dev/?p=16', 1, 'nav_menu_item', '', 0),
+(17, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2012-02-03 11:29:12', '2012-02-03 11:29:12', '', 0, 'http://student.dev/?p=17', 9, 'nav_menu_item', '', 0),
+(18, 1, '2012-01-31 17:07:32', '2012-01-31 17:07:32', ' ', '', '', 'publish', 'open', 'open', '', '18', '', '', '2012-02-03 11:29:10', '2012-02-03 11:29:10', '', 0, 'http://student.dev/?p=18', 2, 'nav_menu_item', '', 0),
+(19, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '19', '', '', '2012-02-03 11:29:13', '2012-02-03 11:29:13', '', 0, 'http://student.dev/?p=19', 15, 'nav_menu_item', '', 0),
+(21, 1, '2012-01-31 17:07:33', '2012-01-31 17:07:33', ' ', '', '', 'publish', 'open', 'open', '', '21', '', '', '2012-02-03 11:29:13', '2012-02-03 11:29:13', '', 0, 'http://student.dev/?p=21', 14, 'nav_menu_item', '', 0),
 (22, 1, '2012-01-31 07:16:39', '2012-01-31 07:16:39', 'Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!', 'Привет, мир!', '', 'inherit', 'open', 'open', '', '1-revision', '', '', '2012-01-31 07:16:39', '2012-01-31 07:16:39', '', 1, 'http://student.dev/1-revision/', 0, 'revision', '', 0),
-(23, 1, '2012-02-01 08:03:34', '2012-02-01 08:03:34', ' ', '', '', 'publish', 'open', 'open', '', '23', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 0, 'http://student.dev/?p=23', 3, 'nav_menu_item', '', 0),
-(24, 1, '2012-02-01 08:07:15', '2012-02-01 08:07:15', ' ', '', '', 'publish', 'open', 'open', '', '24', '', '', '2012-02-01 08:07:15', '2012-02-01 08:07:15', '', 5, 'http://student.dev/?p=24', 4, 'nav_menu_item', '', 0),
+(23, 1, '2012-02-01 08:03:34', '2012-02-01 08:03:34', ' ', '', '', 'publish', 'open', 'open', '', '23', '', '', '2012-02-03 11:29:10', '2012-02-03 11:29:10', '', 0, 'http://student.dev/?p=23', 3, 'nav_menu_item', '', 0),
 (25, 1, '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 'Главная', '', 'publish', 'open', 'open', '', 'home', '', '', '2012-02-01 08:33:05', '2012-02-01 08:33:05', '', 0, 'http://student.dev/?page_id=25', 0, 'page', '', 0),
 (26, 1, '2012-02-01 08:31:01', '2012-02-01 08:31:01', '', 'Главная', '', 'inherit', 'open', 'open', '', '25-revision', '', '', '2012-02-01 08:31:01', '2012-02-01 08:31:01', '', 25, 'http://student.dev/25-revision/', 0, 'revision', '', 0),
 (27, 1, '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 'Главная', '', 'inherit', 'open', 'open', '', '25-revision-2', '', '', '2012-02-01 08:32:13', '2012-02-01 08:32:13', '', 25, 'http://student.dev/25-revision-2/', 0, 'revision', '', 0),
@@ -515,19 +574,28 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (46, 1, '2012-02-02 12:45:27', '2012-02-02 12:45:27', 'Pellentesque euismod enim sit amet urna facilisis nec elementum purus porttitor. Aenean iaculis sollicitudin nulla, a tristique orci commodo eu. Mauris ipsum nisl, consectetur non tristique vel, congue in urna. Sed porta egestas lacus in ornare. Quisque tempor sollicitudin erat, a lacinia ante lobortis vitae. Vestibulum a dui nulla, ut eleifend elit. Etiam at arcu nibh, ac eleifend sapien. Suspendisse placerat tempor nisi, vel bibendum nisl sollicitudin et. Aenean viverra risus metus, ut porta magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu nunc justo.\r\n\r\nIn egestas scelerisque justo, vitae sollicitudin nisl scelerisque sed. Mauris a lectus in quam vulputate fringilla in at odio. Nunc vitae tempus mi. Proin turpis enim, sagittis id porttitor et, mollis non mauris. Sed nec nulla eget lectus bibendum aliquam. Phasellus pretium, dolor ut mollis placerat, urna urna convallis tortor, nec molestie mi enim in est. Praesent non ante eget turpis faucibus placerat. Quisque adipiscing leo non enim pharetra in mattis lorem mattis. In et neque in ante elementum pulvinar vel fermentum odio.\r\n\r\nMauris consequat, lacus ut eleifend ullamcorper, metus augue tincidunt magna, ac venenatis tellus lectus sit amet nisi. Morbi nisl sapien, adipiscing eu posuere id, scelerisque quis felis. Maecenas id auctor ipsum. Fusce imperdiet interdum lacus, ut porta eros cursus eu. Maecenas dapibus, tortor eget tincidunt pulvinar, ligula enim venenatis lectus, vulputate rhoncus massa lorem vitae neque. Suspendisse non purus eget lectus viverra lobortis. Cras aliquam, felis et suscipit tristique, turpis sem pretium magna, vel laoreet nulla dolor eget tellus. Vivamus pretium, turpis ut scelerisque molestie, magna nulla lacinia augue, sed tincidunt diam orci tempus justo. Sed quam tortor, molestie eget lacinia vitae, dictum in elit. Suspendisse potenti. Fusce ac odio et velit tempus mattis.', 'Pellentesque euismod enim sit amet', '', 'inherit', 'open', 'open', '', '43-revision-2', '', '', '2012-02-02 12:45:27', '2012-02-02 12:45:27', '', 43, 'http://student.dev/43-revision-2/', 0, 'revision', '', 0),
 (47, 1, '2012-02-02 12:43:06', '2012-02-02 12:43:06', 'Aenean volutpat tortor at metus consectetur quis posuere purus tristique. Nullam vel diam id dolor sagittis accumsan. Vivamus sit amet massa est. Donec sapien orci, ornare vitae tincidunt sit amet, molestie ut magna. Proin dapibus egestas convallis. Duis et sollicitudin mi. Nulla facilisi. Morbi vel felis sit amet erat adipiscing fermentum vel at felis. Fusce ut ante massa. Praesent metus elit, tincidunt ac tempor in, euismod ac metus. Praesent euismod ipsum et erat pulvinar dictum. Pellentesque ornare ligula vel lorem lobortis sit amet euismod libero ullamcorper. Nam eu volutpat mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla egestas facilisis dignissim.\r\n\r\nMauris cursus hendrerit nibh, at porta lacus viverra eget. Aliquam porttitor, nisi vel faucibus lacinia, sapien arcu ultricies libero, in suscipit ligula elit ut purus. Fusce ac quam ipsum. Suspendisse lobortis rhoncus nisi, a vulputate tellus ornare in. Nam adipiscing neque sed ante egestas ullamcorper. Nunc ac nunc at tortor ullamcorper aliquet. In tempor gravida tellus, quis elementum nulla porttitor sit amet. In hac habitasse platea dictumst. Duis mollis nisl nec leo ullamcorper tincidunt. Quisque ac felis tellus. Sed quis orci dui. Vestibulum in orci nec lacus tincidunt hendrerit. Sed posuere molestie diam, eget egestas erat commodo sit amet. In fringilla, nibh tincidunt faucibus lacinia, metus odio fringilla enim, et ullamcorper elit nulla sit amet metus. Nam ac tellus eget erat cursus varius. Duis tempor blandit molestie.\r\n\r\nIn est elit, fringilla vitae tristique at, bibendum convallis dui. Praesent mi ante, fringilla nec euismod vitae, fringilla sed quam. Vivamus id laoreet mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Ut commodo dictum turpis iaculis sagittis. Nam nisl magna, ullamcorper ac gravida eu, ultricies et mi. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida mi vel ipsum sollicitudin a tempus mauris gravida. Quisque malesuada, erat a pellentesque commodo, arcu risus hendrerit turpis, id consequat ligula ligula adipiscing turpis. Proin rutrum placerat augue, eget dapibus turpis lobortis non. Fusce varius urna quis massa consectetur consectetur. Donec a nunc nec dui pharetra hendrerit eget sed leo. Quisque quis est sem, ac scelerisque lectus. In at mollis lorem.', 'Aenean volutpat tortor', '', 'inherit', 'open', 'open', '', '41-revision-2', '', '', '2012-02-02 12:43:06', '2012-02-02 12:43:06', '', 41, 'http://student.dev/41-revision-2/', 0, 'revision', '', 0),
 (48, 1, '2012-02-02 12:48:27', '2012-02-02 12:48:27', 'Aenean volutpat tortor at metus consectetur quis posuere purus tristique. Nullam vel diam id dolor sagittis accumsan. Vivamus sit amet massa est. Donec sapien orci, ornare vitae tincidunt sit amet, molestie ut magna. Proin dapibus egestas convallis. Duis et sollicitudin mi. Nulla facilisi. Morbi vel felis sit amet erat adipiscing fermentum vel at felis. Fusce ut ante massa. Praesent metus elit, tincidunt ac tempor in, euismod ac metus. Praesent euismod ipsum et erat pulvinar dictum. Pellentesque ornare ligula vel lorem lobortis sit amet euismod libero ullamcorper. Nam eu volutpat mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla egestas facilisis dignissim.\r\n\r\nMauris cursus hendrerit nibh, at porta lacus viverra eget. Aliquam porttitor, nisi vel faucibus lacinia, sapien arcu ultricies libero, in suscipit ligula elit ut purus. Fusce ac quam ipsum. Suspendisse lobortis rhoncus nisi, a vulputate tellus ornare in. Nam adipiscing neque sed ante egestas ullamcorper. Nunc ac nunc at tortor ullamcorper aliquet. In tempor gravida tellus, quis elementum nulla porttitor sit amet. In hac habitasse platea dictumst. Duis mollis nisl nec leo ullamcorper tincidunt. Quisque ac felis tellus. Sed quis orci dui. Vestibulum in orci nec lacus tincidunt hendrerit. Sed posuere molestie diam, eget egestas erat commodo sit amet. In fringilla, nibh tincidunt faucibus lacinia, metus odio fringilla enim, et ullamcorper elit nulla sit amet metus. Nam ac tellus eget erat cursus varius. Duis tempor blandit molestie.\r\n\r\nIn est elit, fringilla vitae tristique at, bibendum convallis dui. Praesent mi ante, fringilla nec euismod vitae, fringilla sed quam. Vivamus id laoreet mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Ut commodo dictum turpis iaculis sagittis. Nam nisl magna, ullamcorper ac gravida eu, ultricies et mi. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida mi vel ipsum sollicitudin a tempus mauris gravida. Quisque malesuada, erat a pellentesque commodo, arcu risus hendrerit turpis, id consequat ligula ligula adipiscing turpis. Proin rutrum placerat augue, eget dapibus turpis lobortis non. Fusce varius urna quis massa consectetur consectetur. Donec a nunc nec dui pharetra hendrerit eget sed leo. Quisque quis est sem, ac scelerisque lectus. In at mollis lorem.', 'Aenean volutpat tortor', '', 'inherit', 'open', 'open', '', '41-revision-3', '', '', '2012-02-02 12:48:27', '2012-02-02 12:48:27', '', 41, 'http://student.dev/41-revision-3/', 0, 'revision', '', 0),
-(49, 1, '2012-02-02 12:51:14', '2012-02-02 12:51:14', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan nulla eget sem tincidunt eleifend. Mauris eget libero orci. Sed at nulla ante, et feugiat sem. Praesent eu justo a lectus adipiscing auctor vitae sed urna. In dignissim leo egestas enim hendrerit aliquet in quis odio. Curabitur ipsum felis, varius sit amet rutrum at, aliquam a diam. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas scelerisque blandit ornare. Vestibulum fermentum nisl in erat gravida non fringilla felis tincidunt. Nulla vitae felis leo, in ultricies arcu. Mauris ultricies condimentum blandit.\n\nCras iaculis, eros non tincidunt congue, turpis velit luctus sapien, sit amet imperdiet nunc velit quis enim. Ut suscipit pulvinar facilisis. Aenean ultricies odio sed erat convallis at placerat eros facilisis. Nulla vitae egestas ligula. Fusce sollicitudin lectus sed felis mollis facilisis. Sed non odio dolor, sed fringilla est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel mi orci. Nam in nulla odio. Vestibulum at justo nibh, eu malesuada est. Vivamus sodales nisi nec risus rhoncus ac sollicitudin erat luctus. Vivamus cursus tellus ac lectus pellentesque lobortis. Nunc ac orci eget ante pellentesque bibendum. Ut justo sem, commodo id vulputate eget, placerat non leo.\n\nFusce nec justo non risus aliquet sagittis et a lectus. Nullam convallis eros at purus egestas a auctor nulla eleifend. Nunc quis nisl blandit mauris elementum ultricies eget ut lectus. Duis porta elit enim. Curabitur suscipit ullamcorper purus non congue. Fusce vestibulum rutrum ultrices. Donec porta rhoncus felis, at lacinia libero placerat et.', 'Lorem ipsum dolor', '', 'inherit', 'open', 'open', '', '28-autosave', '', '', '2012-02-02 12:51:14', '2012-02-02 12:51:14', '', 28, 'http://student.dev/28-autosave/', 0, 'revision', '', 0);
+(49, 1, '2012-02-02 12:51:14', '2012-02-02 12:51:14', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan nulla eget sem tincidunt eleifend. Mauris eget libero orci. Sed at nulla ante, et feugiat sem. Praesent eu justo a lectus adipiscing auctor vitae sed urna. In dignissim leo egestas enim hendrerit aliquet in quis odio. Curabitur ipsum felis, varius sit amet rutrum at, aliquam a diam. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas scelerisque blandit ornare. Vestibulum fermentum nisl in erat gravida non fringilla felis tincidunt. Nulla vitae felis leo, in ultricies arcu. Mauris ultricies condimentum blandit.\n\nCras iaculis, eros non tincidunt congue, turpis velit luctus sapien, sit amet imperdiet nunc velit quis enim. Ut suscipit pulvinar facilisis. Aenean ultricies odio sed erat convallis at placerat eros facilisis. Nulla vitae egestas ligula. Fusce sollicitudin lectus sed felis mollis facilisis. Sed non odio dolor, sed fringilla est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel mi orci. Nam in nulla odio. Vestibulum at justo nibh, eu malesuada est. Vivamus sodales nisi nec risus rhoncus ac sollicitudin erat luctus. Vivamus cursus tellus ac lectus pellentesque lobortis. Nunc ac orci eget ante pellentesque bibendum. Ut justo sem, commodo id vulputate eget, placerat non leo.\n\nFusce nec justo non risus aliquet sagittis et a lectus. Nullam convallis eros at purus egestas a auctor nulla eleifend. Nunc quis nisl blandit mauris elementum ultricies eget ut lectus. Duis porta elit enim. Curabitur suscipit ullamcorper purus non congue. Fusce vestibulum rutrum ultrices. Donec porta rhoncus felis, at lacinia libero placerat et.', 'Lorem ipsum dolor', '', 'inherit', 'open', 'open', '', '28-autosave', '', '', '2012-02-02 12:51:14', '2012-02-02 12:51:14', '', 28, 'http://student.dev/28-autosave/', 0, 'revision', '', 0),
+(50, 1, '2012-02-02 12:37:53', '2012-02-02 12:37:53', 'Phasellus ac venenatis enim. Aliquam sagittis venenatis nulla quis facilisis. Fusce sodales libero ut orci semper ut consectetur urna sodales. Etiam non cursus dolor. Sed mi erat, fringilla et fringilla ac, adipiscing vel dolor. Vestibulum condimentum lorem eget elit gravida et rutrum ante rutrum. Aliquam erat volutpat. Phasellus aliquam metus ante. Integer aliquet elementum ipsum, ut feugiat lorem posuere vitae.\r\n\r\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In auctor, mi eget molestie placerat, lacus urna blandit sem, nec pharetra sem eros a urna. Sed pharetra, risus sit amet cursus blandit, turpis turpis condimentum ipsum, vitae viverra nunc lacus dignissim metus. Morbi vel gravida dui. Cras at molestie turpis. Integer mollis dignissim eros, at vulputate lectus porttitor iaculis. Duis in risus justo, sed elementum magna. Praesent pharetra lacus at ipsum accumsan at euismod quam pellentesque. Donec sed dui metus, a vestibulum diam. Sed blandit sagittis aliquam. Curabitur orci risus, pellentesque at iaculis non, viverra pretium eros.\r\n\r\nCras interdum tellus tincidunt elit condimentum id ultrices augue condimentum. Ut at orci dolor. Curabitur nibh mi, pharetra vitae mollis scelerisque, fringilla ac purus. Integer vestibulum molestie felis facilisis faucibus. In hac habitasse platea dictumst. Curabitur nec lectus vitae lectus commodo vehicula. Phasellus lobortis accumsan ipsum, vitae tristique neque pellentesque et. Fusce eget tristique diam. Integer lobortis molestie feugiat. Curabitur scelerisque velit fermentum risus euismod malesuada. In laoreet egestas sapien, eget interdum arcu varius nec. Suspendisse porttitor, mi vitae rutrum viverra, erat metus congue purus, eget semper tortor enim quis tortor. Praesent pulvinar facilisis nibh, in ultrices tortor mollis non.', 'Phasellus ac venenatis enim', '', 'inherit', 'open', 'open', '', '36-revision-3', '', '', '2012-02-02 12:37:53', '2012-02-02 12:37:53', '', 36, 'http://student.dev/36-revision-3/', 0, 'revision', '', 0);
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(50, 1, '2012-02-02 12:37:53', '2012-02-02 12:37:53', 'Phasellus ac venenatis enim. Aliquam sagittis venenatis nulla quis facilisis. Fusce sodales libero ut orci semper ut consectetur urna sodales. Etiam non cursus dolor. Sed mi erat, fringilla et fringilla ac, adipiscing vel dolor. Vestibulum condimentum lorem eget elit gravida et rutrum ante rutrum. Aliquam erat volutpat. Phasellus aliquam metus ante. Integer aliquet elementum ipsum, ut feugiat lorem posuere vitae.\r\n\r\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In auctor, mi eget molestie placerat, lacus urna blandit sem, nec pharetra sem eros a urna. Sed pharetra, risus sit amet cursus blandit, turpis turpis condimentum ipsum, vitae viverra nunc lacus dignissim metus. Morbi vel gravida dui. Cras at molestie turpis. Integer mollis dignissim eros, at vulputate lectus porttitor iaculis. Duis in risus justo, sed elementum magna. Praesent pharetra lacus at ipsum accumsan at euismod quam pellentesque. Donec sed dui metus, a vestibulum diam. Sed blandit sagittis aliquam. Curabitur orci risus, pellentesque at iaculis non, viverra pretium eros.\r\n\r\nCras interdum tellus tincidunt elit condimentum id ultrices augue condimentum. Ut at orci dolor. Curabitur nibh mi, pharetra vitae mollis scelerisque, fringilla ac purus. Integer vestibulum molestie felis facilisis faucibus. In hac habitasse platea dictumst. Curabitur nec lectus vitae lectus commodo vehicula. Phasellus lobortis accumsan ipsum, vitae tristique neque pellentesque et. Fusce eget tristique diam. Integer lobortis molestie feugiat. Curabitur scelerisque velit fermentum risus euismod malesuada. In laoreet egestas sapien, eget interdum arcu varius nec. Suspendisse porttitor, mi vitae rutrum viverra, erat metus congue purus, eget semper tortor enim quis tortor. Praesent pulvinar facilisis nibh, in ultrices tortor mollis non.', 'Phasellus ac venenatis enim', '', 'inherit', 'open', 'open', '', '36-revision-3', '', '', '2012-02-02 12:37:53', '2012-02-02 12:37:53', '', 36, 'http://student.dev/36-revision-3/', 0, 'revision', '', 0),
 (51, 1, '2012-02-02 11:00:41', '2012-02-02 11:00:41', 'Sed pretium aliquam sapien non lacinia. Nulla commodo vestibulum lacus, eu congue tortor scelerisque eu. Nullam laoreet dui ut tellus placerat pellentesque. Suspendisse et mauris at quam laoreet pellentesque vel sit amet nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet felis urna. Cras tempus rhoncus mauris nec molestie. Maecenas viverra ultrices mauris, et consequat arcu rutrum quis. Donec erat urna, euismod ac auctor at, auctor vel purus. Suspendisse dapibus metus quis lorem euismod molestie. Cras tempor turpis nec diam fringilla sed gravida eros venenatis.\r\n\r\nPellentesque auctor est neque. Sed eget velit felis. Maecenas ac tellus at justo suscipit faucibus ornare eu augue. Nullam semper nulla at nulla interdum ac fringilla nisl vulputate. Nam fermentum mauris a libero luctus eu aliquam augue porttitor. Nunc vel tellus vel felis imperdiet dictum. Mauris placerat, augue a posuere facilisis, urna ligula lobortis nulla, a vestibulum neque felis nec leo. Nulla nulla turpis, facilisis eget tempus vitae, sodales eu nulla. Pellentesque volutpat, lectus ac luctus fermentum, mauris neque elementum arcu, a congue velit quam eu ante. Praesent nec magna id quam gravida rhoncus. Nunc auctor velit vitae purus venenatis ut scelerisque felis elementum. Fusce mollis erat ut nulla ornare luctus. Suspendisse turpis turpis, consequat a sodales sit amet, rhoncus et ante. Nam sit amet sem est. Morbi ligula nunc, viverra pretium commodo et, aliquam sed dolor. Quisque imperdiet lobortis urna.\r\n\r\nSed in enim vel augue sodales mollis in a sapien. Vestibulum sed lectus tempor nibh rutrum posuere eget non leo. Vivamus rhoncus, nibh vel eleifend gravida, nulla nunc tincidunt orci, in dapibus libero ligula sed erat. Quisque euismod lacus sit amet lacus gravida pellentesque. Integer iaculis euismod risus vitae vehicula. Nulla eu enim libero. Cras ipsum erat, elementum eget scelerisque ac, varius a neque. Vivamus convallis mollis arcu, vel gravida ligula pharetra vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend eros non purus feugiat ac varius est vulputate. Vivamus libero felis, porta eget venenatis vel, sagittis id risus. Praesent commodo tempor justo, ut elementum lorem sagittis sit amet. Phasellus nec libero quis dui vulputate accumsan faucibus at dolor. Cras dictum metus ipsum, ut volutpat mi. Sed rutrum mattis tellus, ut volutpat metus dictum in. Donec varius velit eget nulla vulputate interdum.', 'Sed pretium aliquam', '', 'inherit', 'open', 'open', '', '31-revision-3', '', '', '2012-02-02 11:00:41', '2012-02-02 11:00:41', '', 31, 'http://student.dev/31-revision-3/', 0, 'revision', '', 0),
 (52, 1, '2012-02-02 12:49:49', '2012-02-02 12:49:49', 'Aenean volutpat tortor at metus consectetur quis posuere purus tristique. Nullam vel diam id dolor sagittis accumsan. Vivamus sit amet massa est. Donec sapien orci, ornare vitae tincidunt sit amet, molestie ut magna. Proin dapibus egestas convallis. Duis et sollicitudin mi. Nulla facilisi. Morbi vel felis sit amet erat adipiscing fermentum vel at felis. Fusce ut ante massa. Praesent metus elit, tincidunt ac tempor in, euismod ac metus. Praesent euismod ipsum et erat pulvinar dictum. Pellentesque ornare ligula vel lorem lobortis sit amet euismod libero ullamcorper. Nam eu volutpat mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla egestas facilisis dignissim.\n\nMauris cursus hendrerit nibh, at porta lacus viverra eget. Aliquam porttitor, nisi vel faucibus lacinia, sapien arcu ultricies libero, in suscipit ligula elit ut purus. Fusce ac quam ipsum. Suspendisse lobortis rhoncus nisi, a vulputate tellus ornare in. Nam adipiscing neque sed ante egestas ullamcorper. Nunc ac nunc at tortor ullamcorper aliquet. In tempor gravida tellus, quis elementum nulla porttitor sit amet. In hac habitasse platea dictumst. Duis mollis nisl nec leo ullamcorper tincidunt. Quisque ac felis tellus. Sed quis orci dui. Vestibulum in orci nec lacus tincidunt hendrerit. Sed posuere molestie diam, eget egestas erat commodo sit amet. In fringilla, nibh tincidunt faucibus lacinia, metus odio fringilla enim, et ullamcorper elit nulla sit amet metus. Nam ac tellus eget erat cursus varius. Duis tempor blandit molestie.\n\nIn est elit, fringilla vitae tristique at, bibendum convallis dui. Praesent mi ante, fringilla nec euismod vitae, fringilla sed quam. Vivamus id laoreet mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Ut commodo dictum turpis iaculis sagittis. Nam nisl magna, ullamcorper ac gravida eu, ultricies et mi. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida mi vel ipsum sollicitudin a tempus mauris gravida. Quisque malesuada, erat a pellentesque commodo, arcu risus hendrerit turpis, id consequat ligula ligula adipiscing turpis. Proin rutrum placerat augue, eget dapibus turpis lobortis non. Fusce varius urna quis massa consectetur consectetur. Donec a nunc nec dui pharetra hendrerit eget sed leo. Quisque quis est sem, ac scelerisque lectus. In at mollis lorem.', 'Aenean volutpat tortor', '', 'inherit', 'open', 'open', '', '41-autosave', '', '', '2012-02-02 12:49:49', '2012-02-02 12:49:49', '', 41, 'http://student.dev/41-autosave/', 0, 'revision', '', 0),
 (53, 1, '2012-02-02 10:57:45', '2012-02-02 10:57:45', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan nulla eget sem tincidunt eleifend. Mauris eget libero orci. Sed at nulla ante, et feugiat sem. Praesent eu justo a lectus adipiscing auctor vitae sed urna. In dignissim leo egestas enim hendrerit aliquet in quis odio. Curabitur ipsum felis, varius sit amet rutrum at, aliquam a diam. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas scelerisque blandit ornare. Vestibulum fermentum nisl in erat gravida non fringilla felis tincidunt. Nulla vitae felis leo, in ultricies arcu. Mauris ultricies condimentum blandit.\r\n\r\nCras iaculis, eros non tincidunt congue, turpis velit luctus sapien, sit amet imperdiet nunc velit quis enim. Ut suscipit pulvinar facilisis. Aenean ultricies odio sed erat convallis at placerat eros facilisis. Nulla vitae egestas ligula. Fusce sollicitudin lectus sed felis mollis facilisis. Sed non odio dolor, sed fringilla est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel mi orci. Nam in nulla odio. Vestibulum at justo nibh, eu malesuada est. Vivamus sodales nisi nec risus rhoncus ac sollicitudin erat luctus. Vivamus cursus tellus ac lectus pellentesque lobortis. Nunc ac orci eget ante pellentesque bibendum. Ut justo sem, commodo id vulputate eget, placerat non leo.\r\n\r\nFusce nec justo non risus aliquet sagittis et a lectus. Nullam convallis eros at purus egestas a auctor nulla eleifend. Nunc quis nisl blandit mauris elementum ultricies eget ut lectus. Duis porta elit enim. Curabitur suscipit ullamcorper purus non congue. Fusce vestibulum rutrum ultrices. Donec porta rhoncus felis, at lacinia libero placerat et.', 'Lorem ipsum dolor', '', 'inherit', 'open', 'open', '', '28-revision-2', '', '', '2012-02-02 10:57:45', '2012-02-02 10:57:45', '', 28, 'http://student.dev/28-revision-2/', 0, 'revision', '', 0),
 (54, 1, '2012-02-02 12:47:11', '2012-02-02 12:47:11', 'Pellentesque euismod enim sit amet urna facilisis nec elementum purus porttitor. Aenean iaculis sollicitudin nulla, a tristique orci commodo eu. Mauris ipsum nisl, consectetur non tristique vel, congue in urna. Sed porta egestas lacus in ornare. Quisque tempor sollicitudin erat, a lacinia ante lobortis vitae. Vestibulum a dui nulla, ut eleifend elit. Etiam at arcu nibh, ac eleifend sapien. Suspendisse placerat tempor nisi, vel bibendum nisl sollicitudin et. Aenean viverra risus metus, ut porta magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu nunc justo.\r\n\r\nIn egestas scelerisque justo, vitae sollicitudin nisl scelerisque sed. Mauris a lectus in quam vulputate fringilla in at odio. Nunc vitae tempus mi. Proin turpis enim, sagittis id porttitor et, mollis non mauris. Sed nec nulla eget lectus bibendum aliquam. Phasellus pretium, dolor ut mollis placerat, urna urna convallis tortor, nec molestie mi enim in est. Praesent non ante eget turpis faucibus placerat. Quisque adipiscing leo non enim pharetra in mattis lorem mattis. In et neque in ante elementum pulvinar vel fermentum odio.\r\n\r\nMauris consequat, lacus ut eleifend ullamcorper, metus augue tincidunt magna, ac venenatis tellus lectus sit amet nisi. Morbi nisl sapien, adipiscing eu posuere id, scelerisque quis felis. Maecenas id auctor ipsum. Fusce imperdiet interdum lacus, ut porta eros cursus eu. Maecenas dapibus, tortor eget tincidunt pulvinar, ligula enim venenatis lectus, vulputate rhoncus massa lorem vitae neque. Suspendisse non purus eget lectus viverra lobortis. Cras aliquam, felis et suscipit tristique, turpis sem pretium magna, vel laoreet nulla dolor eget tellus. Vivamus pretium, turpis ut scelerisque molestie, magna nulla lacinia augue, sed tincidunt diam orci tempus justo. Sed quam tortor, molestie eget lacinia vitae, dictum in elit. Suspendisse potenti. Fusce ac odio et velit tempus mattis.', 'Pellentesque euismod enim sit amet', '', 'inherit', 'open', 'open', '', '43-revision-3', '', '', '2012-02-02 12:47:11', '2012-02-02 12:47:11', '', 43, 'http://student.dev/43-revision-3/', 0, 'revision', '', 0),
-(55, 1, '2012-02-03 10:25:19', '2012-02-03 10:25:19', 'http://student.dev/wp-content/uploads/2012/02/subscribe2-ru_ru47.zip', 'subscribe2-ru_ru47.zip', '', 'private', 'open', 'open', '', 'subscribe2-ru_ru47-zip', '', '', '2012-02-03 10:25:19', '2012-02-03 10:25:19', '', 0, 'http://student.dev/wp-content/uploads/2012/02/subscribe2-ru_ru47.zip', 0, 'attachment', '', 0);
+(55, 1, '2012-02-03 10:25:19', '2012-02-03 10:25:19', 'http://student.dev/wp-content/uploads/2012/02/subscribe2-ru_ru47.zip', 'subscribe2-ru_ru47.zip', '', 'private', 'open', 'open', '', 'subscribe2-ru_ru47-zip', '', '', '2012-02-03 10:25:19', '2012-02-03 10:25:19', '', 0, 'http://student.dev/wp-content/uploads/2012/02/subscribe2-ru_ru47.zip', 0, 'attachment', '', 0),
+(56, 1, '2012-02-03 11:29:12', '2012-02-03 11:29:12', ' ', '', '', 'publish', 'open', 'open', '', '56', '', '', '2012-02-03 11:29:12', '2012-02-03 11:29:12', '', 12, 'http://student.dev/?p=56', 10, 'nav_menu_item', '', 0),
+(57, 1, '2012-02-03 11:29:13', '2012-02-03 11:29:13', ' ', '', '', 'publish', 'open', 'open', '', '57', '', '', '2012-02-03 11:29:13', '2012-02-03 11:29:13', '', 12, 'http://student.dev/?p=57', 12, 'nav_menu_item', '', 0),
+(58, 1, '2012-02-03 11:29:12', '2012-02-03 11:29:12', ' ', '', '', 'publish', 'open', 'open', '', '58', '', '', '2012-02-03 11:29:12', '2012-02-03 11:29:12', '', 12, 'http://student.dev/?p=58', 11, 'nav_menu_item', '', 0),
+(59, 1, '2012-02-03 11:29:13', '2012-02-03 11:29:13', ' ', '', '', 'publish', 'open', 'open', '', '59', '', '', '2012-02-03 11:29:13', '2012-02-03 11:29:13', '', 12, 'http://student.dev/?p=59', 13, 'nav_menu_item', '', 0),
+(60, 1, '2012-02-03 11:29:11', '2012-02-03 11:29:11', ' ', '', '', 'publish', 'open', 'open', '', '60', '', '', '2012-02-03 11:29:11', '2012-02-03 11:29:11', '', 5, 'http://student.dev/?p=60', 4, 'nav_menu_item', '', 0),
+(61, 1, '2012-02-03 11:29:11', '2012-02-03 11:29:11', ' ', '', '', 'publish', 'open', 'open', '', '61', '', '', '2012-02-03 11:29:11', '2012-02-03 11:29:11', '', 5, 'http://student.dev/?p=61', 5, 'nav_menu_item', '', 0),
+(62, 1, '2012-02-03 11:29:11', '2012-02-03 11:29:11', ' ', '', '', 'publish', 'open', 'open', '', '62', '', '', '2012-02-03 11:29:11', '2012-02-03 11:29:11', '', 5, 'http://student.dev/?p=62', 6, 'nav_menu_item', '', 0),
+(63, 1, '2012-02-03 11:29:11', '2012-02-03 11:29:11', ' ', '', '', 'publish', 'open', 'open', '', '63', '', '', '2012-02-03 11:29:11', '2012-02-03 11:29:11', '', 5, 'http://student.dev/?p=63', 7, 'nav_menu_item', '', 0),
+(64, 1, '2012-02-03 11:29:12', '2012-02-03 11:29:12', ' ', '', '', 'publish', 'open', 'open', '', '64', '', '', '2012-02-03 11:29:12', '2012-02-03 11:29:12', '', 5, 'http://student.dev/?p=64', 8, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_subscribe2`
+-- Tabellenstruktur für Tabelle `wp_subscribe2`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_subscribe2` (
@@ -539,15 +607,10 @@ CREATE TABLE IF NOT EXISTS `wp_subscribe2` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
---
--- Дамп данных таблицы `wp_subscribe2`
---
-
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_terms`
+-- Tabellenstruktur für Tabelle `wp_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_terms` (
@@ -561,7 +624,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
--- Дамп данных таблицы `wp_terms`
+-- Daten für Tabelle `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -570,7 +633,6 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (3, 'menu top', 'menu-top', 0),
 (4, 'Жизнь', 'life', 0),
 (5, 'Студент', 'student', 0),
-(6, 'Учеба', 'ucheba', 0),
 (7, 'Новости', 'news', 0),
 (8, 'Работа', 'work', 0),
 (9, 'Развлечения', 'drink', 0),
@@ -587,7 +649,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_term_relationships`
+-- Tabellenstruktur für Tabelle `wp_term_relationships`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
@@ -599,12 +661,12 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `wp_term_relationships`
+-- Daten für Tabelle `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
+(1, 1, 0),
 (1, 2, 0),
-(1, 6, 0),
 (2, 2, 0),
 (3, 2, 0),
 (4, 2, 0),
@@ -617,7 +679,6 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (19, 3, 0),
 (21, 3, 0),
 (23, 3, 0),
-(24, 3, 0),
 (28, 7, 0),
 (28, 9, 0),
 (28, 10, 0),
@@ -635,7 +696,6 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (31, 17, 0),
 (31, 18, 0),
 (36, 4, 0),
-(36, 6, 0),
 (36, 8, 0),
 (36, 9, 0),
 (36, 10, 0),
@@ -643,22 +703,29 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (41, 1, 0),
 (41, 4, 0),
 (41, 5, 0),
-(41, 6, 0),
 (41, 8, 0),
 (41, 12, 0),
 (41, 13, 0),
 (43, 5, 0),
-(43, 6, 0),
 (43, 7, 0),
 (43, 8, 0),
 (43, 9, 0),
 (43, 15, 0),
-(43, 16, 0);
+(43, 16, 0),
+(56, 3, 0),
+(57, 3, 0),
+(58, 3, 0),
+(59, 3, 0),
+(60, 3, 0),
+(61, 3, 0),
+(62, 3, 0),
+(63, 3, 0),
+(64, 3, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_term_taxonomy`
+-- Tabellenstruktur für Tabelle `wp_term_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
@@ -674,16 +741,15 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
--- Дамп данных таблицы `wp_term_taxonomy`
+-- Daten für Tabelle `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1),
+(1, 1, 'category', '', 0, 2),
 (2, 2, 'link_category', '', 0, 7),
-(3, 3, 'nav_menu', '', 0, 7),
+(3, 3, 'nav_menu', '', 0, 15),
 (4, 4, 'category', '', 5, 2),
 (5, 5, 'category', '', 0, 3),
-(6, 6, 'category', '', 5, 4),
 (7, 7, 'category', '', 0, 3),
 (8, 8, 'category', '', 5, 3),
 (9, 9, 'category', '', 5, 3),
@@ -700,7 +766,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_usermeta`
+-- Tabellenstruktur für Tabelle `wp_usermeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
@@ -714,7 +780,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
 
 --
--- Дамп данных таблицы `wp_usermeta`
+-- Daten für Tabelle `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -746,7 +812,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `wp_users`
+-- Tabellenstruktur für Tabelle `wp_users`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_users` (
@@ -766,8 +832,12 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Дамп данных таблицы `wp_users`
+-- Daten für Tabelle `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BkRn2pSngRBb0Pvv2CPQ5R4yt7GKKc.', 'admin', 'vlad_graf@mail.ru', '', '2012-01-31 07:16:38', '', 0, 'admin');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
