@@ -7,8 +7,10 @@
 function add_open_graph_tags() {
 while (have_posts()) : the_post(); ?>
     <meta property="og:title" content="<?php
-        $category = get_the_category();
-        echo $category[0]->cat_name . ' - ';
+		$category = get_the_category();
+		if(isset($category[0])) {
+			echo $category[0]->cat_name . ' - ';
+        }
         the_title()
         ?>"/>
 
