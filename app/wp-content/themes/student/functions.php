@@ -1,5 +1,8 @@
 <?php
 
+// Load main options panel file
+require_once "functions/admin-menu.php";
+
 function kama_excerpt($args=''){
     global $post;
     if(is_array($args)){

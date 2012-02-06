@@ -16,14 +16,10 @@
             <div class="soc">
                 <h6>Мы в сети:</h6>
                 <ul class="soc-icon">
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/small1.png" alt="" title=""/></a>
-                    </li>
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/small2.png" alt="" title=""/></a>
-                    </li>
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/small3.png" alt="" title=""/></a>
-                    </li>
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/small4.png" alt="" title=""/></a>
-                    </li>
+                    <li><a href="<?php echo get_option('vkontakte');?>"><img src="<?php bloginfo('template_directory'); ?>/img/icon1.gif" alt="" title="" /></a></li>
+                    <li><a href="<?php echo get_option('mail');?>"><img src="<?php bloginfo('template_directory'); ?>/img/icon2.gif" alt="" title="" /></a></li>
+                    <li><a href="<?php echo get_option('twitter');?>"><img src="<?php bloginfo('template_directory'); ?>/img/icon3.gif" alt="" title="" /></a></li>
+                    <li><a href="<?php echo get_option('google');?>"><img src="<?php bloginfo('template_directory'); ?>/img/icon4.gif" alt="" title="" /></a></li>
                 </ul>
             </div>
         </div>
