@@ -52,6 +52,12 @@
         <?php endif; ?>
             <div class="comentars">
                 <h3>Комментарии</h3>
+                  <div id="vk_auth"></div>
+
+    <script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
+
+    <div id="login_button" onclick="VK.Auth.login(authInfo);"></div>
+                    <?php comments_template( '', true ); ?><?php /*?>
                 <div class="comments-wrapt">
                     <div class="commentlist">
                         <ul>
@@ -92,6 +98,7 @@
                     </div>
                 </div>
             </div>
+            <?php */?>
             <div class="three-post">
                 <h3>Related Ideas</h3>
                 <ul>

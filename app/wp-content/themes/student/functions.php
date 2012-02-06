@@ -63,5 +63,6 @@ if ( function_exists('register_sidebar') )
 
 require_once "functions/menu.php";
 require_once "functions/opengraph.php";
+require_once "functions/comments.php";
 
-
+error_reporting(5);
