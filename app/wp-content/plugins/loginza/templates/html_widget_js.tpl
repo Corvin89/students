@@ -1,0 +1,1 @@
+<script src="http://%loginza_host%/js/widget.js" type="text/javascript"></script>
