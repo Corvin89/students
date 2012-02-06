@@ -167,7 +167,7 @@ $queries[] =
  meta_value        longtext,
  PRIMARY KEY (meta_id),
  KEY mp_mail_id (mp_mail_id,meta_key)
-) $charset_collate;";ENGINE = MYISAM
+) $charset_collate;";
 
 $queries[] = 
 "CREATE TABLE $wpdb->mp_users (
