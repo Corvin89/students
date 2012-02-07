@@ -56,6 +56,7 @@ function my_custom_submenu_page_callback()
                 </td>
             </tr>
 
+            <th scope="row"><h3>Соц сети</h3><th scope="row">
             <tr valign="top">
                 <th scope="row">vk.com</th>
                 <td><input style="width:400px; height:25px;" type="text" name="student_vk"
@@ -83,9 +84,6 @@ function my_custom_submenu_page_callback()
 
 
             <style>
-                .top_banner {
-                    border-top: 1px solid #888;
-                }
                 .bottom_banner {
                     border-bottom: 1px solid #888;
                 }
