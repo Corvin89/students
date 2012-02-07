@@ -37,15 +37,10 @@
     <div id="header">
         <div class="top">
             <a href="<?php bloginfo('url'); ?>" id="logo"></a>
-            <?php if (get_option('top_banner_path')) {
-            ?>
+
             <div class="banner"><a href="<?php echo get_option('top_banner_url');?>"><img
                 src="<?php echo get_option('top_banner_path');?>" alt=""
                 title=""/></a></div>
-            <?php } else { ?>
-            <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt=""
-                                                 title=""/></a></div>
-            <?php } ?>
         </div>
         <?php wp_nav_menu($args = array(
             'menu' => 'Top',
