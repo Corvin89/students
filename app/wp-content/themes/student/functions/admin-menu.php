@@ -29,7 +29,7 @@ function my_custom_submenu_page_callback()
             <th scope="row"><h3>Баннеры</h3><th scope="row">
 
             <tr valign="top" class="top_banner">
-                <th scope="row">Верхний (путь к баннеру)</th>
+                <th scope="row">Верхний (адрес баннера) 726 × 88</th>
                 <td><input style="width:400px; height:25px;" type="text" name="top_banner_path"
                            value="<?php echo get_option('top_banner_path');?>"/>
                 </td>
@@ -43,9 +43,9 @@ function my_custom_submenu_page_callback()
             </tr>
 
             <tr valign="top">
-                <th scope="row">Нижний (путь к баннеру)</th>
-                <td><input style="width:400px; height:25px;" type="text" name="bottom_banner"
-                           value="<?php echo get_option('bottom_banner');?>"/>
+                <th scope="row">Нижний (адрес баннера) 160 × 601</th>
+                <td><input style="width:400px; height:25px;" type="text" name="bottom_banner_path"
+                           value="<?php echo get_option('bottom_banner_path');?>"/>
                 </td>
 
             </tr>
