@@ -10,10 +10,10 @@
     <meta http-equiv="imagetoolbar" content="no"/>
     <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/all.css"/>
     <!--[if IE 8]>
-    <link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen"/><![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie8.css" media="screen"/><![endif]-->
     <!--[if gte IE 9]>
     <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></script>

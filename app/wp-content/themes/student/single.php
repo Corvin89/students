@@ -39,8 +39,7 @@
                 <div class="list-url">
                     <ul>
                         <li><a href="#">Email to a Friend</a></li>
-                        <li><a href="#" class="print">Print</a></li>
-                        <li><a href="#" class="pdf">PDF</a></li>
+                        <li><a href="#" class="print" onclick="print()">Print</a></li>
                     </ul>
                     <div class="url">
                         <span>ссылка URL:</span>
