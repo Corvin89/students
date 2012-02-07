@@ -3,6 +3,25 @@
 // Load main options panel file
 require_once "functions/admin-menu.php";
 
+function hls_set_query() {
+    $query  = attribute_escape(get_search_query());
+
+    if(strlen($query) > 0){
+        echo '
+      <script type="text/javascript">
+        var hls_query  = "'.$query.'";
+      </script>
+    ';
+    }
+}
+
+function hls_init_jquery() {
+    wp_enqueue_script('jquery');
+}
+
+add_action('init', 'hls_init_jquery');
+add_action('wp_print_scripts', 'hls_set_query');
+
 function kama_excerpt($args=''){
     global $post;
     if(is_array($args)){

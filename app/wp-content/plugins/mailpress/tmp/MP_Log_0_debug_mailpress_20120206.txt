@@ -1,0 +1,3 @@
+
+2012-02-06 16:59:10 000000 --  **** Start logging **** debug_mailpress *** level : 8191 **** (5.2.1) **** /wp-admin/plugins.php?action=activate&plugin=mailpress%2FMailPress.php&plugin_status=all&paged=1&s&_wpnonce=7003eddee2
+2012-02-06 16:59:10 000000 --  **** End   logging **** debug_mailpress *** level : 8191 **** status : TRUE 

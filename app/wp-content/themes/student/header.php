@@ -22,6 +22,24 @@
     <script type="text/javascript">
         VK.init({apiId: 2784828, onlyWidgets: true});
     </script>
+    <style type="text/css" media="screen">
+        .hls { background: #D3E18A; }
+    </style>
+    <script type="text/javascript">
+        jQuery.fn.extend({
+            highlight: function(search, insensitive, hls_class){
+                var regex = new RegExp("(<[^>]*>)|(\\b"+ search.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +")", insensitive ? "ig" : "g");
+                return jQuery('#conteiner').html(jQuery('#conteiner').html().replace(regex, function(a, b, c){
+                    return (a.charAt(0) == "<") ? a : "<strong class=\""+ hls_class +"\">" + c + "</strong>";
+                }));
+            }
+        });
+        jQuery(document).ready(function($){
+            if(typeof(hls_query) != 'undefined'){
+                $("#post-area").highlight(hls_query, 1, "hls");
+            }
+        });
+    </script>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -47,7 +65,8 @@
             'container_class' => 'menu',
             'menu_class' => 'menu',
             'echo' => true,
-            'walker' => new My_Walker_Nav_Menu
+            'walker' => new My_Walker_Nav_Menu,
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li id="search"><form role="search" method="get" id="searchform" action="' . get_bloginfo("siteurl") . '"><div><input type="text" value="" name="s" id="s" /><input type="submit" id="searchsubmit" value="Искать" /></div></form></li></ul>'
              )
         );?>
 
