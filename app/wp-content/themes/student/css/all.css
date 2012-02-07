@@ -94,7 +94,7 @@ body{
 }
 
 #header div.menu ul{
-	float:left;width:740px;
+	float:left;width:975px;
 	margin:0 0 0 10px;
 }
 
@@ -116,6 +116,11 @@ body{
 	line-height:37px;
 	padding:0 25px 0 15px;
 	text-decoration:none;
+}
+
+#header div.menu ul #search{
+    width: 238px;
+    margin: 0 0 0 10px;
 }
 
 #header div.menu ul li.activ span{
