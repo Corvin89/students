@@ -2,17 +2,25 @@
     <div class="boxe">
         <div class="top-blue">Что это?</div>
         <div class="images">
-            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img-block.png" alt="" title=""/></a>
-
-            <div class="title">О воде</div>
+            <?php wp_reset_query(); ?>
+            <?php query_posts('posts_per_page=1&category_name=interview'); ?>
+            <?php while (have_posts()) : the_post(); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php the_permalink(); ?>"><div class="title"><?php the_title(); ?></div></a>
+            <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
         </div>
     </div>
     <div class="boxe">
         <div class="top-green">Что это?</div>
         <div class="images">
-            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img-block.png" alt="" title=""/></a>
-
-            <div class="title">О воде</div>
+            <?php wp_reset_query(); ?>
+            <?php query_posts('posts_per_page=1&offset=1&category_name=interview'); ?>
+            <?php while (have_posts()) : the_post(); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php the_permalink(); ?>"><div class="title"><?php the_title(); ?></div></a>
+            <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
         </div>
     </div>
     <div class="boxe">
@@ -21,3 +29,4 @@
             title=""/></a>
     </div>
 </div>
+<!--interview-->

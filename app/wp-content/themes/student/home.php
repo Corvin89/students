@@ -6,7 +6,7 @@
 get_header(); ?>
 <div id="conteiner">
     <div class="boxer">
-        <?php query_posts('posts_per_page=1'); ?>
+        <?php query_posts('posts_per_page=1&category_name=post_on_home_page'); ?>
         <?php while (have_posts()) : the_post(); ?>
         <div class="box-post">
             <div class="title"><a href="<?php the_permalink();?>"><?php the_category(); ?></a></div>
@@ -33,7 +33,7 @@ get_header(); ?>
         <?php wp_reset_query(); ?>
         <div class="news">
             <ul class="posts">
-                <?php query_posts('posts_per_page=2&offset=1'); ?>
+                <?php query_posts('posts_per_page=2&offset=1&category_name=post_on_home_page'); ?>
                 <?php while (have_posts()) : the_post(); ?>
                 <li>
                     <div class="small">
@@ -65,7 +65,7 @@ get_header(); ?>
                 <?php wp_reset_query(); ?>
             </ul>
         </div>
-        <?php query_posts('posts_per_page=2&category_name=studwiki'); ?>
+        <?php query_posts('posts_per_page=2&offset=3&category_name=post_on_home_page'); ?>
         <?php while (have_posts()) : the_post(); ?>
         <div class="post">
             <div class="top-cat">
