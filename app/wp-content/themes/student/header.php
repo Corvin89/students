@@ -20,34 +20,17 @@
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?47"></script>
     <script type="text/javascript">
-        VK.init({apiId: 2784828, onlyWidgets: true});
-    </script>
-    <style type="text/css" media="screen">
-        .hls { background: #D3E18A; }
-    </style>
-    <script type="text/javascript">
-        jQuery.fn.extend({
-            highlight: function(search, insensitive, hls_class){
-                var regex = new RegExp("(<[^>]*>)|(\\b"+ search.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +")", insensitive ? "ig" : "g");
-                return jQuery('#conteiner').html(jQuery('#conteiner').html().replace(regex, function(a, b, c){
-                    return (a.charAt(0) == "<") ? a : "<strong class=\""+ hls_class +"\">" + c + "</strong>";
-                }));
-            }
-        });
-        jQuery(document).ready(function($){
-            if(typeof(hls_query) != 'undefined'){
-                $("#post-area").highlight(hls_query, 1, "hls");
-            }
-        });
+        VK.init({apiId:2784828, onlyWidgets:true});
     </script>
     <?php wp_head(); ?>
 </head>
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
+    js = d.createElement(s);
+    js.id = id;
     js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
@@ -56,8 +39,9 @@
         <div class="top">
             <a href="<?php bloginfo('url'); ?>" id="logo"></a>
 
-            <div class="banner"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/banner.gif" alt=""
-                                                 title=""/></a></div>
+            <div class="banner"><a href="<?php echo get_option('top_banner_url');?>"><img
+                src="<?php echo get_option('top_banner_path');?>" alt=""
+                title=""/></a></div>
         </div>
         <?php wp_nav_menu($args = array(
             'menu' => 'Top',
