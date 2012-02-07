@@ -26,22 +26,33 @@ function my_custom_submenu_page_callback()
         <input type="hidden" name="settings">
         <table class="form-table">
 
-            <tr><th scope="row"><h3>Баннеры</h3><th scope="row"></tr>
+            <th scope="row"><h3>Баннеры</h3><th scope="row">
+
             <tr valign="top" class="top_banner">
-                <th scope="row">Верхний</th>
+                <th scope="row">Верхний (путь к баннеру)</th>
                 <td><input style="width:400px; height:25px;" type="text" name="top_banner"
                            value="<?php echo get_option('top_banner');?>"/>
                 </td>
-                <th scope="row">Верхний</th>
+
+            </tr>
+            <tr valign="top">
+                <th scope="row">Верхний (URL)</th>
                 <td><input style="width:400px; height:25px;" type="text" name="top_banner"
                            value="<?php echo get_option('top_banner');?>"/>
                 </td>
             </tr>
 
+            <tr valign="top">
+                <th scope="row">Нижний (путь к баннеру)</th>
+                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
+                           value="<?php echo get_option('top_banner');?>"/>
+                </td>
+
+            </tr>
             <tr valign="top" class="bottom_banner">
-                <th scope="row">Нижний</th>
-                <td><input style="width:400px; height:25px;" type="text" name="bottom_banner"
-                           value="<?php echo get_option('bottom_banner');?>"/>
+                <th scope="row">Нижний (URL)</th>
+                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
+                           value="<?php echo get_option('top_banner');?>"/>
                 </td>
             </tr>
 
