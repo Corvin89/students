@@ -30,29 +30,29 @@ function my_custom_submenu_page_callback()
 
             <tr valign="top" class="top_banner">
                 <th scope="row">Верхний (путь к баннеру)</th>
-                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
-                           value="<?php echo get_option('top_banner');?>"/>
+                <td><input style="width:400px; height:25px;" type="text" name="top_banner_path"
+                           value="<?php echo get_option('top_banner_path');?>"/>
                 </td>
 
             </tr>
             <tr valign="top">
                 <th scope="row">Верхний (URL)</th>
-                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
-                           value="<?php echo get_option('top_banner');?>"/>
+                <td><input style="width:400px; height:25px;" type="text" name="top_banner_url"
+                           value="<?php echo get_option('top_banner_url');?>"/>
                 </td>
             </tr>
 
             <tr valign="top">
                 <th scope="row">Нижний (путь к баннеру)</th>
-                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
-                           value="<?php echo get_option('top_banner');?>"/>
+                <td><input style="width:400px; height:25px;" type="text" name="bottom_banner"
+                           value="<?php echo get_option('bottom_banner');?>"/>
                 </td>
 
             </tr>
             <tr valign="top" class="bottom_banner">
                 <th scope="row">Нижний (URL)</th>
-                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
-                           value="<?php echo get_option('top_banner');?>"/>
+                <td><input style="width:400px; height:25px;" type="text" name="bottom_banner_url"
+                           value="<?php echo get_option('bottom_banner_url');?>"/>
                 </td>
             </tr>
 
