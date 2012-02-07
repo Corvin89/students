@@ -15,7 +15,7 @@ get_header(); ?>
 
                 <p><a href="<?php the_permalink();?>" class="more">Подробнее...</a></p>
             </div>
-            <?php the_post_thumbnail(); ?>
+			<img src="<?php bloginfo('url') ?>/resize.php?src=<?= wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>&#38;h=405&#38;w=312&#38;zc=1" alt="" />
         </div>
         <div class="news">
             <p><span class="date"><?php the_time('d:m:y'); ?></span></p>
