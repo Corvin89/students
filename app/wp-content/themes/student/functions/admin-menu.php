@@ -25,19 +25,26 @@ function my_custom_submenu_page_callback()
     <form method="post" action="themes.php?page=my-custom-submenu-page">
         <input type="hidden" name="settings">
         <table class="form-table">
-            <tr><h3>Баннеры</h3></tr>
+
+            <tr><th scope="row"><h3>Баннеры</h3><th scope="row"></tr>
             <tr valign="top" class="top_banner">
                 <th scope="row">Верхний</th>
                 <td><input style="width:400px; height:25px;" type="text" name="top_banner"
                            value="<?php echo get_option('top_banner');?>"/>
                 </td>
+                <th scope="row">Верхний</th>
+                <td><input style="width:400px; height:25px;" type="text" name="top_banner"
+                           value="<?php echo get_option('top_banner');?>"/>
+                </td>
             </tr>
+
             <tr valign="top" class="bottom_banner">
                 <th scope="row">Нижний</th>
                 <td><input style="width:400px; height:25px;" type="text" name="bottom_banner"
                            value="<?php echo get_option('bottom_banner');?>"/>
                 </td>
             </tr>
+
             <tr valign="top">
                 <th scope="row">vk.com</th>
                 <td><input style="width:400px; height:25px;" type="text" name="student_vk"
