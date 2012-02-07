@@ -30,7 +30,7 @@ return;
 
     <?php else : ?>
 
-    <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
+    <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id='comment-form'>
 
         <?php if ( $user_ID ) : ?>
 

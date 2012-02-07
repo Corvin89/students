@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie8.css" media="screen"/><![endif]-->
     <!--[if gte IE 9]>
     <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
+    <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/css/print.css" />
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?47"></script>
     <script type="text/javascript">
