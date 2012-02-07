@@ -1,0 +1,123 @@
+.testme_admin_img_col img {
+	margin-right:10px;
+	width: 16px;
+	height: 16px;
+}
+
+.testme_title {
+	width:70%;
+	font-weight:bold;
+	color:#000099;
+}	
+
+.testme_error {
+	color:#FF0000;
+	font-weight:bold;
+}
+
+.testme_edit_one {
+	background: url(images/admin_edit_bg.gif) top repeat-x;
+	padding:25px 10px 0 10px;
+	clear:both;
+	border-top: 2px solid #c5d2d8;
+}
+
+.testme_edit_menu {
+	width:185px;
+	float:left;
+	margin-right:15px;
+	text-align:center;
+	border-right: 1px solid #c5d2d8;
+	border-left: 1px solid #c5d2d8;
+	border-top: 1px solid #c5d2d8;
+	padding:5px;
+}	
+
+.testme_edit_menu_active {
+	background-color: #e1e1e1;
+	font-weight:bold;
+}	
+
+div.testme_4_desc {
+	width: 500px;
+	border-top: 1px solid #ddd;
+	margin-bottom:15px;
+}
+
+span.testme_4_title {
+		font-weight:bold;
+		font-size:120%;
+}
+div.testme_4_result {
+	width: 500px;
+	border-top: 1px solid #ddd;
+	clear: both;
+}	
+div.testme_clear {
+	clear:both;}
+
+.testme_aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testme_alignleft {
+	float: left;
+    margin: 0 7px 2px 0;
+    padding: 4px;
+}
+
+.testme_alignright {
+	float: right;
+    margin: 0 0 2px 7px;
+    padding: 4px;
+}
+
+.status1 {
+	color: #AAA;
+}
+.status2 {
+	color: blue;
+}
+.status3 {
+	color: darkorange;
+}
+.status4 {
+	color: green;
+}	
+
+.testme_step4_status1, .testme_step4_status2, .testme_step4_status3, .testme_step4_status4 {
+	font-size: 130%;
+	padding: 10px;
+}	
+
+.testme_step4_status1 {
+	border:3px solid #AAA;
+}
+.testme_step4_status2 {
+	border:3px solid blue;
+}	
+.testme_step4_status3 {
+	border:3px solid darkorange;
+}	
+.testme_step4_status4 {
+	border:3px solid green;
+}		
+
+#testme_moder_comment {
+	width: 500px;
+}	
+
+#testme_new_test {
+margin-bottom: 15px;
+display: none;
+}
+
+.row_delete {
+	background: #f5b0ba;
+}
+.testme_prev_post_content {
+    width:600px;
+    height:300px;
+}

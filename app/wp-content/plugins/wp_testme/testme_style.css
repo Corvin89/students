@@ -1,0 +1,130 @@
+/*  === Вывод теста === */
+
+.testme_area {
+}
+
+/*  Форма теста */
+form.testme_form {
+	text-align:left;
+}
+
+/* Заголовок теста */
+.testme_title h3 {}
+
+/* Описание теста */
+.testme_description {}
+
+/* Блок с вопросом и ответами к нему */
+.testme_question {}
+
+/* Текст вопроса */
+.testme_question_text {
+	margin-top:20px;
+    font-weight: bold;
+}
+
+/* Блок с ответом */
+.testme_answer_block {
+    margin-bottom:7px;
+}
+
+
+/* Радио-кнопка для выбора ответа */
+.testme_answer {
+	padding-left:20px;
+}
+
+/* Текст ответа */
+.testme_question label {
+    margin-left: 10px;
+}
+
+/* Параметры кнопки */
+.testme_button {
+    margin-top: 20px;
+    padding: 3px 15px 3px 15px;
+}
+
+/*  === Результаты === */
+
+/* Оболочка, в которую записывается результат */
+#testme_result {
+	border: 2px solid #CCC;
+}
+
+/* Весь блок с результатами */
+.testme_result_block {
+	margin: 10px;
+}
+
+/* Надпись перед показом результатов */
+.testme_before_results {
+    color: #006666;
+}
+
+/* Заголовок результата */
+.testme_result_title {}
+
+/* Описание результата */
+.testme_result_text {}
+
+/* Картинка */
+.testme_image {}
+
+/* Стили для блоков с кодами для тестов и форумов */
+.testme_code {
+    clear:both;
+}
+
+.testme_code textarea {
+    height: 100px;
+    width: 99%;
+}
+
+
+/*  === Ошибки === */
+
+/* Ошибка, если отвечены не все вопросы */
+.testme_error {
+    border:1px solid red;
+    padding: 10px;
+}
+
+/*  === Ссылка === */
+
+/* ссылка на сайт */
+.testme_backlink {
+    padding-right:30px;
+    padding: 15px 0 0 0;
+    font-size: 80%;
+    text-align:right;
+}
+
+/* ***** Для версии 1.2 *****/
+
+/* Результат теста в баллах */
+.testme_your_score {
+    margin-top:10px;
+    font-weight: bold;
+}
+
+/* Для незарегистрированных */
+.testme_not_logged {
+    margin-top:15px;
+    padding: 10px;
+    border:1px dashed #CCCCCC;;
+    font-weight: bold;
+    color: #666600;
+}
+
+/* Список вопросов, когда нет права проходить тест */
+.testme_asnwer_list {
+
+}
+
+.testme_asnwer_list li {
+    list-style-position: inside;
+    list-style-type:circle;
+}
+
+	
