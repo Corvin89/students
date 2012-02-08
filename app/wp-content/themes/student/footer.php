@@ -1,12 +1,14 @@
 <div id="footer">
     <div class="cntr">
-        <ul class="menu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">База идей</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
+        <?php wp_nav_menu($args = array(
+            'menu' => 'bottom',
+            'container' => 'div',
+            'container_class' => 'menu',
+            'menu_class' => 'menu',
+            'echo' => true,
+            'depth' => 1,
+        )
+    );?>
         <div class="last">
             <div class="copy">
                 <div class="logo"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/divlogo.png" alt=""
