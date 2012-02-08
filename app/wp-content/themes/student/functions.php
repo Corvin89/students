@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE);
+
 function kama_excerpt($args=''){
     global $post;
     if(is_array($args)){
