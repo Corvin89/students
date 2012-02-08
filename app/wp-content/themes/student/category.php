@@ -1,33 +1,33 @@
 <?php get_header(); ?>
 <div id="conteiner">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="boxer width">
-            <div class="title">
-                <h1 class="title"><?php the_category();?></h1>
+    <div class="boxer width">
+        <div class="title">
+            <h1 class="title"> <?php echo single_term_title(); ?></h1>
+        </div>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="post">
+            <div class="top-cat">
+                <span class="date"><?php the_time('d.m.y');?></span>
+                <a href="#" class="tags">Style & Design </a>
             </div>
-            <div class="post">
-                <div class="top-cat">
-                    <span class="date"><?php the_time('d.m.y');?></span>
-                    <a href="#" class="tags">Style & Design </a>
+            <div class="two-box">
+                <div class="post-photo">
+                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
                 </div>
-                <div class="two-box">
-                    <div class="post-photo">
-                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-                    </div>
-                    <div class="box-text">
-                        <h3><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
-                        <p><?php the_excerpt() ?></p>
-                    </div>
-                </div>
-                <div class="soc"><a href="<?php the_permalink();?>" class="more">Читать далее</a>
+                <div class="box-text">
+                    <h3><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
 
-                    <div class="likes"><img src="img/like.png" alt="" title=""/></div>
+                    <p><?php the_excerpt() ?></p>
                 </div>
+            </div>
+            <div class="soc"><a href="<?php the_permalink();?>" class="more">Читать далее</a>
+
+                <div class="likes"><img src="img/like.png" alt="" title=""/></div>
             </div>
         </div>
-    <?php endwhile; ?>
-    <?php endif; ?>
-
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
     <div class="col-3">
         <div class="top-orang">Подпишитесь бесплатно</div>
         <form action="" method="post">
