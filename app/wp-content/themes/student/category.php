@@ -2,7 +2,7 @@
 <div id="conteiner">
     <div class="boxer width">
         <div class="title">
-            <h1 class="title"> <?php echo single_term_title(); ?></h1>
+            <h1 class="title"><?php echo single_term_title(); ?></h1>
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="post">

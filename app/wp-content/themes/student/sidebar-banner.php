@@ -1,6 +1,6 @@
 <div class="right-box">
     <div class="boxe">
-        <div class="top-blue">Что это?</div>
+        <div class="top-blue">Интервью</div>
         <div class="images">
             <?php wp_reset_query(); ?>
             <?php query_posts('posts_per_page=1&category_name=interview'); ?>
@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="boxe">
-        <div class="top-green">Что это?</div>
+        <div class="top-green">Интервью</div>
         <div class="images">
             <?php wp_reset_query(); ?>
             <?php query_posts('posts_per_page=1&offset=1&category_name=interview'); ?>
