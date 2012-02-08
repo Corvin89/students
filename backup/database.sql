@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.5
+-- version 3.3.2deb1ubuntu1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Erstellungszeit: 08. Feb 2012 um 10:27
--- Server Version: 5.5.16
--- PHP-Version: 5.3.8
+-- Хост: localhost
+-- Время создания: Фев 08 2012 г., 12:54
+-- Версия сервера: 5.1.41
+-- Версия PHP: 5.3.2-1ubuntu4.11
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -17,13 +16,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Datenbank: `student`
+-- База данных: `student`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_forums`
+-- Структура таблицы `bb_forums`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_forums` (
@@ -40,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `bb_forums` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Daten für Tabelle `bb_forums`
+-- Дамп данных таблицы `bb_forums`
 --
 
 INSERT INTO `bb_forums` (`forum_id`, `forum_name`, `forum_slug`, `forum_desc`, `forum_parent`, `forum_order`, `topics`, `posts`) VALUES
@@ -49,7 +48,7 @@ INSERT INTO `bb_forums` (`forum_id`, `forum_name`, `forum_slug`, `forum_desc`, `
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_meta`
+-- Структура таблицы `bb_meta`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_meta` (
@@ -64,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `bb_meta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Daten für Tabelle `bb_meta`
+-- Дамп данных таблицы `bb_meta`
 --
 
 INSERT INTO `bb_meta` (`meta_id`, `object_type`, `object_id`, `meta_key`, `meta_value`) VALUES
@@ -81,7 +80,7 @@ INSERT INTO `bb_meta` (`meta_id`, `object_type`, `object_id`, `meta_key`, `meta_
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_terms`
+-- Структура таблицы `bb_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_terms` (
@@ -95,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `bb_terms` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Daten für Tabelle `bb_terms`
+-- Дамп данных таблицы `bb_terms`
 --
 
 INSERT INTO `bb_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -106,7 +105,7 @@ INSERT INTO `bb_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_term_relationships`
+-- Структура таблицы `bb_term_relationships`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_term_relationships` (
@@ -119,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `bb_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Daten für Tabelle `bb_term_relationships`
+-- Дамп данных таблицы `bb_term_relationships`
 --
 
 INSERT INTO `bb_term_relationships` (`object_id`, `term_taxonomy_id`, `user_id`, `term_order`) VALUES
@@ -130,7 +129,7 @@ INSERT INTO `bb_term_relationships` (`object_id`, `term_taxonomy_id`, `user_id`,
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_term_taxonomy`
+-- Структура таблицы `bb_term_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_term_taxonomy` (
@@ -146,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `bb_term_taxonomy` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Daten für Tabelle `bb_term_taxonomy`
+-- Дамп данных таблицы `bb_term_taxonomy`
 --
 
 INSERT INTO `bb_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -157,7 +156,7 @@ INSERT INTO `bb_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_topics`
+-- Структура таблицы `bb_topics`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_topics` (
@@ -185,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `bb_topics` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Daten für Tabelle `bb_topics`
+-- Дамп данных таблицы `bb_topics`
 --
 
 INSERT INTO `bb_topics` (`topic_id`, `topic_title`, `topic_slug`, `topic_poster`, `topic_poster_name`, `topic_last_poster`, `topic_last_poster_name`, `topic_start_time`, `topic_time`, `forum_id`, `topic_status`, `topic_open`, `topic_last_post_id`, `topic_sticky`, `topic_posts`, `tag_count`) VALUES
@@ -194,7 +193,7 @@ INSERT INTO `bb_topics` (`topic_id`, `topic_title`, `topic_slug`, `topic_poster`
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_usermeta`
+-- Структура таблицы `bb_usermeta`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_usermeta` (
@@ -208,7 +207,7 @@ CREATE TABLE IF NOT EXISTS `bb_usermeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Daten für Tabelle `bb_usermeta`
+-- Дамп данных таблицы `bb_usermeta`
 --
 
 INSERT INTO `bb_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -218,7 +217,7 @@ INSERT INTO `bb_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `bb_users`
+-- Структура таблицы `bb_users`
 --
 
 CREATE TABLE IF NOT EXISTS `bb_users` (
@@ -238,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `bb_users` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Daten für Tabelle `bb_users`
+-- Дамп данных таблицы `bb_users`
 --
 
 INSERT INTO `bb_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_status`, `display_name`) VALUES
@@ -247,7 +246,7 @@ INSERT INTO `bb_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_commentmeta`
+-- Структура таблицы `wp_commentmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
@@ -260,10 +259,15 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_commentmeta`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_comments`
+-- Структура таблицы `wp_comments`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_comments` (
@@ -291,7 +295,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Daten für Tabelle `wp_comments`
+-- Дамп данных таблицы `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -303,7 +307,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_links`
+-- Структура таблицы `wp_links`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_links` (
@@ -325,7 +329,7 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Daten für Tabelle `wp_links`
+-- Дамп данных таблицы `wp_links`
 --
 
 INSERT INTO `wp_links` (`link_id`, `link_url`, `link_name`, `link_image`, `link_target`, `link_description`, `link_visible`, `link_owner`, `link_rating`, `link_updated`, `link_rel`, `link_notes`, `link_rss`) VALUES
@@ -340,7 +344,7 @@ INSERT INTO `wp_links` (`link_id`, `link_url`, `link_name`, `link_image`, `link_
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_formfields`
+-- Структура таблицы `wp_mailpress_formfields`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_formfields` (
@@ -356,10 +360,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_formfields` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_formfields`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_forms`
+-- Структура таблицы `wp_mailpress_forms`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_forms` (
@@ -372,10 +381,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_forms` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_forms`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_mailmeta`
+-- Структура таблицы `wp_mailpress_mailmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_mailmeta` (
@@ -387,10 +401,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_mailmeta` (
   KEY `mp_mail_id` (`mp_mail_id`,`meta_key`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_mailmeta`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_mails`
+-- Структура таблицы `wp_mailpress_mails`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_mails` (
@@ -417,10 +436,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_mails` (
   KEY `status` (`status`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_mails`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_stats`
+-- Структура таблицы `wp_mailpress_stats`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_stats` (
@@ -431,10 +455,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_stats` (
   PRIMARY KEY (`stype`,`sdate`,`slib`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Дамп данных таблицы `wp_mailpress_stats`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_tracks`
+-- Структура таблицы `wp_mailpress_tracks`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_tracks` (
@@ -455,10 +484,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_tracks` (
   KEY `mmeta_id` (`mmeta_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_tracks`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_usermeta`
+-- Структура таблицы `wp_mailpress_usermeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_usermeta` (
@@ -470,10 +504,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_usermeta` (
   KEY `mp_user_id` (`mp_user_id`,`meta_key`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_usermeta`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_mailpress_users`
+-- Структура таблицы `wp_mailpress_users`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_mailpress_users` (
@@ -496,10 +535,15 @@ CREATE TABLE IF NOT EXISTS `wp_mailpress_users` (
   KEY `status` (`status`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_mailpress_users`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_options`
+-- Структура таблицы `wp_options`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_options` (
@@ -510,10 +554,10 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=466 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=468 ;
 
 --
--- Daten für Tabelle `wp_options`
+-- Дамп данных таблицы `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -620,8 +664,8 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (103, 0, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (104, 0, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (105, 0, 'sidebars_widgets', 'a:4:{s:18:"orphaned_widgets_1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:1:{i:0;s:17:"facebook-like-box";}s:13:"array_version";i:3;}', 'yes'),
-(106, 0, 'cron', 'a:4:{i:1328642203;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1328685409;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1328692210;a:1:{s:8:"do_pings";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}s:7:"version";i:2;}', 'yes'),
-(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1328690635;s:15:"version_checked";s:5:"3.3.1";}', 'yes'),
+(106, 0, 'cron', 'a:3:{i:1328728603;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1328771809;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://ru.wordpress.org/wordpress-3.3.1-ru_RU.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1328695641;s:15:"version_checked";s:5:"3.3.1";}', 'yes'),
 (110, 0, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1328690638;s:7:"checked";a:3:{s:7:"student";s:3:"1.0";s:12:"twentyeleven";s:3:"1.3";s:9:"twentyten";s:3:"1.3";}s:8:"response";a:0:{}}', 'yes'),
 (113, 0, 'dashboard_widget_options', 'a:4:{s:25:"dashboard_recent_comments";a:1:{s:5:"items";i:5;}s:24:"dashboard_incoming_links";a:5:{s:4:"home";s:18:"http://student.dev";s:4:"link";s:94:"http://blogsearch.google.com/blogsearch?scoring=d&partner=wordpress&q=link:http://student.dev/";s:3:"url";s:127:"http://blogsearch.google.com/blogsearch_feeds?scoring=d&ie=utf-8&num=10&output=rss&partner=wordpress&q=link:http://student.dev/";s:5:"items";i:10;s:9:"show_date";b:0;}s:17:"dashboard_primary";a:7:{s:4:"link";s:26:"http://wordpress.org/news/";s:3:"url";s:31:"http://wordpress.org/news/feed/";s:5:"title";s:18:"Блог WordPress";s:5:"items";i:2;s:12:"show_summary";i:1;s:11:"show_author";i:0;s:9:"show_date";i:1;}s:19:"dashboard_secondary";a:7:{s:4:"link";s:28:"http://planet.wordpress.org/";s:3:"url";s:33:"http://planet.wordpress.org/feed/";s:5:"title";s:37:"Другие новости WordPress";s:5:"items";i:5;s:12:"show_summary";i:0;s:11:"show_author";i:0;s:9:"show_date";i:0;}}', 'yes'),
 (126, 0, 'can_compress_scripts', '1', 'yes'),
@@ -629,7 +673,7 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (152, 0, '_site_transient_browser_98e8bb3c89c7eaebf6672cc32c7ee8dc', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:11:"16.0.912.77";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (157, 0, 'theme_mods_twentyeleven', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1328010762;s:4:"data";a:6:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:9:"sidebar-4";a:0:{}s:9:"sidebar-5";a:0:{}}}}', 'yes'),
 (158, 0, 'current_theme', 'DriverBuddy', 'yes'),
-(159, 0, 'theme_mods_student', 'a:2:{i:0;b:0;s:18:"nav_menu_locations";a:2:{s:3:"top";i:3;s:6:"bottom";i:0;}}', 'yes'),
+(159, 0, 'theme_mods_student', 'a:2:{i:0;b:0;s:18:"nav_menu_locations";a:2:{s:3:"top";i:3;s:6:"bottom";i:22;}}', 'yes'),
 (160, 0, 'theme_switched', '', 'yes'),
 (161, 0, 'recently_activated', 'a:2:{s:25:"subscribe2/subscribe2.php";i:1328282223;s:23:"rustolat/rus-to-lat.php";i:1328262061;}', 'yes'),
 (162, 0, '_site_transient_timeout_browser_e015afc46b2088f41b6ad6db073cfe17', '1328634080', 'yes'),
@@ -673,7 +717,6 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (413, 0, 'student_mail', 'http://mail.ru', 'yes'),
 (414, 0, 'student_twitter', 'http://twitter.com/', 'yes'),
 (415, 0, 'student_google', 'https://plus.google.com', 'yes'),
-(429, 0, '_transient_doing_cron', '1328693217', 'yes'),
 (430, 0, '_site_transient_timeout_theme_roots', '1328697837', 'yes'),
 (431, 0, '_site_transient_theme_roots', 'a:3:{s:7:"student";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";}', 'yes'),
 (432, 0, '_transient_timeout_feed_c2cb6b65a21c26a6c91c183e4515b2b5', '1328733843', 'no');
@@ -714,12 +757,14 @@ INSERT INTO `wp_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (462, 0, '_transient_dash_de3249c4736ad3bd2cd29147c4a0d43e', '<h4>Самые популярные</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/wordpress-importer/''>WordPress Importer</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=wordpress-importer&amp;_wpnonce=2e74a493be&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''WordPress Importer''>Установить</a>)</span>\n<p>Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file.</p>\n<h4>Самые свежие</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/att-youtube/''>ATT YouTube Widget</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=att-youtube&amp;_wpnonce=64a9e2b0dc&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''ATT YouTube Widget''>Установить</a>)</span>\n<p>Display a YouTube video in your sidebar.</p>\n<h4>Недавно обновлённые</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/webstartavenue-endnotes/''>WebStartAvenue Endnotes</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=webstartavenue-endnotes&amp;_wpnonce=cb8acfc4da&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''WebStartAvenue Endnotes''>Установить</a>)</span>\n<p>Add endnotes to your posts or pages using shortcodes.</p>\n', 'no'),
 (463, 0, '_transient_dash_aa95765b5cc111c56d5993d476b1c2f0', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressTavern/~3/dN2KnHn1RKM/senior-php-developer-position-open-lift'' title=''Chris of LiftUX reached out to me the other day and wanted me to let everyone know that they are hiring for the position of Senior WordPress/PHP developer. The developer would also be helping to build out themes and plugins for UpThemes. Related posts: WordPress Developers That Are Hiring WordPress Developer Chats Should Focus On Core Want To Work For Crowd  [&hellip;]''>WPTavern: Senior PHP Developer Position Open – Lift</a></li><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressTavern/~3/emTl6kPlRBo/first-issue-of-the-wpcandy-quarterly-almost-out-the-door'' title=''Many people within the WordPress community are anxiously awaiting the first issue of the WPCandy Quarterly to show up in their mailbox. According to Ryan, that day is soon approaching as the first batches are currently being printed. However, since there is still some time before we’ll be holding the physical copy, Ryan has explained how he went about develo [&hellip;]''>WPTavern: First Issue Of The WPCandy Quarterly Almost Out The Door</a></li><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/weblogtoolscollection/UXMP/~3/AM6W4C3RlI0/'' title=''New plugins Google AdSense and Google Analytics Remover will prevent AdSense ads and Analytics tracking code from displaying when you are logged in. Updated plugins Custom Field Suite allows you to visually manage custom fields. Fast Secure Contact Form lets your visitors send you a quick e-mail message and blocks all common spammer tactics. Additionally, th [&hellip;]''>Weblog Tools Collection: WordPress Plugin Releases for 2/7</a></li><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressTavern/~3/R0SygD8Vul0/buddypress-codex-revamped'' title=''John James Jacoby of BuddyPress.org has announced that the BuddyPress Codex has received a much needed refresh. Here is the kicker, the BuddyPress Codex is powered by a WordPress installation where all registered users are an editor. Users can share information as in a traditional wiki but everything is housed on individual pages. Interestingly enough, this  [&hellip;]''>WPTavern: BuddyPress Codex Revamped</a></li><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressTavern/~3/7AtTcDhuJUw/how-page-ly-was-built'' title=''First off, congratulations to Joshua Strebel and to his wife as they are now first-time parents. Secondly, Joshua has put together a pretty transparent view as to how he created Page.ly, a WordPress specific hosting service. So far, the guide is five parts long but I advise you to start out with part 1, Identifying the opportunity. No related posts. [&hellip;]''>WPTavern: How Page.ly Was Built</a></li></ul></div>', 'no'),
 (464, 0, 'testme_rcode', '', 'yes'),
-(465, 0, 'category_children', 'a:2:{i:5;a:5:{i:0;i:4;i:1;i:8;i:2;i:9;i:3;i:10;i:4;i:11;}i:12;a:4:{i:0;i:13;i:1;i:14;i:2;i:15;i:3;i:16;}}', 'yes');
+(465, 0, 'category_children', 'a:2:{i:5;a:5:{i:0;i:4;i:1;i:8;i:2;i:9;i:3;i:10;i:4;i:11;}i:12;a:4:{i:0;i:13;i:1;i:14;i:2;i:15;i:3;i:16;}}', 'yes'),
+(466, 0, '_site_transient_timeout_browser_2406d83a631d9dbaf40873840037f15c', '1329300478', 'yes'),
+(467, 0, '_site_transient_browser_2406d83a631d9dbaf40873840037f15c', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:11:"16.0.912.77";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_postmeta`
+-- Структура таблицы `wp_postmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
@@ -730,10 +775,10 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=258 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=312 ;
 
 --
--- Daten für Tabelle `wp_postmeta`
+-- Дамп данных таблицы `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -904,14 +949,60 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (236, 72, '_wp_attachment_image_alt', 'facepalm'),
 (237, 73, '_edit_lock', '1328693218:1'),
 (238, 73, '_edit_last', '1'),
-(255, 73, '_pingme', '1'),
-(256, 73, '_encloseme', '1'),
-(257, 87, '_edit_lock', '1328693199:1');
+(257, 87, '_edit_lock', '1328693199:1'),
+(258, 88, '_menu_item_type', 'custom'),
+(259, 88, '_menu_item_menu_item_parent', '0'),
+(260, 88, '_menu_item_object_id', '88'),
+(261, 88, '_menu_item_object', 'custom'),
+(262, 88, '_menu_item_target', ''),
+(263, 88, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(264, 88, '_menu_item_xfn', ''),
+(265, 88, '_menu_item_url', 'http://student.dev/'),
+(267, 89, '_menu_item_type', 'post_type'),
+(268, 89, '_menu_item_menu_item_parent', '0'),
+(269, 89, '_menu_item_object_id', '10'),
+(270, 89, '_menu_item_object', 'page'),
+(271, 89, '_menu_item_target', ''),
+(272, 89, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(273, 89, '_menu_item_xfn', ''),
+(274, 89, '_menu_item_url', ''),
+(276, 90, '_menu_item_type', 'post_type'),
+(277, 90, '_menu_item_menu_item_parent', '0'),
+(278, 90, '_menu_item_object_id', '5'),
+(279, 90, '_menu_item_object', 'page'),
+(280, 90, '_menu_item_target', ''),
+(281, 90, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(282, 90, '_menu_item_xfn', ''),
+(283, 90, '_menu_item_url', ''),
+(285, 91, '_menu_item_type', 'post_type'),
+(286, 91, '_menu_item_menu_item_parent', '0'),
+(287, 91, '_menu_item_object_id', '14'),
+(288, 91, '_menu_item_object', 'page'),
+(289, 91, '_menu_item_target', ''),
+(290, 91, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(291, 91, '_menu_item_xfn', ''),
+(292, 91, '_menu_item_url', ''),
+(294, 92, '_menu_item_type', 'post_type'),
+(295, 92, '_menu_item_menu_item_parent', '0'),
+(296, 92, '_menu_item_object_id', '7'),
+(297, 92, '_menu_item_object', 'page'),
+(298, 92, '_menu_item_target', ''),
+(299, 92, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(300, 92, '_menu_item_xfn', ''),
+(301, 92, '_menu_item_url', ''),
+(303, 93, '_menu_item_type', 'post_type'),
+(304, 93, '_menu_item_menu_item_parent', '0'),
+(305, 93, '_menu_item_object_id', '12'),
+(306, 93, '_menu_item_object', 'page'),
+(307, 93, '_menu_item_target', ''),
+(308, 93, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(309, 93, '_menu_item_xfn', ''),
+(310, 93, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_posts`
+-- Структура таблицы `wp_posts`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_posts` (
@@ -943,10 +1034,10 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=88 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=94 ;
 
 --
--- Daten für Tabelle `wp_posts`
+-- Дамп данных таблицы `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -1030,12 +1121,18 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (84, 1, '2012-02-02 12:49:23', '2012-02-02 12:49:23', 'Sed pretium aliquam sapien non lacinia. Nulla commodo vestibulum lacus, eu congue tortor scelerisque eu. Nullam laoreet dui ut tellus placerat pellentesque. Suspendisse et mauris at quam laoreet pellentesque vel sit amet nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sit amet felis urna. Cras tempus rhoncus mauris nec molestie. Maecenas viverra ultrices mauris, et consequat arcu rutrum quis. Donec erat urna, euismod ac auctor at, auctor vel purus. Suspendisse dapibus metus quis lorem euismod molestie. Cras tempor turpis nec diam fringilla sed gravida eros venenatis.\r\n\r\nPellentesque auctor est neque. Sed eget velit felis. Maecenas ac tellus at justo suscipit faucibus ornare eu augue. Nullam semper nulla at nulla interdum ac fringilla nisl vulputate. Nam fermentum mauris a libero luctus eu aliquam augue porttitor. Nunc vel tellus vel felis imperdiet dictum. Mauris placerat, augue a posuere facilisis, urna ligula lobortis nulla, a vestibulum neque felis nec leo. Nulla nulla turpis, facilisis eget tempus vitae, sodales eu nulla. Pellentesque volutpat, lectus ac luctus fermentum, mauris neque elementum arcu, a congue velit quam eu ante. Praesent nec magna id quam gravida rhoncus. Nunc auctor velit vitae purus venenatis ut scelerisque felis elementum. Fusce mollis erat ut nulla ornare luctus. Suspendisse turpis turpis, consequat a sodales sit amet, rhoncus et ante. Nam sit amet sem est. Morbi ligula nunc, viverra pretium commodo et, aliquam sed dolor. Quisque imperdiet lobortis urna.\r\n\r\nSed in enim vel augue sodales mollis in a sapien. Vestibulum sed lectus tempor nibh rutrum posuere eget non leo. Vivamus rhoncus, nibh vel eleifend gravida, nulla nunc tincidunt orci, in dapibus libero ligula sed erat. Quisque euismod lacus sit amet lacus gravida pellentesque. Integer iaculis euismod risus vitae vehicula. Nulla eu enim libero. Cras ipsum erat, elementum eget scelerisque ac, varius a neque. Vivamus convallis mollis arcu, vel gravida ligula pharetra vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend eros non purus feugiat ac varius est vulputate. Vivamus libero felis, porta eget venenatis vel, sagittis id risus. Praesent commodo tempor justo, ut elementum lorem sagittis sit amet. Phasellus nec libero quis dui vulputate accumsan faucibus at dolor. Cras dictum metus ipsum, ut volutpat mi. Sed rutrum mattis tellus, ut volutpat metus dictum in. Donec varius velit eget nulla vulputate interdum.', 'Sed pretium aliquam', '', 'inherit', 'open', 'open', '', '31-revision-4', '', '', '2012-02-02 12:49:23', '2012-02-02 12:49:23', '', 31, 'http://student.dev/31-revision-4/', 0, 'revision', '', 0),
 (85, 1, '2012-02-07 18:07:55', '2012-02-07 18:07:55', 'Pellentesque euismod enim sit amet urna facilisis nec elementum purus porttitor. Aenean iaculis sollicitudin nulla, a tristique orci commodo eu. Mauris ipsum nisl, consectetur non tristique vel, congue in urna. Sed porta egestas lacus in ornare. Quisque tempor sollicitudin erat, a lacinia ante lobortis vitae. Vestibulum a dui nulla, ut eleifend elit. Etiam at arcu nibh, ac eleifend sapien. Suspendisse placerat tempor nisi, vel bibendum nisl sollicitudin et. Aenean viverra risus metus, ut porta magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu nunc justo.\r\n\r\nIn egestas scelerisque justo, vitae sollicitudin nisl scelerisque sed. Mauris a lectus in quam vulputate fringilla in at odio. Nunc vitae tempus mi. Proin turpis enim, sagittis id porttitor et, mollis non mauris. Sed nec nulla eget lectus bibendum aliquam. Phasellus pretium, dolor ut mollis placerat, urna urna convallis tortor, nec molestie mi enim in est. Praesent non ante eget turpis faucibus placerat. Quisque adipiscing leo non enim pharetra in mattis lorem mattis. In et neque in ante elementum pulvinar vel fermentum odio.\r\n\r\nMauris consequat, lacus ut eleifend ullamcorper, metus augue tincidunt magna, ac venenatis tellus lectus sit amet nisi. Morbi nisl sapien, adipiscing eu posuere id, scelerisque quis felis. Maecenas id auctor ipsum. Fusce imperdiet interdum lacus, ut porta eros cursus eu. Maecenas dapibus, tortor eget tincidunt pulvinar, ligula enim venenatis lectus, vulputate rhoncus massa lorem vitae neque. Suspendisse non purus eget lectus viverra lobortis. Cras aliquam, felis et suscipit tristique, turpis sem pretium magna, vel laoreet nulla dolor eget tellus. Vivamus pretium, turpis ut scelerisque molestie, magna nulla lacinia augue, sed tincidunt diam orci tempus justo. Sed quam tortor, molestie eget lacinia vitae, dictum in elit. Suspendisse potenti. Fusce ac odio et velit tempus mattis.', 'Pellentesque euismod enim sit amet', '', 'inherit', 'open', 'open', '', '43-revision-5', '', '', '2012-02-07 18:07:55', '2012-02-07 18:07:55', '', 43, 'http://student.dev/43-revision-5/', 0, 'revision', '', 0),
 (86, 1, '2012-02-07 18:07:27', '2012-02-07 18:07:27', '[TESTME 1]', 'Тест вашего интеллекта', '', 'inherit', 'open', 'open', '', '73-revision-5', '', '', '2012-02-07 18:07:27', '2012-02-07 18:07:27', '', 73, 'http://student.dev/73-revision-5/', 0, 'revision', '', 0),
-(87, 1, '2012-02-08 11:19:27', '2012-02-08 11:19:27', '[TESTME 2]', 'Двоичная система', 'Проверим знания двоичной системы исчисления.', 'draft', 'open', 'open', '', '', '', '', '2012-02-08 11:19:27', '2012-02-08 11:19:27', '', 0, '', 0, 'post', '', 0);
+(87, 1, '2012-02-08 11:19:27', '2012-02-08 11:19:27', '[TESTME 2]', 'Двоичная система', 'Проверим знания двоичной системы исчисления.', 'draft', 'open', 'open', '', '', '', '', '2012-02-08 11:19:27', '2012-02-08 11:19:27', '', 0, '', 0, 'post', '', 0),
+(88, 1, '2012-02-08 10:20:20', '2012-02-08 10:20:20', '', 'Главная', '', 'publish', 'open', 'open', '', '%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f', '', '', '2012-02-08 10:24:41', '2012-02-08 10:24:41', '', 0, 'http://student.dev/?p=88', 1, 'nav_menu_item', '', 0),
+(89, 1, '2012-02-08 10:20:21', '2012-02-08 10:20:21', ' ', '', '', 'publish', 'open', 'open', '', '89', '', '', '2012-02-08 10:24:42', '2012-02-08 10:24:42', '', 0, 'http://student.dev/?p=89', 4, 'nav_menu_item', '', 0),
+(90, 1, '2012-02-08 10:20:20', '2012-02-08 10:20:20', ' ', '', '', 'publish', 'open', 'open', '', '90', '', '', '2012-02-08 10:24:42', '2012-02-08 10:24:42', '', 0, 'http://student.dev/?p=90', 2, 'nav_menu_item', '', 0),
+(91, 1, '2012-02-08 10:20:21', '2012-02-08 10:20:21', ' ', '', '', 'publish', 'open', 'open', '', '91', '', '', '2012-02-08 10:24:42', '2012-02-08 10:24:42', '', 0, 'http://student.dev/?p=91', 6, 'nav_menu_item', '', 0),
+(92, 1, '2012-02-08 10:20:20', '2012-02-08 10:20:20', ' ', '', '', 'publish', 'open', 'open', '', '92', '', '', '2012-02-08 10:24:42', '2012-02-08 10:24:42', '', 0, 'http://student.dev/?p=92', 3, 'nav_menu_item', '', 0),
+(93, 1, '2012-02-08 10:20:21', '2012-02-08 10:20:21', ' ', '', '', 'publish', 'open', 'open', '', '93', '', '', '2012-02-08 10:24:42', '2012-02-08 10:24:42', '', 0, 'http://student.dev/?p=93', 5, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_subscribe2`
+-- Структура таблицы `wp_subscribe2`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_subscribe2` (
@@ -1047,10 +1144,15 @@ CREATE TABLE IF NOT EXISTS `wp_subscribe2` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+--
+-- Дамп данных таблицы `wp_subscribe2`
+--
+
+
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_terms`
+-- Структура таблицы `wp_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_terms` (
@@ -1061,10 +1163,10 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   PRIMARY KEY (`term_id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 --
--- Daten für Tabelle `wp_terms`
+-- Дамп данных таблицы `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -1087,12 +1189,13 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (18, 'мутка2', 'mutka2', 0),
 (19, 'Посты на главной', 'post_on_home_page', 0),
 (20, 'Интервью', 'interview', 0),
-(21, 'Тесты', 'tests', 0);
+(21, 'Тесты', 'tests', 0),
+(22, 'menu footer', 'menu-footer', 0);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_term_relationships`
+-- Структура таблицы `wp_term_relationships`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
@@ -1104,7 +1207,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Daten für Tabelle `wp_term_relationships`
+-- Дамп данных таблицы `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -1172,12 +1275,18 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (66, 3, 0),
 (67, 3, 0),
 (73, 21, 0),
-(87, 21, 0);
+(87, 21, 0),
+(88, 22, 0),
+(89, 22, 0),
+(90, 22, 0),
+(91, 22, 0),
+(92, 22, 0),
+(93, 22, 0);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_term_taxonomy`
+-- Структура таблицы `wp_term_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
@@ -1190,10 +1299,10 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 --
--- Daten für Tabelle `wp_term_taxonomy`
+-- Дамп данных таблицы `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -1216,12 +1325,13 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (18, 18, 'post_tag', '', 0, 1),
 (19, 19, 'category', '', 0, 4),
 (20, 20, 'category', '', 0, 3),
-(21, 21, 'category', '', 0, 1);
+(21, 21, 'category', '', 0, 1),
+(22, 22, 'nav_menu', '', 0, 6);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_testme_answers`
+-- Структура таблицы `wp_testme_answers`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_testme_answers` (
@@ -1233,7 +1343,7 @@ CREATE TABLE IF NOT EXISTS `wp_testme_answers` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
--- Daten für Tabelle `wp_testme_answers`
+-- Дамп данных таблицы `wp_testme_answers`
 --
 
 INSERT INTO `wp_testme_answers` (`ID`, `answer_text`, `answer_points`, `answer_question_relation`) VALUES
@@ -1257,7 +1367,7 @@ INSERT INTO `wp_testme_answers` (`ID`, `answer_text`, `answer_points`, `answer_q
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_testme_questions`
+-- Структура таблицы `wp_testme_questions`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_testme_questions` (
@@ -1268,7 +1378,7 @@ CREATE TABLE IF NOT EXISTS `wp_testme_questions` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
--- Daten für Tabelle `wp_testme_questions`
+-- Дамп данных таблицы `wp_testme_questions`
 --
 
 INSERT INTO `wp_testme_questions` (`ID`, `question_text`, `question_test_relation`) VALUES
@@ -1282,7 +1392,7 @@ INSERT INTO `wp_testme_questions` (`ID`, `question_text`, `question_test_relatio
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_testme_results`
+-- Структура таблицы `wp_testme_results`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_testme_results` (
@@ -1299,7 +1409,7 @@ CREATE TABLE IF NOT EXISTS `wp_testme_results` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Daten für Tabelle `wp_testme_results`
+-- Дамп данных таблицы `wp_testme_results`
 --
 
 INSERT INTO `wp_testme_results` (`ID`, `result_title`, `result_text`, `result_image`, `result_image_position`, `result_point_start`, `result_point_end`, `result_letter`, `result_test_relation`) VALUES
@@ -1314,7 +1424,7 @@ INSERT INTO `wp_testme_results` (`ID`, `result_title`, `result_text`, `result_im
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_testme_stats`
+-- Структура таблицы `wp_testme_stats`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_testme_stats` (
@@ -1326,10 +1436,10 @@ CREATE TABLE IF NOT EXISTS `wp_testme_stats` (
   `stat_ip` varchar(20) DEFAULT NULL,
   `stat_test_relation` int(10) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
--- Daten für Tabelle `wp_testme_stats`
+-- Дамп данных таблицы `wp_testme_stats`
 --
 
 INSERT INTO `wp_testme_stats` (`ID`, `stat_time`, `stat_result`, `stat_user`, `stat_points`, `stat_ip`, `stat_test_relation`) VALUES
@@ -1345,12 +1455,14 @@ INSERT INTO `wp_testme_stats` (`ID`, `stat_time`, `stat_result`, `stat_user`, `s
 (10, '2012-02-08 11:21:17', '4', 1, '1', '127.0.0.1', 2),
 (11, '2012-02-08 11:24:59', '6', 1, '3', '127.0.0.1', 2),
 (12, '2012-02-08 11:25:24', '7', 1, '4', '127.0.0.1', 2),
-(13, '2012-02-08 11:25:57', '4', 1, '1', '127.0.0.1', 2);
+(13, '2012-02-08 11:25:57', '4', 1, '1', '127.0.0.1', 2),
+(14, '2012-02-08 12:10:08', '4', 1, '1', '127.0.0.1', 2),
+(15, '2012-02-08 12:10:53', '5', 1, '2', '127.0.0.1', 2);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_testme_tests`
+-- Структура таблицы `wp_testme_tests`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_testme_tests` (
@@ -1374,17 +1486,17 @@ CREATE TABLE IF NOT EXISTS `wp_testme_tests` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Daten für Tabelle `wp_testme_tests`
+-- Дамп данных таблицы `wp_testme_tests`
 --
 
 INSERT INTO `wp_testme_tests` (`ID`, `test_name`, `test_type`, `test_done`, `test_description`, `test_start_day`, `test_only_reg`, `test_show_points`, `test_random_questions`, `test_random_answers`, `test_user`, `test_status`, `test_moder_id`, `test_moder_time`, `test_moder_comment`, `test_post`) VALUES
 (1, 'Тест вашего интеллекта', '123', 8, NULL, '2012-02-07', 0, 0, 0, 0, 1, 4, 1, '2012-02-07', '', 73),
-(2, 'Двоичная система', '123', 5, 'Проверим знания двоичной системы исчисления.', '2012-02-08', 0, 0, 0, 0, 1, 4, 1, '2012-02-08', '', 87);
+(2, 'Двоичная система', '123', 7, 'Проверим знания двоичной системы исчисления.', '2012-02-08', 0, 0, 0, 0, 1, 4, 1, '2012-02-08', '', 87);
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_usermeta`
+-- Структура таблицы `wp_usermeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
@@ -1398,7 +1510,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
 
 --
--- Daten für Tabelle `wp_usermeta`
+-- Дамп данных таблицы `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -1420,7 +1532,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (16, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:8:"add-post";i:1;s:12:"add-post_tag";}'),
 (17, 1, 'closedpostboxes_page', 'a:0:{}'),
 (18, 1, 'metaboxhidden_page', 'a:5:{i:0;s:10:"postcustom";i:1;s:16:"commentstatusdiv";i:2;s:11:"commentsdiv";i:3;s:9:"authordiv";i:4;s:12:"revisionsdiv";}'),
-(19, 1, 'nav_menu_recently_edited', '3'),
+(19, 1, 'nav_menu_recently_edited', '22'),
 (20, 1, 'wp_user-settings', 'editor=tinymce&uploader=1&align=center'),
 (21, 1, 'wp_user-settings-time', '1328631721'),
 (24, 1, 's2_authors', ''),
@@ -1444,7 +1556,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `wp_users`
+-- Структура таблицы `wp_users`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_users` (
@@ -1464,13 +1576,9 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Daten für Tabelle `wp_users`
+-- Дамп данных таблицы `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BkRn2pSngRBb0Pvv2CPQ5R4yt7GKKc.', 'admin', 'vlad_graf@mail.ru', '', '2012-01-31 07:16:38', '', 0, 'admin'),
 (2, 'loginza5rUWDWmt39d4XcgalLw2q8', '$P$BuqBmKfqDwLn0TLW0dT55uiel3q1zO/', 'klikermellenium', 'klikermellenium@gmail.com', 'https://www.google.com/accounts/o8/id?id=AItOawnMUhcfmiDFUra1vLXYCWDNcvPzmRPo2H4', '2012-02-06 15:13:24', '', 0, 'Vladislav Fedorischev');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
