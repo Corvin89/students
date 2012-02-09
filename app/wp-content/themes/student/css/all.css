@@ -1063,3 +1063,14 @@ h3{
 span.wpcf7-not-valid-tip{
 	top:113%;
 }
+
+#searchform input[type=text] {
+    margin-right: 13px;
+    height: 23px;
+    margin-top: 6px;
+}
+
+#searchform input[type=submit] {
+height: 28px;
+width: 55px;
+}
