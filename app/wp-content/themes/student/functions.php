@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL ^ E_NOTICE);
+
 // Load main options panel file
 require_once "functions/admin-menu.php";
 

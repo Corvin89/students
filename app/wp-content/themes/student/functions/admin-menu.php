@@ -29,7 +29,7 @@ function my_custom_submenu_page_callback()
             <th scope="row"><h3>Баннеры</h3><th scope="row">
 
             <tr valign="top" class="top_banner">
-                <th scope="row">Верхний (адрес баннера) 726 × 88</th>
+                <th scope="row">Верхний (адрес баннера) 726 × 90</th>
                 <td><input style="width:400px; height:25px;" type="text" name="top_banner_path"
                            value="<?php echo get_option('top_banner_path');?>"/>
                 </td>

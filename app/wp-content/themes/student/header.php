@@ -53,5 +53,4 @@
             'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li id="search"><form role="search" method="get" id="searchform" action="' . get_bloginfo("siteurl") . '"><div><input type="text" value="" name="s" id="s" /><input type="submit" id="searchsubmit" value="Искать" /></div></form></li></ul>'
              )
         );?>
-
     </div>
