@@ -3,6 +3,12 @@
     <div class="boxer width">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="pages">
+                <?php $categories = get_the_category($post->ID);  ?>
+                <?php
+                    foreach ($categories as $category){
+                        $array_categories[] = $category->term_id;
+                    }
+                ?>
                 <h1><?php the_title();?></h1>
         <?php the_content();?>
         <div class="news">
@@ -55,27 +61,19 @@
         <div class="three-post">
             <h3>Related Ideas</h3>
             <ul>
+                <?php query_posts( array('category__in' => $array_categories,
+                                         'posts_per_page' => 3));
+                ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                     <div class="small">
-                        <a href="#"><img src="<?php bloginfo('template_directory')?>/img/photo.jpg" alt="" title=""/></a>
-
-                        <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                        <div class="title"><a href="<?php the_permalink();?>"><?php the_title();?></a></div>
                     </div>
                 </li>
-                <li>
-                    <div class="small">
-                        <a href="#"><img src="<?php bloginfo('template_directory')?>/img/photo.jpg" alt="" title=""/></a>
-
-                        <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="small">
-                        <a href="#"><img src="<?php bloginfo('template_directory')?>/img/photo.jpg" alt="" title=""/></a>
-
-                        <div class="title"><a href="#">Бал дебютанок Tatler</a></div>
-                    </div>
-                </li>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
             </ul>
         </div>
     </div>
