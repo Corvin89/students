@@ -173,12 +173,10 @@ get_header(); ?>
     <?php get_sidebar('banner'); ?>
     <div class="col-3">
         <?php get_sidebar('top'); ?>
-        <ul>
         <?php if ( !function_exists('dynamic_sidebar')
         || !dynamic_sidebar() ) : ?>
         <?php //get_sidebar('middle'); ?>
         <?php endif; ?>
-        </ul>
         <?php get_sidebar('bottom'); ?>
     </div>
 </div>
