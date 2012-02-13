@@ -78,7 +78,7 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                     <div class="small">
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                        <a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('url') ?>/resize.php?src=<?= wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>&#38;h=125&#38;w=175&#38;zc=1" alt="" /></a>
                         <div class="title"><a href="<?php the_permalink();?>"><?php the_title();?></a></div>
                     </div>
                 </li>
