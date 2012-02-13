@@ -1131,3 +1131,15 @@ div.commentlist{
 	overflow:hidden;
 	margin:6px 0 0;
 }
+#searchform input[type=text] {
+    margin-right: 3px;
+    height: 23px;
+    margin-top: 6px;
+    width: 150px
+}
+
+#searchform input[type=submit] {
+    height: 28px;
+    width: 60px;
+    text-align: center;
+}
