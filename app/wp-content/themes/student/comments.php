@@ -17,59 +17,6 @@ return;
     ?>
 
     <?php if ('open' == $post->comment_status) : ?>
-
-<div class="respond">
-    <div class="cancel-comment-reply">
-        <small><?php cancel_comment_reply_link(); ?></small>
-    </div>
-
-    <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-    <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode
-
-    (get_permalink()); ?>">logged in</a> to post a comment.</p>
-
-    <?php else : ?>
-
-    <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id='comment-form'>
-
-        <?php if ( $user_ID ) : ?>
-
-        <p>Вы вошли как <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>.
-
-            <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Выйти с аккаунта">Выход &raquo;</a></p>
-
-        <?php else : ?>
-        <div class="item">
-            <em>Поля, отмеченные *, обязательны для заполнения.</em>
-        </div>
-        <div class="item">
-            <label for="author"><?php _e('Name'); ?> <em>*</em></label>
-            <input type="text" name="author" id="author" class="text" value="<?php echo $comment_author; ?>" size="28" />
-
-        </div>
-
-        <div class="item">
-            <label for="3"><?php _e('E-mail'); ?> <em>*</em></label>
-            <input type="text" name="email" id="email" class="text" value="<?php echo $comment_author_email; ?>" size="28" tabindex="2"  />
-        </div>
-        <div class="item">
-            <label for="url"><?php _e('Город'); ?></label>
-            <input type="text" name="url" id="url" value="" size="28" tabindex="3" class="text requre" />
-        </div>
-        <?php endif; ?>
-        <div class="item">
-            <label for="comment"><?php _e('Коментарий'); ?></label>
-            <textarea name="comment" id="comment" cols="60" rows="10" tabindex="4" class="textarea requre"></textarea>
-        </div>
-        <div class="item">
-            <input name="submit" id="submit" type="submit" tabindex="5" value="<?php _e('Отправить'); ?>" class="cbutton" />
-            <?php comment_id_fields(); ?>
-        </div>
-        <?php do_action('comment_form', $post->ID); ?>
-    </form>
-    <?php  //show_manual_subscription_form(); ?>
-    <?php endif; ?>
-</div>
 <!-- You can start editing here. -->
 <?php // Begin Comments & Trackbacks ?>
 <?php if ( have_comments() ) : ?>
@@ -100,5 +47,59 @@ return;
 <?php else : // Comments are closed ?>
 <p><?php _e('Sorry, the comment form is closed at this time.'); ?></p>
 <?php endif; ?>
+<div class="respond">
+    <div class="cancel-comment-reply">
+        <small><?php cancel_comment_reply_link(); ?></small>
+    </div>
+
+    <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
+    <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode
+
+    (get_permalink()); ?>">Выйти</a> to post a comment.</p>
+
+    <?php else : ?>
+
+    <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id='comment-form'>
+
+        <?php if ( $user_ID ) : ?>
+
+        <p>Вы вошли как <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>.
+
+            <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Выйти с аккаунта">Выход &raquo;</a></p>
+
+        <?php else : ?>
+        <div class="item">
+            <em>Поля, отмеченные *, обязательны для заполнения.</em>
+        </div>
+        <div class="item">
+            <label for="author"><?php _e('Name'); ?> <em>*</em></label>
+            <input type="text" name="author" id="author" class="text" value="<?php echo $comment_author; ?>" size="28" />
+
+        </div>
+
+        <div class="item">
+            <label for="3"><?php _e('E-mail'); ?> <em>*</em></label>
+            <input type="text" name="email" id="email" class="text" value="<?php echo $comment_author_email; ?>" size="28" tabindex="2"  />
+        </div>
+        <div class="item">
+            <label for="url"><?php _e('Город'); ?></label>
+            <input type="text" name="url" id="url" value="" size="28" tabindex="3" class="text requre" />
+        </div>
+        <?php endif; ?>
+		<div class="item">
+			<label for="comment"><?php _e('Коментарий'); ?></label>
+		</div>
+        <div class="item">            
+            <textarea name="comment" id="comment" cols="60" rows="10" tabindex="4" class="textarea requre"></textarea>
+        </div>
+        <div class="item">
+            <input name="submit" id="submit" class="orang" type="submit" tabindex="5" value="<?php _e('Отправить'); ?>" class="cbutton" />
+            <?php comment_id_fields(); ?>
+        </div>
+        <?php do_action('comment_form', $post->ID); ?>
+    </form>
+    <?php  //show_manual_subscription_form(); ?>
+    <?php endif; ?>
+</div>
 </div>
 
