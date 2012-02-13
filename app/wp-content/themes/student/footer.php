@@ -11,7 +11,7 @@
     );?>
         <div class="last">
             <div class="copy">
-                <div class="logo"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/divlogo.png" alt=""
+                <div class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/divlogo.png" alt=""
                                                    title=""/></a></div>
                 <p>Студенческий журнал IStudent.kz © 2011, Все права защищены.</p>
             </div>
