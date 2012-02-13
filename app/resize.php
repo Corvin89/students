@@ -12,8 +12,7 @@
     zc: zoom crop (0 or 1)
     q: quality (default is 75 and max is 100)
 
-    HTML example: <img src="/resize.php?src=/images/whatever.jpg&w=150&h=200&zc=1" alt="" />
-	<img width="109" height="300" src="http://student.dev/wp-content/uploads/2012/02/Unnamed-109x300.jpg" class="attachment-post-thumbnail wp-post-image" alt="Unnamed-109x300" title="Unnamed-109x300" />
+    HTML example: <img src="/scripts/timthumb.php?src=/images/whatever.jpg&w=150&h=200&zc=1" alt="" />
 */
 
 /*
@@ -26,7 +25,7 @@ $sizeLimits = array(
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 define ('CACHE_SIZE', 800);					// number of files to store before clearing cache
-define ('CACHE_CLEAR', 150);					// maximum number of files to delete on each cache clear
+define ('CACHE_CLEAR', 15);					// maximum number of files to delete on each cache clear
 define ('CACHE_USE', TRUE);				// use the cache files? (mostly for testing)
 define ('VERSION', '1.15');					// version number (to force a cache refresh)
 define ('DIRECTORY_CACHE', './cache');		// cache directory
@@ -34,7 +33,7 @@ define ('DIRECTORY_TEMP', './temp');		// temp directory
 
 // 	external domains that are allowed to be displayed on your website
 $allowedSites = array (
-	
+
 );
 
 
