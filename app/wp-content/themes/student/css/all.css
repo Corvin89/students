@@ -119,7 +119,7 @@ body{
 }
 
 #header div.menu ul #search{
-    width: 270px;
+    width: 238px;
     margin: 0 0 0 10px;
 }
 
@@ -1131,6 +1131,7 @@ div.commentlist{
 	width:100%;
 	overflow:hidden;
 	margin:6px 0 0;
+<<<<<<< HEAD
 }
 
 #searchform input[type=text] {
@@ -1144,4 +1145,6 @@ div.commentlist{
     height: 28px;
     width: 60px;
     text-align: center;
+=======
+>>>>>>> 6ae4939d4f0603589f56c42ad80922c5cff0e76c
 }
