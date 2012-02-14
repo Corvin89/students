@@ -4,6 +4,7 @@
  * Description: Home Page
  */
 get_header(); ?>
+
 <div id="conteiner">
     <div class="boxer">
         <?php query_posts('posts_per_page=1&category_name=post_on_home_page'); ?>
