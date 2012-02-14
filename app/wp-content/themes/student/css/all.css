@@ -1131,20 +1131,4 @@ div.commentlist{
 	width:100%;
 	overflow:hidden;
 	margin:6px 0 0;
-<<<<<<< HEAD
-}
-
-#searchform input[type=text] {
-    margin-right: 3px;
-    height: 23px;
-    margin-top: 6px;
-    width: 180px
-}
-
-#searchform input[type=submit] {
-    height: 28px;
-    width: 60px;
-    text-align: center;
-=======
->>>>>>> 6ae4939d4f0603589f56c42ad80922c5cff0e76c
 }
