@@ -82,8 +82,13 @@ function the_thumbnail_src() {
 
 if ( function_exists('register_sidebar') )
     register_sidebar();
+add_theme_support( 'menu' );
 
-require_once "functions/menu.php";
+register_nav_menus(array(
+    'head_menu' => 'Верхнее меню',            //Название месторасположения меню в шаблоне
+    'bottom' => 'Нижнее меню'   //Название другого месторасположения меню в шаблоне
+));
+
 require_once "functions/opengraph.php";
 require_once "functions/comments.php";
 

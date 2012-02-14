@@ -32,7 +32,8 @@
             <?php endif; ?>
         </script>
         <div class="email">
-            <input type="text" class="text" name="email" value="<?php echo $mail; ?>" />
+			<label for="mail"><?php echo $mail; ?></label>
+            <input type="text" class="text" id="mail" name="email" value="" />
             <input type="submit" class="submit" name="subscribe" value="" />
         </div>
         <p><strong>Анонимность данных гарантируем!</strong></p>

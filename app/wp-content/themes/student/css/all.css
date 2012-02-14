@@ -94,7 +94,7 @@ body{
 }
 
 #header div.menu ul{
-	float:left;width:975px;
+	float:left;width:735px;
 	margin:0 0 0 10px;
 }
 
@@ -114,7 +114,7 @@ body{
 	text-shadow:0 1px #84c2e9;
 	text-transform:uppercase;
 	line-height:37px;
-	padding:0 25px 0 15px;
+	padding:0 19px 0 15px;
 	text-decoration:none;
 }
 
@@ -527,7 +527,17 @@ body{
 	width:203px;
 	height:33px;
 	overflow:hidden;
+	position:relative;
 	margin:28px 0;
+}
+
+#conteiner div.col-3 div.email label{
+	color: #CECECE;
+	position:absolute;
+	top:9px;
+	left:11px;
+    font-size: 12px;
+    width: 157px;
 }
 
 #conteiner div.col-3 div.email input.text{
@@ -702,6 +712,7 @@ body{
 	background:none;
 	font-size:12px;
 	color:#cecece;
+	height:17px;
 }
 
 #header div.serc input.sub{
@@ -1130,3 +1141,35 @@ div.commentlist{
 	overflow:hidden;
 	margin:6px 0 0;
 }
+
+#footer div.last div.soc ul li img{
+	height:21px;
+	width:auto;
+}
+
+#header div.serc div.disk{
+	position:relative;
+}
+
+#header div.serc div.disk label{
+	border: 0 none;
+    color: #CECECE;
+    font-size: 12px;
+	position:absolute;
+	top:8px;
+	left:9px;
+    width: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
