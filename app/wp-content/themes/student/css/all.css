@@ -144,6 +144,7 @@ body{
     position: absolute;
     top: 29px;
     width: 193px;
+	z-index:33;
 }
 
 #header div.menu ul li:hover div.submenu{
@@ -1069,13 +1070,17 @@ span.wpcf7-not-valid-tip{
 
 }
 
+<<<<<<< HEAD
 #searchform input[type=text] {
+=======
+#searchform input{
+>>>>>>> 3a8b3b67b2c85a0fcc1e709efe30255400561e52
     margin-right: 13px;
     height: 23px;
     margin-top: 6px;
 }
 
-#searchform input[type=submit] {
+#searchform input{
 height: 28px;
 width: 55px;
 }
