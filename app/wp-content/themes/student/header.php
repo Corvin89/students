@@ -49,7 +49,7 @@
 	             head_menu() ;
 	        ?>
 			<div class="serc">				
-				<form role="search" method="get" id="searchform" action="' . get_bloginfo("siteurl") . '"><div class="disk"><label for="s">Поиск по сайту</label><input type="text" class="text" value="" name="s" id="s" /><input type="submit" class="sub" id="searchsubmit" value="" /></div></form>
+				<form role="search" method="get" id="searchform" action="<?php echo get_bloginfo("siteurl"); ?>"><div class="disk"><label for="s">Поиск по сайту</label><input type="text" class="text" value="" name="s" id="s" /><input type="submit" class="sub" id="searchsubmit" value="" /></div></form>
 			</div>
 		</div>
     </div>
