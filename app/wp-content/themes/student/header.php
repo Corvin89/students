@@ -10,6 +10,7 @@
     <meta http-equiv="imagetoolbar" content="no"/>
     <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.infieldlabel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/all.css"/>
     <!--[if IE 8]>
@@ -43,14 +44,13 @@
                 src="<?php echo get_option('top_banner_path');?>" alt=""
                 title=""/></a></div>
         </div>
-        <?php wp_nav_menu($args = array(
-            'menu' => 'Top',
-            'container' => 'div',
-            'container_class' => 'menu',
-            'menu_class' => 'menu',
-            'echo' => true,
-            'walker' => new My_Walker_Nav_Menu,
-            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li id="search"><form role="search" method="get" id="searchform" action="' . get_bloginfo("siteurl") . '"><div><input type="text" value="" name="s" id="s" /><input type="submit" id="searchsubmit" value="Искать" /></div></form></li></ul>'
-             )
-        );?>
+		<div class="menu">
+			<?php 
+	            require_once ('menu.php');
+	             head_menu() ;
+	        ?>
+			<div class="serc">				
+				<form role="search" method="get" id="searchform" action="' . get_bloginfo("siteurl") . '"><div class="disk"><label for="s">Поиск по сайту</label><input type="text" class="text" value="" name="s" id="s" /><input type="submit" class="sub" id="searchsubmit" value="" /></div></form>
+			</div>
+		</div>
     </div>
