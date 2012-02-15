@@ -8,8 +8,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2011-11-02 01:07+0200\n"
-"Last-Translator: Igor Klipach <klipach@gmail.com>\n"
+"PO-Revision-Date: 2012-02-15 18:52+0300\n"
+"Last-Translator: Alexandr <apt-get source language-pack-gnome-ru-base>\n"
 "Language-Team: Igor Klipach <klipach@gmail.com>\n"
 "X-Poedit-Language: Russian\n"
 
@@ -87,7 +87,7 @@ msgstr "Список рассылки на который будут подпи�
 
 #: lib/ns_widget_mailchimp.class.php:98
 msgid "Sign Up Button Text :"
-msgstr "Текст кнопки \"Подписаться\" :"
+msgstr "Текст над кнопкой \"Подписаться\" :"
 
 #: lib/ns_widget_mailchimp.class.php:100
 msgid "Personal Information"

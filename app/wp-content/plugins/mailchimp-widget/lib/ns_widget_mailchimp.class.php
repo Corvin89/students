@@ -277,7 +277,9 @@ class NS_Widget_MailChimp extends WP_Widget {
 			} else {
 				?>	
 				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="<?php echo $this->id_base . '_form-' . $this->number; ?>" method="post">
-					<?php echo $this->subscribe_errors;?>
+                    <div class="white">
+                        <p><?php echo __($instance['signup_text'], 'mailchimp-widget'); ?></p>
+                    <?php echo $this->subscribe_errors;?>
 					<?php	
 						if ($instance['collect_first']) {
 					?>	
@@ -292,10 +294,14 @@ class NS_Widget_MailChimp extends WP_Widget {
 					<?php	
 						}
 					?>
+                        <div class="email">
 						<input type="hidden" name="ns_mc_number" value="<?php echo $this->number; ?>" />
-						<label for="<?php echo $this->id_base; ?>-email-<?php echo $this->number; ?>"><?php echo __('Email Address :', 'mailchimp-widget'); ?></label>
-						<input id="<?php echo $this->id_base; ?>-email-<?php echo $this->number; ?>" type="text" name="<?php echo $this->id_base; ?>_email" />
-						<input class="button" type="submit" name="<?php echo __($instance['signup_text'], 'mailchimp-widget'); ?>" value="<?php echo __($instance['signup_text'], 'mailchimp-widget'); ?>" />
+						<label style="display:none;" for="<?php echo $this->id_base; ?>-email-<?php echo $this->number; ?>"><?php echo __('Email Address :', 'mailchimp-widget'); ?></label>
+						<input class="text" id="<?php echo $this->id_base; ?>-email-<?php echo $this->number; ?>" type="text" name="<?php echo $this->id_base; ?>_email" />
+						<input class="button" type="submit" name="<?php echo __($instance['signup_text'], 'mailchimp-widget'); ?>" value="" />
+                    </div>
+                        <p><strong>Анонимность данных гарантируем!</strong></p>
+                    </div>
 					</form>
 						<script>jQuery('#<?php echo $this->id_base; ?>_form-<?php echo $this->number; ?>').ns_mc_widget({"url" : "<?php echo $_SERVER['PHP_SELF']; ?>", "cookie_id" : "<?php echo $this->id_base; ?>-<?php echo $this->number; ?>", "cookie_value" : "<?php echo $this->hash_mailing_list_id(); ?>", "loader_graphic" : "<?php echo $this->default_loader_graphic; ?>"}); </script>
 				<?php

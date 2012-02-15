@@ -82,6 +82,18 @@ function the_thumbnail_src() {
 
 if ( function_exists('register_sidebar') )
     register_sidebar();
+
+if ( function_exists('register_sidebar') ){
+register_sidebar(array(
+    'name' => 'Подписка',
+    'id' => 'subscribe-sidebar',
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '<div class="top-orang">',
+    'after_title' => '</div>',
+));
+}
+
 add_theme_support( 'menu' );
 
 register_nav_menus(array(

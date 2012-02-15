@@ -1163,15 +1163,12 @@ div.commentlist{
     width: 170px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+div.email input.button{
+float: left;
+height: 31px;
+margin: 0 0 0 3px;
+width: 30px;
+border: 0;
+background: none;
+cursor: pointer;
+}
