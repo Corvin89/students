@@ -46,7 +46,6 @@
         </div>
 		<div class="menu">
 			<?php 
-	            require_once ('menu.php');
 	             head_menu() ;
 	        ?>
 			<div class="serc">				
