@@ -1172,3 +1172,27 @@ border: 0;
 background: none;
 cursor: pointer;
 }
+
+#conteiner div.col-3 div.error {
+    overflow: hidden;
+    padding: 15px 15px 5px;
+    margin: 0 0 7px;
+    color: #870b0d;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    font-family: Arial, Trebuchet MS, Verdana;
+    width: 210px;
+}
+
+#conteiner div.col-3 form.subscribe_widget_mailcamp>p {
+    overflow: hidden;
+    padding: 15px 15px 5px;
+    margin: 0 0 7px;
+    color: #0d850c;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    font-family: Arial, Trebuchet MS, Verdana;
+    width: 210px;
+}

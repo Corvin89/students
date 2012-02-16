@@ -276,7 +276,7 @@ class NS_Widget_MailChimp extends WP_Widget {
 				echo $this->signup_success_message;
 			} else {
 				?>	
-				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="<?php echo $this->id_base . '_form-' . $this->number; ?>" method="post">
+				<form class="subscribe_widget_mailcamp" action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="<?php echo $this->id_base . '_form-' . $this->number; ?>" method="post">
                     <div class="white">
                         <p><?php echo __($instance['signup_text'], 'mailchimp-widget'); ?></p>
                     <?php echo $this->subscribe_errors;?>
