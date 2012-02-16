@@ -1099,7 +1099,7 @@ div.likes-col-1{
 
 div.likes-col-2{
 	float: left;
-    width: 85px;
+    width: 100px;
 }
 
 div.likes-col-3{
@@ -1112,6 +1112,19 @@ div.likes-col-4{
     height: 23px;
     overflow: hidden;
     width: 157px;
+
+}
+div.likes-col-4-1{
+    float: left;
+    height: 23px;
+    overflow: hidden;
+    width: 157px;
+    margin-top: 5px;
+}
+
+div.likes-col-5{
+    float: left;
+    width: 100px;
 }
 
 div.soc-line{
