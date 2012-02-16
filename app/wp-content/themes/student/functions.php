@@ -150,6 +150,5 @@ function head_menu()
 
 require_once "functions/opengraph.php";
 require_once "functions/comments.php";
-
-error_reporting(5);
 require_once "functions/like.php";
+error_reporting(5);

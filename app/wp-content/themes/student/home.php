@@ -145,7 +145,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="soc"><a href="#" class="more">Подробнее...</a>
-                <?php do_shortcode('[social_likes]'); ?>
+<!--                --><?php //do_shortcode('[social_likes]'); ?>
 <!--                <div class="likes"><div class="likes">-->
 <!--<!--                    google+1button-->-->
 <!--                    <g:plusone size="medium"></g:plusone>-->
