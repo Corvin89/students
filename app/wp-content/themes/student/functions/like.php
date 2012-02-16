@@ -29,6 +29,6 @@ function shortcode_social_likes($atts, $content = null) {
 //    <!--                        <a target="_blank" class="mrc__plugin_uber_like_button" href="http://connect.mail.ru/share?share_url=http%3A%2F%2F" data-mrc-config="{'type' : 'button', 'caption-mm' : '1', 'caption-ok' : '0', 'counter' : 'true', 'text' : 'true', 'width' : '100%'}">Нравится</a>-->
 //    <!--                        <script src="http://cdn.connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>-->
 //    <!--                    </div>-->
-//}
+}
 
 add_shortcode('social_likes', 'shortcode_social_likes');
