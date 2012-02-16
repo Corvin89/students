@@ -1,0 +1,10 @@
+Installation
+------------
+
+To install Simple CAPTCHA, you need to copy the directory name "simpleCAPTCHA" into your plugin directory located at "wp-content/plugins".
+
+The correct path you should have to the plugin is "wp-content/plugins/simpleCAPTCHA"
+
+URL to your images should be http://yourURL.com/wp-content/plugins/simpleCAPTCHA/gdimg.php
+
+Note: Registered user do not need to go through CAPTCHA challenge, thus you wont be able to see the CAPTCHA until you logout.

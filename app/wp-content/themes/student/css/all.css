@@ -94,7 +94,7 @@ body{
 }
 
 #header div.menu ul{
-	float:left;width:975px;
+	float:left;width:735px;
 	margin:0 0 0 10px;
 }
 
@@ -114,7 +114,7 @@ body{
 	text-shadow:0 1px #84c2e9;
 	text-transform:uppercase;
 	line-height:37px;
-	padding:0 25px 0 15px;
+	padding:0 19px 0 15px;
 	text-decoration:none;
 }
 
@@ -144,6 +144,7 @@ body{
     position: absolute;
     top: 29px;
     width: 193px;
+	z-index:33;
 }
 
 #header div.menu ul li:hover div.submenu{
@@ -297,11 +298,12 @@ body{
 	float:left;
 	color:#ff7200;
 	font-size:12px;
+	margin:0 16px 0 0;
 	line-height:22px;
 }
 
 #conteiner div.soc div.likes{
-	float:right;
+	float:left;
 }
 
 #conteiner ul.posts{
@@ -461,6 +463,7 @@ body{
 	overflow:hidden;
 	position:relative;
 	margin:1px 0 0;
+	min-height:100px;
 }
 
 #conteiner div.right-box div.title{
@@ -524,7 +527,17 @@ body{
 	width:203px;
 	height:33px;
 	overflow:hidden;
+	position:relative;
 	margin:28px 0;
+}
+
+#conteiner div.col-3 div.email label{
+	color: #CECECE;
+	position:absolute;
+	top:9px;
+	left:11px;
+    font-size: 12px;
+    width: 157px;
 }
 
 #conteiner div.col-3 div.email input.text{
@@ -699,6 +712,7 @@ body{
 	background:none;
 	font-size:12px;
 	color:#cecece;
+	height:17px;
 }
 
 #header div.serc input.sub{
@@ -751,7 +765,7 @@ h1{
 }
 
 #conteiner div.list-url ul{
-	width:250px;
+	width:190px;
 	float:left;
 	margin:5px 0 0;
 	overflow:hidden;
@@ -794,7 +808,7 @@ h1{
 
 #conteiner div.url input.url{
 	float:left;
-	width:150px;
+	width:250px;
 	font-size:12px;
 	padding:4px 8px 6px;
 	color:#cecece;
@@ -907,6 +921,7 @@ h3{
 	float:left;
 	border:0;
 	color:#a95008;
+	cursor:pointer;
 	text-shadow:0 1px #fdc79d;
 	font-size:12px;
 	font-weight:bold;
@@ -1062,15 +1077,98 @@ h3{
 
 span.wpcf7-not-valid-tip{
 	top:113%;
+
+
 }
 
-#searchform input[type=text] {
+#searchform input{
     margin-right: 13px;
     height: 23px;
     margin-top: 6px;
 }
 
-#searchform input[type=submit] {
+#searchform input{
 height: 28px;
 width: 55px;
+}
+
+div.likes-col-1{
+	float: left;
+    width: 80px;
+}
+
+div.likes-col-2{
+	float: left;
+    width: 85px;
+}
+
+div.likes-col-3{
+	float: left;
+    width: 136px;
+}
+
+div.likes-col-4{
+	float: left;
+    height: 23px;
+    overflow: hidden;
+    width: 157px;
+}
+
+div.soc-line{
+	overflow:hidden;
+	width:100%;
+	margin:0 0 5px;
+}
+
+div.soc-block{
+	float: left;
+    width: 462px;
+}
+
+ul.children {
+    background: url("../img/podcoment.gif") no-repeat;
+    clear: both;
+    margin: 0 0 0 13px;
+    overflow: hidden;
+    padding: 4px 0 0 35px;
+    width: 552px;
+}
+
+ul.children div.boxers {
+    width: 480px !important;
+}
+
+div.commentlist{
+	width:100%;
+	overflow:hidden;
+	margin:6px 0 0;
+}
+
+#footer div.last div.soc ul li img{
+	height:21px;
+	width:auto;
+}
+
+#header div.serc div.disk{
+	position:relative;
+}
+
+#header div.serc div.disk label{
+	border: 0 none;
+    color: #CECECE;
+    font-size: 12px;
+	position:absolute;
+	top:8px;
+	left:9px;
+    width: 170px;
+}
+
+div.email input.button{
+float: left;
+height: 31px;
+margin: 0 0 0 3px;
+width: 30px;
+border: 0;
+background: none;
+cursor: pointer;
 }
