@@ -19,6 +19,7 @@
     <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
     <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/css/print.css"/>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/search.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?47"></script>
     <script type="text/javascript">
         VK.init({apiId:2784828, onlyWidgets:true});
