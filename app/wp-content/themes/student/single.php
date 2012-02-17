@@ -1,7 +1,38 @@
 <?php get_header(); ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('.email-to-a-friend').click(function () {
+            var res = prompt("Введиме e-mail");
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                return pattern.test(emailAddress);
+            }
+
+            if (!isValidEmailAddress(res)) {
+                alert("Error");
+            } else {
+                location.href = "<?php echo $_SERVER["REDIRECT_URL"]; ?>?mail=" + res;
+            }
+        });
+    })
+</script>
 <div id="conteiner">
     <div class="boxer width">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php
+        if (isset($_GET["mail"]) && $_SESSION['istudent_mail'] != $_GET["mail"] && filter_var($_GET["mail"], FILTER_VALIDATE_EMAIL)) {
+            ?>
+            <script type="text/javascript">
+                    <?php if (wp_mail($_GET["mail"], "Re: " . get_the_title(), get_the_content())) {
+                    $_SESSION["istudent_mail"] = $_GET["mail"]; ?>
+                alert("true");
+                    <?php } else { ?>
+                alert("false");
+                    <?php }?>
+            </script>
+            <?php } ?>b
             <div class="pages">
                 <?php $categories = get_the_category($post->ID); ?>
         <?php
@@ -24,7 +55,7 @@
         </div>
         <div class="list-url">
             <ul>
-                <li><a href="#">Email to a Friend</a></li>
+                <li><a href="#" class="email-to-a-friend">Email to a Friend</a></li>
                 <li><a href="#" class="print" onclick="print()">Print</a></li>
             </ul>
             <div class="url">
