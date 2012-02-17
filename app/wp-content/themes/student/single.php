@@ -22,11 +22,11 @@
     <div class="boxer width">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php
-        if (isset($_GET["mail"]) && $_SESSION['istudent_mail'] != $_GET["mail"] && filter_var($_GET["mail"], FILTER_VALIDATE_EMAIL)) {
+        if (isset($_GET["mail"]) && $_SESSION[$_SERVER["REDIRECT_URL"]] != $_GET["mail"] && filter_var($_GET["mail"], FILTER_VALIDATE_EMAIL)) {
             ?>
             <script type="text/javascript">
                 <?php if (wp_mail($_GET["mail"], "Re: " . get_the_title(), get_the_content())) {
-                        $_SESSION["istudent_mail"] = $_GET["mail"]; ?>
+                        $_SESSION[$_SERVER["REDIRECT_URL"]] = $_GET["mail"]; ?>
                         alert("Сообщение отправлено успешно.");
                 <?php } else { ?>
                         alert("Ошибка отправки сообщения.");
