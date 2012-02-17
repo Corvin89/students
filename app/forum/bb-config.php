@@ -22,7 +22,7 @@ define( 'BBDB_USER', 'admin' );
 define( 'BBDB_PASSWORD', 'admin' );
 
 /** MySQL hostname */
-define( 'BBDB_HOST', 'localhost' );
+define( 'BBDB_HOST', '192.168.0.7' );
 
 /** Database Charset to use in creating database tables. */
 define( 'BBDB_CHARSET', 'utf8' );
