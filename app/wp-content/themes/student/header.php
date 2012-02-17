@@ -19,6 +19,7 @@
     <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
     <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/css/print.css"/>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/google.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/search.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?47"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="http://cdn.connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>
