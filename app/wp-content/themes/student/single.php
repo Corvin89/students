@@ -11,7 +11,7 @@
             }
 
             if (!isValidEmailAddress(res)) {
-                alert("Error");
+                alert("Не правильно введен email адрес");
             } else {
                 location.href = "<?php echo $_SERVER["REDIRECT_URL"]; ?>?mail=" + res;
             }
