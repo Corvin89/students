@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
@@ -25,14 +25,14 @@
         if (isset($_GET["mail"]) && $_SESSION['istudent_mail'] != $_GET["mail"] && filter_var($_GET["mail"], FILTER_VALIDATE_EMAIL)) {
             ?>
             <script type="text/javascript">
-                    <?php if (wp_mail($_GET["mail"], "Re: " . get_the_title(), get_the_content())) {
-                    $_SESSION["istudent_mail"] = $_GET["mail"]; ?>
-                alert("true");
-                    <?php } else { ?>
-                alert("false");
-                    <?php }?>
+                <?php if (wp_mail($_GET["mail"], "Re: " . get_the_title(), get_the_content())) {
+                        $_SESSION["istudent_mail"] = $_GET["mail"]; ?>
+                        alert("Сообщение отправлено успешно.");
+                <?php } else { ?>
+                        alert("Ошибка отправки сообщения.");
+                <?php }?>
             </script>
-            <?php } ?>b
+            <?php } ?>
             <div class="pages">
                 <?php $categories = get_the_category($post->ID); ?>
         <?php

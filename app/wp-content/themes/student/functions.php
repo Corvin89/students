@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 // Load main options panel file
 require_once "functions/admin-menu.php";
 
