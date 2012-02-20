@@ -1,7 +1,6 @@
 <?php
 /*
 Plugin Name: MailChimp Widget
-Plugin URI: https://github.com/kalchas
 Description: 
 Author: James Lafferty
 Version: 100.800.120
