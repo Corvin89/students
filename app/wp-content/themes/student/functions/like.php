@@ -15,13 +15,13 @@ function shortcode_social_likes()
         </div>
         <div class="likes-col-4">
             <div id="vk_like_<?php the_ID(); ?>" class="social_like_button"></div>
-            <script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
         </div>
         <div class="likes-col-5">
             <?php facebook(); ?>
         </div>
     </div>
 </div>
+<script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
 <?php
 }
 
@@ -43,12 +43,12 @@ function shortcode_social_likes_loop()
     </div>
     <div class="likes-col-3">
         <div id="vk_like_<?php the_ID(); ?>" class="social_like_button"></div>
-        <script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
     </div>
     <div class="likes-col-4-1">
         <?php facebook(); ?>
     </div>
 </div>
+<script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
 <?php
 }
 
