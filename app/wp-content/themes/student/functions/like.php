@@ -13,7 +13,9 @@ function shortcode_social_likes()
         <div class="likes-col-3">
             <?php mailru(); ?>
         </div>
+
         <div class="likes-col-4">
+
             <div id="vk_like_<?php the_ID(); ?>" class="social_like_button"></div>
         </div>
         <div class="likes-col-5">

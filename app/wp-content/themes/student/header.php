@@ -24,7 +24,7 @@
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="http://cdn.connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>
     <script type="text/javascript">
-        VK.init({apiId:2784828, onlyWidgets:true});
+        VK.init({apiId:2818381, onlyWidgets:true});
     </script>
     <?php wp_head(); ?>
 </head>
