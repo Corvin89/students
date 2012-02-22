@@ -14,7 +14,7 @@ function shortcode_social_likes()
             <?php mailru(); ?>
         </div>
         <div class="likes-col-4">
-            <?php vklike();  ?>
+            <div id="vk_like_<?php the_ID(); ?>" class="social_like_button"></div>
             <script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
         </div>
         <div class="likes-col-5">
@@ -42,7 +42,7 @@ function shortcode_social_likes_loop()
         <?php mailru(); ?>
     </div>
     <div class="likes-col-3">
-        <?php vklike();  ?>
+        <div id="vk_like_<?php the_ID(); ?>" class="social_like_button"></div>
         <script type="text/javascript">VK.Widgets.Like("vk_like_<?php the_ID(); ?>", {type:"button", width:205, pageUrl: '<?php the_permalink(); ?>', verb: 1, pageImage: '<?php the_thumbnail_src(); ?>'});</script>
     </div>
     <div class="likes-col-4-1">
